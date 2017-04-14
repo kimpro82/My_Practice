@@ -37,7 +37,8 @@ plot3d(colors, col=rgb(colors))
 R <- rnorm(1000, 64, 50)
 G <- rnorm(1000, 128, 50)
 B <- rnorm(1000, 192, 50)
-colors <- cbind(R,G,B)tail(colors)
+colors <- cbind(R,G,B)
+tail(colors)
 
 for (i in 1:1000) {
   for (j in 1:3) {
