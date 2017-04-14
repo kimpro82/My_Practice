@@ -5,7 +5,7 @@
 ## Install required library packages (only at first)
 install.packages("rgl")
 
-## loading required libraries
+## Loading required libraries
 library(rgl)
 
 
@@ -17,7 +17,8 @@ library(rgl)
 colors <- matrix(c(c(255,0,0),c(0,255,0),c(0,0,255)), ncol=3)
 colors
 
-plot3d(colors)plot3d(colors, col=rgb(colors/255))
+plot3d(colors)
+plot3d(colors, col=rgb(colors/255))
 
 ## '/255' : because rgb() requires values between 0 and 1.
 
