@@ -65,4 +65,4 @@ plot(G2, B2, col=rgb(colors/255))
 plot(B2, R2, col=rgb(colors/255))
 
 
-## Thanks for Nick Kim, Seung Lee
+## Thanks to Nick Kim, Seung Lee
