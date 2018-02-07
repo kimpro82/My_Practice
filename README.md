@@ -10,7 +10,10 @@ showing RGB color data' distribution by several methods in R
 : generating RGB data and using sigmoid function
 
 # R_Plotting_Fibonacci Tornado.R (2017.5.7)
-Generating Fibonacci Series and Fibonacci Coordinates by Looping
+generating Fibonacci Series and Fibonacci Coordinates by looping
 
 # Nirvana.py (2017.5.15)
 a simple Python practice
+
+# Python_Class_Test.py (2018.2.7)
+a simple Python Class practice
