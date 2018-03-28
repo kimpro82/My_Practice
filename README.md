@@ -12,8 +12,8 @@
 
 # R_Plotting_RGB.R (2017.4.14)
 - showing RGB color data' distribution by several methods in R
-: plot3d(), converting on coordinate plane
-: generating RGB data and using sigmoid function
+- plot3d(), converting on coordinate plane
+- generating RGB data and using sigmoid function
 
 # Ganzi.html (2017.4.3)
 - a simple Javascript practice
