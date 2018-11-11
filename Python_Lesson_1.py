@@ -21,7 +21,7 @@ print(total)
 print("총평가금액: ", total)
 
 
-# 03. Python's 
+# 03. Python's string
 
 mystring1 = 'a'
 mystring2 = "a"
