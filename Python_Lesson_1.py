@@ -97,7 +97,7 @@ a = [1,2,3,4]
 max(a)
 min(a)
 
-## ex
+# ex
 close = [100, 200, 300, 400]
 diff = max(close) - min(close)
 diff*0.3
