@@ -1,4 +1,4 @@
-# 01. 파이썬 개요
+# 01. Python's outline
 
 ## ---(Sun Nov 11 13:32:12 2018)---
 print(3)
@@ -6,7 +6,7 @@ print(3)
 972*0.97
 
 
-# 02. 파이썬 변수
+# 02. Python's variable
 
 bitcoin=9751500
 bitcoin
@@ -21,7 +21,7 @@ print(total)
 print("총평가금액: ", total)
 
 
-# 03. 파이썬 문자열
+# 03. Python's 
 
 mystring1 = 'a'
 mystring2 = "a"
@@ -73,7 +73,7 @@ cap_ticker = ticker2[:3]
 cap_ticker
 
 
-# 04. 파이썬 리스트
+# 04. Python's list
 
 hold = ["btc_krw", "xrp_krw", "eth_krw"]
 hold[0]
@@ -106,13 +106,13 @@ a
 sum(a)/len(a)
 
 
-# 05. 파이썬 튜플
+# 05. Python's tuple
 
 close2 = (100, 200, 300, 400)
 type(close2)
 
 
-# 06. 파이썬 딕셔너리
+# 06. Python's dictionary
 
 icecream = {'merona' : 1000, 'gugucon' : 2000}
 type(icecream)
