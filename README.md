@@ -1,6 +1,10 @@
 # My_Practice
 - miscellaneous petty works
 
+# Python_lesson_1.py (2018.11.11)
+- the 1st week, Python lesson for making cryptocurrency automated trading system
+- http://learningspoons.com/offline-class/offline-invest/cryptocurrency/
+
 # Python_Class_Test.py (2018.2.7)
 - a simple Python Class practice
 
