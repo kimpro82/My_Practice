@@ -12,7 +12,7 @@ miscellaneous petty works
 
 
 ## Python_Class_Test.py (2018.02.07)
-- a simple Python Class practice
+- a simple Python `class` practice
 
 <pre><code>class MyFirstClass :
     
@@ -27,7 +27,7 @@ Do.Family("Kim", "Future Baby")</code></pre>
 
 ![Python_Class_Test](https://github.com/kimpro82/My_Practice/blob/master/images/2018-02-07%20Python_Class_Test.PNG)
 
-I found that a simple class in Python doesn't need stuffs like `__main__`, `__init__` and so on.
+I found that a simple `class` in Python doesn't need stuffs like `__main__`, `__init__` and so on.
 What the `__hell__`?
 
 ## Nirvana.py (2017.05.15)
@@ -124,7 +124,7 @@ plot(log(series[1:12]), type="l",
 
 ## R_Plotting_RGB.R (2017.04.14)
 - showing RGB color data' distribution by several methods in R
-- using plot3d(), converting on coordinate plane
+- using `plot3d()`, converting on coordinate plane
 - generating RGB data with a sigmoid function
 
 <pre><code>## Install required library packages (only at first)
