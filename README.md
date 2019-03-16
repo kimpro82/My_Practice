@@ -25,6 +25,8 @@ Do.Family("Kim", "Husband")
 Do.Family("Shin", "Wife")
 Do.Family("Kim", "Future Baby")</code></pre>
 
+![Python_Class_Test](https://github.com/kimpro82/My_Practice/blob/master/images/2018-02-07%20Python_Class_Test.PNG)
+
 I found that a simple class in Python doesn't need stuffs like `__main__`, `__init__` and so on.
 What the `__hell__`?
 
@@ -101,6 +103,8 @@ plot(x[1:12], y[1:12], type="l",
      main="Fibonacci Tornado")
 abline(h=0, v=0, col="gray", lty=3)</code></pre>
 
+![Fibonacci Tornado](https://github.com/kimpro82/My_Practice/blob/master/images/2017-05-07%2003%3B04%3B10%20Fibonacci%20Tornado.PNG)
+
 #### Bonus. Seeing it's Aproximate to the Golden Ratio.
 <pre><code>fibonacci.ratio <- c()
 
@@ -116,6 +120,7 @@ abline(h=1.618, col="red", lty=3)
 plot(log(series[1:12]), type="l", 
      main="Natural Logarithm of Fibonacci Series")</code></pre>
 
+![Fibonacci Series - Golden Ratio](https://github.com/kimpro82/My_Practice/blob/master/images/2017-05-07%2003%3B03%3B02%20Fibonacci%20Series%20-%20Golden%20Ratio.PNG)
 
 ## R_Plotting_RGB.R (2017.04.14)
 - showing RGB color data' distribution by several methods in R
@@ -134,6 +139,8 @@ tail(colors)
 
 plot3d(colors, col=rgb(colors))</code></pre>
 
+![RGB_Plotting_2](https://github.com/kimpro82/My_Practice/blob/master/images/2017-04-15%2001%3B33%3B17%20RGB_Plotting_2.PNG)
+
 #### Using Sigmoid function
 Reference : https://en.wikipedia.org/wiki/Sigmoid_function
 <pre><code>R <- rnorm(1000, 64, 50)
@@ -144,6 +151,8 @@ colors <- (tanh(cbind(R,G,B)/255)+1)/2
 summary(colors)
 
 plot3d(colors, col=rgb(colors))</code></pre>
+
+![RGB_Plotting_5](https://github.com/kimpro82/My_Practice/blob/master/images/2017-04-15%2001%3B59%3B29%20RGB_Plotting_5.PNG)
 
 #### Using Sigmoid function 2 (Plotting on coordinate plane)
 Reference : https://github.com/THEjoezack/ColorMine/blob/master/ColorMine/ColorSpaces/Conversions/YxyConverter.cs
@@ -158,6 +167,8 @@ par(mfrow=c(1,3))
 plot(colors[,1], colors[,2], col=rgb(colors))
 plot(colors[,2], colors[,3], col=rgb(colors))
 plot(colors[,3], colors[,1], col=rgb(colors))</code></pre>
+
+![RGB_Plotting_6](https://github.com/kimpro82/My_Practice/blob/master/images/2017-04-15%2002%3B04%3B13%20RGB_Plotting_6.PNG)
 
 
 ## Ganzi.html (2017.04.03)
