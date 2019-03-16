@@ -8,6 +8,7 @@ miscellaneous petty works
 
 
 ## Python_Lesson (2018.11.11~12.16)
+- 6-weeks python lesson for making cryptocurrency automated trading system
 - http://learningspoons.com/offline-class/offline-invest/cryptocurrency/
 
 
