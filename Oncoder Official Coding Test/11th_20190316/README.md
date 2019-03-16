@@ -96,7 +96,7 @@ class Solution:
             self.finish2[i][k] = int(self.finish2[i][k])
                 
         
-        # 각 유의 이동 거리 및 도달 시간 계산
+        # 각 유닛의 이동 거리 및 도달 시간 계산
         self.distance = distance
         self.demanded_time = demanded_time
         
