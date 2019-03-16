@@ -1,5 +1,5 @@
 # [My_Practice]
-- miscellaneous petty works
+miscellaneous petty works
 
 
 ## Oncoder Official Coding Test
