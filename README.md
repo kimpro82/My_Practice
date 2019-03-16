@@ -1,17 +1,17 @@
-## [My_Practice]
+# [My_Practice]
 - miscellaneous petty works
 
 
-### Oncoder Official Coding Test
+## Oncoder Official Coding Test
 - https://www.oncoder.com/developer/
 - The 11th Test (2019.03.16)
 
 
-### Python_Lesson (2018.11.11~12.16)
+## Python_Lesson (2018.11.11~12.16)
 - http://learningspoons.com/offline-class/offline-invest/cryptocurrency/
 
 
-### Python_Class_Test.py (2018.02.07)
+## Python_Class_Test.py (2018.02.07)
 - a simple Python Class practice
 
 <pre><code>class MyFirstClass :
@@ -28,7 +28,7 @@ Do.Family("Kim", "Future Baby")</code></pre>
 I found that a simple class in Python doesn't need stuffs like `__main__`, `__init__` and so on.
 What the `__hell__`?
 
-### Nirvana.py (2017.05.15)
+## Nirvana.py (2017.05.15)
 - a simple Python practice
 
 <pre><code>death_entropy = 100
@@ -39,10 +39,10 @@ while(my_entropy < death_entropy) :
     my_entropy += 1
 print('Nirvana')</code></pre>
 
-### R_Plotting_Fibonacci Tornado.R (2017.05.07)
+## R_Plotting_Fibonacci Tornado.R (2017.05.07)
 - generating Fibonacci Series and Fibonacci Coordinates by looping
 
-##### 1. Generating Fibonacci Series
+#### 1. Generating Fibonacci Series
 <pre><code>series <- c(1,1)
 n <- 1000                                     ## defining the length of the series
 
@@ -52,7 +52,7 @@ for (i in 3:n) {
 
 head(series)</code></pre>
 
-##### 2. Skimming the Movement of Fibonacci Coordinates
+#### 2. Skimming the Movement of Fibonacci Coordinates
 <pre><code>## The series' flow : (0,0), (1,0), (1,1), (-1,1), (-1,-2), (4,-2), ……
 
 ## Each Coordinate's movement :
@@ -66,13 +66,13 @@ head(series)</code></pre>
 There are 4 types of calculation for coordinates' movement.
 It seems possible to be realized by looping.
 
-##### 2-1. How sort the types of calculation?
+#### 2-1. How sort the types of calculation?
 <pre><code>## type 1 : %% 4 = 1
 ## type 2 : %% 4 = 2
 ## type 3 : %% 4 = 3
 ## type 4 : %% 4 = 4</code></pre>
 
-##### 3. Generating Fibonacci Coordinates by Looping
+#### 3. Generating Fibonacci Coordinates by Looping
 <pre><code>x <- 0
 y <- 0
 
@@ -95,13 +95,13 @@ for (j in 2:n) {
   }
 }</code></pre>
 
-##### 3-1. Drawing Plot
+#### 3-1. Drawing Plot
 <pre><code>windows(width=5, height=5)
 plot(x[1:12], y[1:12], type="l", 
      main="Fibonacci Tornado")
 abline(h=0, v=0, col="gray", lty=3)</code></pre>
 
-##### Bonus. Seeing it's Aproximate to the Golden Ratio.
+#### Bonus. Seeing it's Aproximate to the Golden Ratio.
 <pre><code>fibonacci.ratio <- c()
 
 for (k in 1:n) {
@@ -117,13 +117,50 @@ plot(log(series[1:12]), type="l",
      main="Natural Logarithm of Fibonacci Series")</code></pre>
 
 
-### R_Plotting_RGB.R (2017.04.14)
+## R_Plotting_RGB.R (2017.04.14)
 - showing RGB color data' distribution by several methods in R
 - using plot3d(), converting on coordinate plane
 - generating RGB data and using sigmoid function
 
+<pre><code>## Install required library packages (only at first)
+install.packages("rgl")
 
-### Ganzi.html (2017.04.03)
+## Loading required libraries
+library(rgl)</code></pre>
+
+#### Generate sample data by Uniform dist.
+<pre><code>colors <- matrix(c(runif(3000)), ncol=3)
+tail(colors)
+
+plot3d(colors, col=rgb(colors))</code></pre>
+
+#### Using Sigmoid function
+Reference : https://en.wikipedia.org/wiki/Sigmoid_function
+<pre><code>R <- rnorm(1000, 64, 50)
+G <- rnorm(1000, 128, 50)
+B <- rnorm(1000, 192, 50)
+
+colors <- (tanh(cbind(R,G,B)/255)+1)/2
+summary(colors)
+
+plot3d(colors, col=rgb(colors))</code></pre>
+
+#### Using Sigmoid function 2 (Plotting on coordinate plane)
+Reference : https://github.com/THEjoezack/ColorMine/blob/master/ColorMine/ColorSpaces/Conversions/YxyConverter.cs
+<pre><code>R2 = R/(R+G+B)
+G2 = G/(R+G+B)
+B2 = B/(R+G+B)
+
+colors <- (tanh(cbind(R2,G2,B2))+1)/2
+summary(colors)
+
+par(mfrow=c(1,3))
+plot(colors[,1], colors[,2], col=rgb(colors))
+plot(colors[,2], colors[,3], col=rgb(colors))
+plot(colors[,3], colors[,1], col=rgb(colors))</code></pre>
+
+
+## Ganzi.html (2017.04.03)
 - a simple Javascript practice
 
 <pre><code>&ltdiv id ="Zure"&gtGanzi&lt/div&gt
