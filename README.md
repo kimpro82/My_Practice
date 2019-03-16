@@ -125,7 +125,7 @@ plot(log(series[1:12]), type="l",
 ## R_Plotting_RGB.R (2017.04.14)
 - showing RGB color data' distribution by several methods in R
 - using plot3d(), converting on coordinate plane
-- generating RGB data and using sigmoid function
+- generating RGB data with a sigmoid function
 
 <pre><code>## Install required library packages (only at first)
 install.packages("rgl")
