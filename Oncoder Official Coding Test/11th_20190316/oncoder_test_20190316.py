@@ -35,7 +35,7 @@ class Solution:
             self.finish2[i][k] = int(self.finish2[i][k])
                 
         
-        # 각 유닉의 이동 거리 및 도달 시간 계산
+        # 각 유의 이동 거리 및 도달 시간 계산
         self.distance = distance
         self.demanded_time = demanded_time
         
@@ -77,7 +77,7 @@ print(start2)
 print(finish2)
 
 
-# Part.2 - Calculating the each distances and their demanded moving time
+# Part.2 - Calculating the each unit's moving distance and its demanded time
 import math
 
 distance = []
