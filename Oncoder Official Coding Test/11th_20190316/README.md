@@ -10,7 +10,7 @@ https://www.oncoder.com/
 
 Suddenly I realized that I misunderstanded the question, but it was too late.
 
-This code is based on my wrong understand, not exam writers' real purpose.
+This code is based on my wrong understanding, not exam writers' real purpose.
 
 
 #### Before making a class, at a temporary function level, it works.
