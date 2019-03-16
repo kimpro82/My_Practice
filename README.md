@@ -5,7 +5,7 @@
 - The 11th Test (2019.03.16)
 
 ### Python_Lesson (2018.11.11~12.16)
-- a simple Python Class practice
+- http://learningspoons.com/offline-class/offline-invest/cryptocurrency/
 
 ### Python_Class_Test.py (2018.02.07)
 - a simple Python Class practice
