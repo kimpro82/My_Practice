@@ -8,7 +8,7 @@ https://www.oncoder.com/
 
 ### Q3 - My Answer
 
-I realized that I misunderstanded the question, but it was too late.
+Suddenly I realized that I misunderstanded the question, but it was too late.
 
 This code is based on my wrong understand, not exam writers' real purpose.
 
