@@ -1,4 +1,4 @@
-## Q2. 연산하기
+# Q2. 연산하기
 
 class Solution:
     def solution(self, a, b):
