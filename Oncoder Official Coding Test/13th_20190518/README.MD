@@ -55,13 +55,6 @@ do1 = do.solution(3,2,1)
 ```
 > 0
 
-```python
-do1[1]
-do1[1][2]
-```
-> TypeError: 'NoneType' object is not subscriptable  
-> TypeError: 'NoneType' object is not subscriptable
-
 I'm so sad
 
 
