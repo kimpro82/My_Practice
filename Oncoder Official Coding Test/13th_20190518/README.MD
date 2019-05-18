@@ -51,7 +51,7 @@ class Solution:
 
 ```python
 do = Solution()
-do1 = do.solution(3,2,1)
+do.solution(3,2,1)
 ```
 > 0
 
