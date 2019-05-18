@@ -15,14 +15,16 @@ This code is based on my wrong understanding, not exam writers' real purpose.
 
 #### Before making a class, at a temporary function level, it works.
 
-<pre><code># a given sample lists of coordinate and velocity
+```python
+# a given sample lists of coordinate and velocity
 start = ["0 0 2","5 0 1"] # X Y V
 finish = ["5 12","10 12"] # X Y
-</code></pre>
+```
 
 ##### Part.1 - Preprocessing
 
-<pre><code>start2 = []
+```python
+start2 = []
 finish2 = []
 
 for i in range(len(start)) :
@@ -36,14 +38,21 @@ for i in range(len(start)) :
     k = len(start)
     for j in range(j) :
         finish2[i][j] = int(finish2[i][j])
+```
 
+```python
 print(start2)
+```
+> [[0, 0, 2], [5, 0, 1]]
+```python
 print(finish2)
-</code></pre>
+```
+> [[5, 12], [10, 12]]
 
 ##### Part.2 - Calculating the each unit's moving distance and its demanded time
 
-<pre><code>import math
+```python
+import math
 
 distance = []
 demanded_time = []
@@ -53,18 +62,30 @@ for l in range(l) :
     # 이동 거리 : 피타고라스의 정리("c^2 = a^2 + b^2") 활용
     distance.append(math.sqrt((finish2[l][0] - start2[l][0])**2 + (finish2[l][1] - start2[l][1])**2))
     demanded_time.append(distance[l]/start2[l][2])
+```
 
+```python
 print(distance)
+```
+> [13.0, 13.0]
+```python
 print(demanded_time)
+```
+> [6.5, 13.0]
+```python
 print(min(demanded_time))
-</code></pre>
+```
+> 6.5
 
 Actually, the result from Pythagorean theorem is also crazy(I hate math!).
 
 Anyway, it works despite of wrong return. But, ……
 
+
 #### My Final Answer
-<pre><code># a given sample lists of coordinate and velocity
+
+```python
+# a given sample lists of coordinate and velocity
 start = ["0 0 2","5 0 1"] # X Y V
 finish = ["5 12","10 12"] # X Y
 
@@ -111,7 +132,7 @@ class Solution:
 # In the test, I don't need to make an instance for myself.
 a = Solution()
 a(["0 0 2","5 0 1"],["5 12","10 12"])
-</code></pre>
+```
 
 I think I converted well from functions to class, but why doesn't it work?
 
