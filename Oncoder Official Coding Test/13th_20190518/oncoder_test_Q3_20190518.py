@@ -42,9 +42,7 @@ class Solution:
 
         
 do = Solution()
-do1 = do.solution(3,2,1)
-do1[1]
-do1[1][2]
+do.solution(3,2,1)
 
 testlist = [1,2,3]
 testper =  list(itertools.permutations(testlist))
