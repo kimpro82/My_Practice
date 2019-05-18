@@ -1,4 +1,5 @@
-# 짝수 갯수 구하기
+# Q4. 짝수 갯수 구하기
+
 class Solution:
     def solution(self, arr):
         self.arr = arr
