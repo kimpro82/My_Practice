@@ -3,8 +3,8 @@ miscellaneous petty works
 
 
 ## Oncoder Official Coding Test
-- Monthly Online Coding Test Site
-- https://www.oncoder.com/developer/
+Monthly Online Coding Test Site  
+https://www.oncoder.com/developer/  
 - The 11th Oncoder Official Coding Test (2019.03.16)
 - The 12th Oncoder Official Coding Test (2019.04.13)
 - The 13th Oncoder Official Coding Test (2019.05.18)
@@ -12,12 +12,12 @@ miscellaneous petty works
 
 
 ## Python_Lesson (2018.11.11~12.16)
-- 6-weeks python lesson for making cryptocurrency automated trading system
-- http://learningspoons.com/offline-class/offline-invest/cryptocurrency/
+6-weeks python lesson for making cryptocurrency automated trading system  
+http://learningspoons.com/offline-class/offline-invest/cryptocurrency/  
 
 
 ## Python_Class_Test.py (2018.02.07)
-- a simple Python `class` practice
+a simple Python `class` practice
 
 ```python
 class MyFirstClass :
@@ -38,7 +38,7 @@ I found that a simple `class` in Python doesn't need stuffs like `__main__`, `__
 What the `__hell__`?
 
 ## Nirvana.py (2017.05.15)
-- a simple Python practice
+a simple Python practice
 
 ```python
 death_entropy = 100
@@ -51,7 +51,7 @@ print('Nirvana')
 ```
 
 ## R_Plotting_Fibonacci Tornado.R (2017.05.07)
-- generating Fibonacci Series and Fibonacci Coordinates by looping
+generating Fibonacci Series and Fibonacci Coordinates by looping
 
 #### 1. Generating Fibonacci Series
 
@@ -204,7 +204,7 @@ plot(colors[,3], colors[,1], col=rgb(colors))
 
 
 ## Ganzi.html (2017.04.03)
-- a simple Javascript practice
+a simple Javascript practice
 
 ```html
 <div id ="Zure">Ganzi</div>
