@@ -9,7 +9,8 @@ https://www.oncoder.com/
 ### Q3 - My Answer
 But it never worked ……
 
-<pre><code>class Solution:
+```python
+class Solution:
     
     width = []
     height = []
@@ -46,13 +47,18 @@ But it never worked ……
         self.exp_area = sum(self.area)/self.K
         
         return self.exp_area
-    
-    
+```
+
+```python
 Solution.solution(K=1,rows=2,cols=3)
-</code></pre>
+```
+> TypeError: solution() missing 1 required positional argument: 'self'
+
 
 ## Practice Code
-<pre><code>K = 1
+
+```python
+K = 1
 rows = 2
 cols = 3
 
@@ -70,10 +76,16 @@ for i in range(1,rows+1) :
         for k in range(1,cols+1) :
             for l in range(1,cols+1) :
                 points.append([i, j, k, l])    
+```
 
+```python
 points[1][0:1]
+```
+> [1]
 
+```python
 # Scoring in rectangle
 for m in len(rectangle) :
     if min(points[m,0:1]>
-</code></pre>
+```
+(미완성)
