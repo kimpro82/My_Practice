@@ -57,12 +57,9 @@ do1 = do.solution(3,2,1)
 
 ```python
 do1[1]
-```
-> TypeError: 'NoneType' object is not subscriptable
-
-```python
 do1[1][2]
 ```
+> TypeError: 'NoneType' object is not subscriptable  
 > TypeError: 'NoneType' object is not subscriptable
 
 I'm so sad
@@ -79,72 +76,61 @@ testper
 
 ```python
 testper[0]
-```
-> (1, 2, 3)
-
-```python
 testper[0][1]
 ```
+> (1, 2, 3)  
 > 2
 
 ```python
 len(testper)
-```
-> 6
-
-```python
 range(0,len(testper))
-```
-> range(0, 6)
-
-```python
 list(range(0,len(testper)))
 ```
+> 6  
+> range(0, 6)  
 > [0, 1, 2, 3, 4, 5]
 
 ```python
 for i in list(range(0,len(testper))) :
     print(testper[i])
 ```
-> (1, 2, 3)
-  (1, 3, 2)
-  (2, 1, 3)
-  (2, 3, 1)
-  (3, 1, 2)
+> (1, 2, 3)  
+  (1, 3, 2)  
+  (2, 1, 3)  
+  (2, 3, 1)  
+  (3, 1, 2)  
   (3, 2, 1)
   
 ```python
 for j in list(range(0,len(testper[0]))) :
     print(testper[0][j])
 ```
-> 1
-  2
+> 1  
+  2  
   3
 
 ```python
 for i in list(range(0,len(testper))) :
     print(testper[-i])
 ```
-> (1, 2, 3)
-  (3, 2, 1)
-  (3, 1, 2)
-  (2, 3, 1)
-  (2, 1, 3)
+> (1, 2, 3)  
+  (3, 2, 1)  
+  (3, 1, 2)  
+  (2, 3, 1)  
+  (2, 1, 3)  
   (1, 3, 2)
 
 ```python
 for j in list(range(0,len(testper[0]))) :
     print(testper[0][-j-1])
 ```
-> 3
-  2
+> 3  
+  2  
   1
 
 ```python    
 1==2 and 2==2
-```
-> False
-```python  
 1==2 or 2==2
 ```
+> False  
 > True
