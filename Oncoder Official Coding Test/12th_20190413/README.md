@@ -86,6 +86,5 @@ points[1][0:1]
 ```python
 # Scoring in rectangle
 for m in len(rectangle) :
-    if min(points[m,0:1]>
+    if min(points[m,0:1]> # 미완성
 ```
-(미완성)
