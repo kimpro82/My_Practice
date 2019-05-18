@@ -111,14 +111,14 @@ for j in list(range(0,len(testper[0]))) :
 
 ```python
 for i in list(range(0,len(testper))) :
-    print(testper[-i])
+    print(testper[-i-1])
 ```
-> (1, 2, 3)  
-  (3, 2, 1)  
+> (3, 2, 1)  
   (3, 1, 2)  
   (2, 3, 1)  
   (2, 1, 3)  
-  (1, 3, 2)
+  (1, 3, 2)  
+  (1, 2, 3)
 
 ```python
 for j in list(range(0,len(testper[0]))) :
