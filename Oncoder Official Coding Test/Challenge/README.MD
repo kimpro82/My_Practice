@@ -201,6 +201,7 @@ for i in list(range(1,a+1)) :
 > 1 0 2  
   2 0 4  
   (중략)  
+  25 0 27  
   25 1 32
 
 ```Python
