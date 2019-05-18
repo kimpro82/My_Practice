@@ -1,6 +1,9 @@
 # Oncoder Official Coding Test
-- Monthly Online Coding Test Site
-- https://www.oncoder.com/
+Monthly Online Coding Test Site  
+https://www.oncoder.com/
+
+### Challenge
+provided sample questions
 
 ### The 11th Oncoder Official Coding Test (2019.03.16)
 
