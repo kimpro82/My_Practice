@@ -2,13 +2,10 @@
 miscellaneous petty works
 
 
-## Oncoder Official Coding Test
-Monthly Online Coding Test Site  
-https://www.oncoder.com/developer/  
-- The 11th Oncoder Official Coding Test (2019.03.16)
-- The 12th Oncoder Official Coding Test (2019.04.13)
-- The 13th Oncoder Official Coding Test (2019.05.18)
-- The 14th Oncoder Official Coding Test (2019.07.13) (not yet)
+## ~~Oncoder Official Coding Test~~
+I decided all the details from here to the new repository <[Oncoder-Coding-Test](https://github.com/kimpro82/Oncoder-Coding-Test)>.  
+Nothing will be updated here anymore.  
+(Other small practices, of courese, will go on here.)
 
 
 ## Python_Lesson (2018.11.11~12.16)
