@@ -4,7 +4,7 @@ miscellaneous petty works
 
 ## Python_Password.py (2019.05.24)
 input the correct passworld within 5 trials or die  
-practice if~else, break/continue, time.sleep(), and so on
+practice if~else, break/continue, time.sleep() and so on
 
 ```python
 import time # for using time.sleep()
