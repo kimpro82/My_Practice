@@ -16,7 +16,7 @@ while chance < 5 :
         chance += 1
         print("You entered the wrong passwords", chance, "times.")
         if chance == 5 :
-            print("You bady guys will be delayed as a penalty.")
+            print("You bad guys will be delayed as a penalty.")
             time.sleep(3)
         else :
             continue
