@@ -44,7 +44,7 @@ for (i in 1:length(cf.time)) {
 }
 ```
 
-![CF Affection Measurement](https://github.com/kimpro82/My-Practice/blob/kimpro82-patch-1/images/CF_Affection_Measurement_20190525.png)
+![CF Affection Measurement](https://github.com/kimpro82/My-Practice/blob/master/images/CF_Affection_Measurement_20190525.png)
 
 
 ## Python_Password.py (2019.05.24)
