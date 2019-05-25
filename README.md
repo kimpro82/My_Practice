@@ -10,7 +10,7 @@ practice if~else, break/continue, time.sleep() and so on
 import time # for using time.sleep()
 
 chance = 0
-pw_original = "mymy" # password. a word that call a pass. you nahm sayin?
+pw_original = "mymy" # password. a word that calls a pass. you nahm sayin?
 
 while chance < 5 :
     pw_input = input("Input your password : ")
