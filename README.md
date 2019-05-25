@@ -10,7 +10,7 @@ practice if~else, break/continue, time.sleep() and so on
 import time # for using time.sleep()
 
 chance = 0
-pw_original = "mymy" # password. a word that call a pass. you nahm sayin?
+pw_original = "mymy" # password. a word that calls a pass. you nahm sayin?
 
 while chance < 5 :
     pw_input = input("Input your password : ")
@@ -39,6 +39,69 @@ while chance < 5 :
 I decided all the details from here to the new repository <[Oncoder-Coding-Test](https://github.com/kimpro82/Oncoder-Coding-Test)>.  
 Nothing will be updated here anymore.  
 (Other small practices, of courese, will go on here.)
+
+
+## Python_Player (2019.03.12) - maybe?
+A class that traces a player's coordinate
+
+```python
+# generating a player who has locatiion (a,b) and its trace data
+ 
+ 
+class player :
+    
+    name = ''
+    # can be named at each instance
+    location = [0,0]
+    # can be set as a random position (future task)
+    trace = [[0,0]]
+    # accumulationg as a list of location (a,b)s' trace
+    
+    def init(self, name, location, trace) : # Why doesn't __init__ work?
+    # alternative : def init(self, name='', location=[0,0], trace=[])
+        self.name = name
+        self.location = location
+        self.trace = trace
+    
+    # methods for moving
+    def right(self, num=1) :
+        self.location = [self.location[0] + num, self.location[1]]
+        self.trace.append(self.location)
+        print(self.location)
+        # Is there any other way to avoid repeat this common line?
+    
+    def left(self, num=1) :
+        self.location = [self.location[0] - num, self.location[1]]
+        self.trace.append(self.location)
+        print(self.location)
+    
+    def up(self, num=1) :
+        self.location = [self.location[0], self.location[1] + num]
+        self.trace.append(self.location)
+        print(self.location)
+    
+    def down(self, num=1) :
+        self.location = [self.location[0], self.location[1] - num]
+        self.trace.append(self.location)
+        print(self.location)
+        
+        # Should 'self' be really abused so much like the above?
+```
+
+```python
+# generating an instance
+p1 = player() 
+
+# Results
+p1.right()
+p1.up(3)
+p1.left(2)
+print(p1.trace)
+```
+> [1, 0]  
+[1, 3]  
+[-1, 3]  
+[[0, 0], [1, 0], [1, 3], [-1, 3]]  
 
 
 ## Python_Lesson (2018.11.11~12.16)
