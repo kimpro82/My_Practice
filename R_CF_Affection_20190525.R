@@ -3,7 +3,7 @@
 
 # 1. Generating Sample Data
 n1 = 24*60  # 24 hours * 60 minutes
-n2 = 18*60  # suppose 18:00pm is the peak
+n2 = 18*60  # not used - suppose 18:00pm is the peak with normal dist.
 cf.time = c(6, 12, 18) # suppose cf is played at 6:00, 12:00 and 18:00)
 jwp = c("This is", "for my friend", "JW Park") # suprise!
 
