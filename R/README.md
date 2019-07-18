@@ -1,6 +1,60 @@
 # [My R Practice]
 
 
+## Grade_Cancel_Effect.R (2019.07.19)
+try simulating grade cancel effect for my sister
+1) generate grade data (because my sister's real GPA can't be opened.ㅋㅋ)
+2) plot
+
+```R
+# 1. generating grade data
+
+# 1.1 grade (4.3 Scale)
+g0 <- 1:4
+gp <- g0 + 0.3
+gm <- g0 - 0.3
+g <- sort(c(g0, gp, gm))
+g
+
+# 1.2 more compact
+g <- sort(c(1:4, 1:4+0.3, 1:4-0.3))
+g
+
+# 1.3 test simply matching by slicing
+g[9]
+g[10]
+g[9.5]
+g[9.152346]
+g[9.876312] # It works but calls values smaller (biased)
+
+# 1.4 generate random grade data
+set.seed(307)
+평점 <- g[rnorm(30, 9.5, 1.5)]
+str(평점)
+
+# 2. plot
+windows(width=15, height=8)
+  par(mfrow=c(1,2)) 
+    hist(평점)
+    plot(평점~rank(평점, ties.method="first"),
+      xlab = "회색선 : 현재 누적 평점, 빨강선 : 하위 2개 과목 수강취소시 평점, 파랑선 : 하위 5개 과목 수강취소시 평점",
+      ylab = "",
+      col = c(rep(2,2), rep(4,3), rep(1,len-2-3))[rank(평점, ties.method="first")]
+    )
+      abline(h=mean((평점), na.rm=TRUE), col="gray")
+      abline(h=mean(sort(평점)[3:len]), col="red")
+      abline(h=mean(sort(평점)[6:len]), col="blue")
+
+# 2.1 vlaues
+mean(평점) # NA. na.rm=TRUE 넣어줘야 함
+mean(평점, na.rm=TRUE)
+mean(sort(평점)[6:len])
+mean(sort(평점)[9:len])    
+```
+
+![Grade_Cancel_Effect](https://github.com/kimpro82/My-Practice/blob/kimpro82-patch-1/images/2019-07-18%20Grade_Cancel_Effect.png)
+
+
 ## CF_Affection.R (2019.05.25)
 For my friend JW Park who wants to measure the affection of TV CF  
 It demands simply CF time schedule and target frequency(ex. app download time), not heavy tracker.
