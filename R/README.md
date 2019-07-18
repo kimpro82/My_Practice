@@ -45,7 +45,7 @@ windows(width=15, height=8)
       abline(h=mean(sort(평점)[3:len]), col="red")
       abline(h=mean(sort(평점)[6:len]), col="blue")
 
-# 2.1 vlaues
+# 2.1 values
 mean(평점) # NA. na.rm=TRUE 넣어줘야 함
 mean(평점, na.rm=TRUE)
 mean(sort(평점)[6:len])
