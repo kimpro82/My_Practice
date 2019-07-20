@@ -25,6 +25,7 @@ str(평점)
 
 
 # 2. plot
+len <- length(sort(평점))
 windows(width=15, height=8)
   par(mfrow=c(1,2)) 
     hist(평점)
