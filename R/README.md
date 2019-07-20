@@ -8,31 +8,47 @@ try simulating grade cancel effect for my sister
 
 ```R
 # 1. generating grade data
-
 # 1.1 grade (4.3 Scale)
 g0 <- 1:4
 gp <- g0 + 0.3
 gm <- g0 - 0.3
 g <- sort(c(g0, gp, gm))
 g
+```
+> 0.7 1.0 1.3 1.7 2.0 2.3 2.7 3.0 3.3 3.7 4.0 4.3
 
+```R
 # 1.2 more compact
 g <- sort(c(1:4, 1:4+0.3, 1:4-0.3))
 g
+```
+> 0.7 1.0 1.3 1.7 2.0 2.3 2.7 3.0 3.3 3.7 4.0 4.3
 
+```R
 # 1.3 test simply matching by slicing
 g[9]
 g[10]
 g[9.5]
 g[9.152346]
 g[9.876312] # It works but calls values smaller (biased)
+```
+> 3.3  
+> 3.7  
+> 3.3  
+> 3.3  
+> 3.3
 
+```R
 # 1.4 generate random grade data
 set.seed(307)
 평점 <- g[rnorm(30, 9.5, 1.5)]
 str(평점)
+```
+> num [1:30] 3.7 3 2.3 2.3 NA 3 3.7 3.3 3 3.3 ...
 
+```R
 # 2. plot
+len <- length(sort(평점))
 windows(width=15, height=8)
   par(mfrow=c(1,2)) 
     hist(평점)
@@ -44,15 +60,22 @@ windows(width=15, height=8)
       abline(h=mean((평점), na.rm=TRUE), col="gray")
       abline(h=mean(sort(평점)[3:len]), col="red")
       abline(h=mean(sort(평점)[6:len]), col="blue")
+```
 
+![Grade_Cancel_Effect](https://github.com/kimpro82/My-Practice/blob/master/images/2019-07-18%20Grade_Cancel_Effect.png)
+
+
+```R
 # 2.1 values
 mean(평점) # NA. na.rm=TRUE 넣어줘야 함
 mean(평점, na.rm=TRUE)
 mean(sort(평점)[6:len])
 mean(sort(평점)[9:len])    
 ```
-
-![Grade_Cancel_Effect](https://github.com/kimpro82/My-Practice/blob/master/images/2019-07-18%20Grade_Cancel_Effect.png)
+> NA  
+> 3.293103  
+> 3.45  
+> 3.514286
 
 
 ## CF_Affection.R (2019.05.25)
