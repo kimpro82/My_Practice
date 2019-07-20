@@ -52,7 +52,7 @@ mean(sort(평점)[6:len])
 mean(sort(평점)[9:len])    
 ```
 
-![Grade_Cancel_Effect](https://github.com/kimpro82/My-Practice/blob/kimpro82-patch-1/images/2019-07-18%20Grade_Cancel_Effect.png)
+![Grade_Cancel_Effect](https://github.com/kimpro82/My-Practice/blob/master/images/2019-07-18%20Grade_Cancel_Effect.png)
 
 
 ## CF_Affection.R (2019.05.25)
