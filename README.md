@@ -3,6 +3,7 @@ miscellaneous petty works
 
 
 ## My R Practice
+- With_Open.py (2019.07.21)
 - Grade_Cancel_Effect.R (2019.07.19)
 - CF_Affection.R (2019.05.25)
 - Plotting_Fibonacci Tornado.R (2017.05.07)
