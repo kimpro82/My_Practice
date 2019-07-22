@@ -30,7 +30,7 @@ int('2dda', 16) - int('2db7', 16)
 type(0x330c) # 이 자체로 int type
 ```
 > 11668  
-> 13068
+> 13068  
 > int
 
 ```python
