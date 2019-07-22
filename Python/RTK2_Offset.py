@@ -7,8 +7,9 @@ the initial data offset addresses of the each province (hexadecimal)
 41 - 330c
 """
 
+
 # 각 영토별 데이터는 35바이트 단위임을 확인
-int('2db7', 16)- int('2d94', 16) # 35
+int('2db7', 16) - int('2d94', 16) # 35
 int('2dda', 16) - int('2db7', 16) # 35
 
 # 영토별 첫번째 값의 offset 위치를 10진수로 확인
