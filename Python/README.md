@@ -1,7 +1,91 @@
 # [My Python Practice]
 
+## RTK2_CallData.py (2019.07.23)
+- partial module of a gaming utility for Romance of The Three Kingdoms II (KOEI, 1989)
+- call each province's data of population, gold, food and so on from a save file
+
+```python
+# province_offset_data - from RTK2_Offset.py (2019.07.22)
+province_offset_init = []
+province_offset_data = []
+
+for i in list(range(0,41)) :
+    province_offset_init.append(11668 + 35*i)
+    province_offset_data.append(list(range(province_offset_init[i], province_offset_init[i]+35)))
+```
+
+```python
+# call the save data on each offset location
+with open('Documents/신랑/개발/Python/SAVE','rb') as f:
+    province_law_data = f.read()
+    province_data = []
+    
+    for i in list(range(0,41)) :
+        province_data_row = [] 
+        for j in list(range(0,35)) :    
+            province_data_row.append(province_law_data[province_offset_data[i][j]])
+        province_data.append(province_data_row)
+
+print(province_data[0:3])
+```
+> [[182, 0, 8, 1, 0, 0, 240, 9, 3, 255, 128, 48, 255, 255, 7, 79, 4, 4, 1, 34, 8, 1, 55, 0, 6, 0, 0, 196, 45, 217, 0, 0, 0, 0, 0],  
+> [20, 10, 172, 74, 4, 0, 20, 9, 3, 255, 128, 50, 255, 2, 56, 100, 52, 0, 2, 64, 221, 0, 67, 0, 5, 0, 0, 150, 46, 11, 26, 12, 5, 0, 0],  
+> [48, 117, 96, 54, 42, 0, 61, 9, 15, 255, 0, 0, 255, 255, 100, 99, 100, 33, 4, 55, 174, 0, 73, 0, 4, 1, 0, 0, 0, 182, 4, 0, 0, 0, 0]]
+
+```python
+# test : gold
+province_gold = []
+
+for i in list(range(0,41)) :
+    province_gold.append(province_data[i][0] + province_data[i][1]*256)
+
+print(province_gold)
+```
+> [182, 2580, 30000, 30000, 30000, 7139, 30000, 1783, 29880, 30000, 29988, 30000, 130, 73, 51, 339, 30000, 0, 30000, 11841, 311, 2542, 12033, 0, 100, 100, 100, 605, 3697, 8908, 30000, 22452, 30000, 6341, 7482, 3649, 2528, 574, 4451, 8050, 12206]
+
+```python
+# all province data
+province_gold = []
+province_food = []
+province_pop = []
+province_rate = []
+province_horses = []
+province_loy = []
+province_land = []
+province_flood = []
+province_forts = []
+
+for i in list(range(0,41)) :
+    province_gold.append(province_data[i][0] + province_data[i][1]*(2**8))
+    province_food.append(province_data[i][2] + province_data[i][3]*(2**8) + province_data[i][4]*(2**16))
+    province_pop.append((province_data[i][6] + province_data[i][7]*(2**8))*100)
+    province_rate.append(province_data[i][19])
+    province_horses.append(province_data[i][17])
+    province_loy.append(province_data[i][15])
+    province_land.append(province_data[i][14])
+    province_flood.append(province_data[i][16])
+    province_forts.append(province_data[i][18])
+
+print("Province", "Pop\t\t", "Gold\t", "Food\t\t", "Rate Horses Loy Land Flood Forts")
+for i in list(range(0,10)) :
+    print(i+1, "\t", province_pop[i], "\t", province_gold[i], "\t", province_food[i], "\t", end =' ')
+    print(province_rate[i], province_horses[i], province_loy[i], province_land[i], province_flood[i], province_forts[i])
+```
+> Province Pop             Gold    Food            Rate Horses Loy Land Flood Forts  
+> 1        254400          182     264     34 4 79 7 4 1  
+> 2        232400          2580    281260          64 0 100 56 52 2  
+> 3        236500          30000   2766432         55 33 99 100 100 4  
+> 4        179300          30000   1732260         46 82 99 93 96 0  
+> 5        246800          30000   2666060         57 19 96 100 100 1  
+> 6        499500          7139    233937          50 42 98 79 64 3  
+> 7        269800          30000   2730580         37 85 94 100 100 3  
+> 8        173600          1783    329476          41 49 100 83 83 2  
+> 9        276300          29880   2694902         30 39 95 47 79 2  
+> 10       1010800         30000   3000000         33 83 96 100 100 6  
+
+
 ## RTK2_Offset.py (2019.07.22)
-- partial module of a gaming utility for Romance of The Three Kingdoms (KOEI, 1989)
+- partial module of a gaming utility for Romance of The Three Kingdoms II (KOEI, 1989)
 - make offset locations' list before call the save data
 
 ```python
