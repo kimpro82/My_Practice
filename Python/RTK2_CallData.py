@@ -18,12 +18,15 @@ with open('Documents/신랑/개발/Python/SAVE','rb') as f:
             province_data_row.append(province_law_data[province_offset_data[i][j]])
         province_data.append(province_data_row)
 
+print(province_data[0:3])
+
 
 # test : gold
 province_gold = []
 
 for i in list(range(0,41)) :
     province_gold.append(province_data[i][0] + province_data[i][1]*256)
+
 print(province_gold)
 
 
