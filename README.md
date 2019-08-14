@@ -3,11 +3,12 @@ miscellaneous petty works
 
 
 ## My Python Practice
+- RTK2_CallData_Pandas.py (2019.08.)
 - RTK2_CallData.py (2019.07.23)
 - RTK2_Offset.py (2019.07.22)
 - With_Open.py (2019.07.21)
 - Password.py (2019.05.24)
-- Player (2019.03.12) - maybe?
+- Player.py (2019.03.12) - maybe?
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
