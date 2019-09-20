@@ -3,7 +3,7 @@
 
 ## RTK2_CallData_Pandas.py (2019.08.12)
 - partial module of a gaming utility for Romance of The Three Kingdoms II (KOEI, 1989)
-- upgrade : adopt Numpy & Pandas and convert to a class
+- upgrade : adopt `Numpy` & `Pandas` and convert to a `class`
 - The parameter `lord` of the def `dataload` doesn't work yet.
 - The columns aren't named yet, too.
 
