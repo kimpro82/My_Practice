@@ -71,7 +71,7 @@ class Rtk2 :
 ```python
 rtk2 = Rtk2()
 
-save = rtk2.dataload('path', 15) # lord('15' doesn't work yet
+save = rtk2.dataload('path', 15) # the parameter lord('15') doesn't work yet
 save.head()
 ```
 
