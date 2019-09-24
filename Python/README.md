@@ -1,6 +1,47 @@
 # [My Python Practice]
 
 
+## Generate_Limited_Range_ND.py (2019.09.22)
+- partial module of a gaming utility for Romance of The Three Kingdoms II (KOEI, 1989)
+- generate rate data for practicing gold-food arbitrage
+
+#### Method 0. Generating initial data (not trimmed yet)
+```python
+mu, sigma, n = 50, 10, 1000
+llimit, rlimit = 25, 75
+
+data = np.random.normal(mu, sigma, n)
+```
+
+#### Method 1. Trim with rack of amount
+```python
+data1 = data[(data >= llimit) & (data <= rlimit)]
+```
+
+#### Method 2. Check each one trial
+```python
+data2, amount = [], 0
+
+while amount < n :
+    data_temp = np.random.normal(mu, sigma, 1)
+    if (data_temp >= llimit) & (data_temp <= rlimit) :
+        data2 = np.append(data2, data_temp)
+        amount += 1
+```
+
+#### Method 3. Generate one round and fill the lack
+```python
+data3 = data[(data >= llimit) & (data <= rlimit)]
+amount = len(data3)
+
+while amount < n :
+    data_temp = np.random.normal(mu, sigma, 1)
+    if (data_temp >= llimit) & (data_temp <= rlimit) :
+        data3 = np.append(data3, data_temp)
+        amount += 1
+```
+
+
 ## RTK2_CallData_Pandas.py (2019.08.12)
 - partial module of a gaming utility for Romance of The Three Kingdoms II (KOEI, 1989)
 - upgrade : adopt `Numpy` & `Pandas` and convert to a `class`
