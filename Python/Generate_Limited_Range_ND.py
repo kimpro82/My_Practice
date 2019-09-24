@@ -37,7 +37,6 @@ while amount < n :
     if (data_temp >= llimit) & (data_temp <= rlimit) :
         data2 = np.append(data2, data_temp)
         amount += 1
-       
 
 plt.hist(data2)
 stats.describe(data2)[0:2]
@@ -45,4 +44,14 @@ stats.describe(data2)[0:2]
 
 # Method 3. Generate one round and fill the lack
 
-# (while at work)
+data3 = data[(data >= llimit) & (data <= rlimit)]
+amount = len(data3)
+
+while amount < n :
+    data_temp = np.random.normal(mu, sigma, 1)
+    if (data_temp >= llimit) & (data_temp <= rlimit) :
+        data3 = np.append(data3, data_temp)
+        amount += 1
+
+plt.hist(data3)
+stats.describe(data3)[0:2]
