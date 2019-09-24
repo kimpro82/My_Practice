@@ -3,7 +3,15 @@
 
 ## Generate_Limited_Range_ND.py (2019.09.22)
 - partial module of a gaming utility for `Romance of The Three Kingdoms II` (KOEI, 1989)
-- generate `rate` data for practicing `gold`-`food` arbitrage
+- generate market rate data sample for practicing `gold`-`food` arbitrage
+- use `numpy` `matplotlib.pyplot` `scipy`
+
+#### Generate a normal distribution with limited range [25, 75]
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import stats
+```
 
 #### Method 0. Generating initial data (not trimmed yet)
 ```python
