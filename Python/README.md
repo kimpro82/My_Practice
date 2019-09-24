@@ -11,15 +11,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
-```
 
-#### Method 0. Generating initial data (not trimmed yet)
-```python
 mu, sigma, n = 50, 10, 1000
 llimit, rlimit = 25, 75
 
 data = np.random.normal(mu, sigma, n)
 ```
+
+#### Method 0. Generating initial data (not trimmed yet)
 ```python
 plt.hist(data)
 stats.describe(data)[0:2] # [0] : nobs, [1] : minmax
