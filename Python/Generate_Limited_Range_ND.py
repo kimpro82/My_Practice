@@ -1,20 +1,17 @@
-# Generating normal distribution with limited range [25, 75]
+# Generating a normal distribution with limited range [25, 75]
 
 import numpy as np
-import pandas as pd
-
-from numpy import random
-from scipy import stats
-
 import matplotlib.pyplot as plt
 
-
-# Method 0. Generating initial data (not trimmed yet)
+from scipy import stats
 
 mu, sigma, n = 50, 10, 1000
 llimit, rlimit = 25, 75
 
 data = np.random.normal(mu, sigma, n)
+
+
+# Method 0. Generating initial data (not trimmed yet)
 
 plt.hist(data)
 stats.describe(data)[0:2] # [0] : nobs, [1] : minmax
