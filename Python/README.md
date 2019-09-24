@@ -2,8 +2,8 @@
 
 
 ## Generate_Limited_Range_ND.py (2019.09.22)
-- partial module of a gaming utility for Romance of The Three Kingdoms II (KOEI, 1989)
-- generate rate data for practicing gold-food arbitrage
+- partial module of a gaming utility for `Romance of The Three Kingdoms II` (KOEI, 1989)
+- generate `rate` data for practicing `gold`-`food` arbitrage
 
 #### Method 0. Generating initial data (not trimmed yet)
 ```python
@@ -12,11 +12,23 @@ llimit, rlimit = 25, 75
 
 data = np.random.normal(mu, sigma, n)
 ```
+```python
+plt.hist(data)
+stats.describe(data)[0:2] # [0] : nobs, [1] : minmax
+```
+![hist0](https://github.com/kimpro82/My_Practice/blob/master/images/Generate_Limited_Range_ND_hist_0.png)
+> (1000, (16.763171096395133, 76.969552776105601))
 
 #### Method 1. Trim with rack of amount
 ```python
 data1 = data[(data >= llimit) & (data <= rlimit)]
 ```
+```python
+plt.hist(data1)
+stats.describe(data1)[0:2]
+```
+![hist1](https://github.com/kimpro82/My_Practice/blob/master/images/Generate_Limited_Range_ND_hist_1.png)
+> (991, (25.600374595125377, 74.942171158969671))
 
 #### Method 2. Check each one trial
 ```python
@@ -28,6 +40,12 @@ while amount < n :
         data2 = np.append(data2, data_temp)
         amount += 1
 ```
+```python
+plt.hist(data2)
+stats.describe(data2)[0:2]
+```
+![hist2](https://github.com/kimpro82/My_Practice/blob/master/images/Generate_Limited_Range_ND_hist_2.png)
+> (1000, (25.987274047611137, 73.473315070409228))
 
 #### Method 3. Generate one round and fill the lack
 ```python
@@ -40,10 +58,15 @@ while amount < n :
         data3 = np.append(data3, data_temp)
         amount += 1
 ```
-
+```python
+plt.hist(data3)
+stats.describe(data3)[0:2]
+```
+![hist3](https://github.com/kimpro82/My_Practice/blob/master/images/Generate_Limited_Range_ND_hist_3.png)
+> (1000, (25.600374595125377, 74.942171158969671))
 
 ## RTK2_CallData_Pandas.py (2019.08.12)
-- partial module of a gaming utility for Romance of The Three Kingdoms II (KOEI, 1989)
+- partial module of a gaming utility for `Romance of The Three Kingdoms II` (KOEI, 1989)
 - upgrade : adopt `Numpy` & `Pandas` and convert to a `class`
 - The parameter `lord` of the def `dataload` doesn't work yet.
 - The columns aren't named yet, too.
@@ -125,7 +148,7 @@ save.head()
 
 
 ## RTK2_CallData.py (2019.07.23)
-- partial module of a gaming utility for Romance of The Three Kingdoms II (KOEI, 1989)
+- partial module of a gaming utility for `Romance of The Three Kingdoms II` (KOEI, 1989)
 - call each province's data of population, gold, food and so on from a save file
 
 ```python
@@ -209,7 +232,7 @@ for i in list(range(0,10)) :
 
 
 ## RTK2_Offset.py (2019.07.22)
-- partial module of a gaming utility for Romance of The Three Kingdoms II (KOEI, 1989)
+- partial module of a gaming utility for `Romance of The Three Kingdoms II` (KOEI, 1989)
 - make offset locations' list before call the save data
 
 ```python
