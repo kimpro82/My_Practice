@@ -1,7 +1,10 @@
 # [My_Practice]
 miscellaneous petty works
 
-## My Python Practice
+## My Python Practice - Network & Security
+- TCP/UDP Server-Client Programming Basic Practice (2019.10.13)
+
+## My Python Practice - The General
 - Generate_Limited_Range_ND.py (2019.9.22)
 - Password.py (2019.05.24)
 - Player.py (2019.03.12) - maybe?
