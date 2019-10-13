@@ -1,4 +1,4 @@
-# Each server/client side codes should be run different kernel from each other.
+# Each server/client side codes should be run by different kernel from each other.
 
 # 1. TCP Server
 
