@@ -4,19 +4,19 @@ miscellaneous petty works
 ## My Python Practice - Network & Security
 - TCP/UDP Server-Client Programming Basic Practice (2019.10.13)
 
-## My Python Practice - Stuff
-- Generate_Limited_Range_ND.py (2019.9.22)
-- Password.py (2019.05.24)
-- Player.py (2019.03.12) - maybe?
-- Class_Test.py (2018.02.07)
-- Nirvana.py (2017.05.15)
-
 ## My Python Practice - RTK2 ERP
 a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) ERP
+- Generate_Limited_Range_ND.py (2019.9.22)
 - RTK2_CallData_Pandas.py (2019.08.12)
 - RTK2_CallData.py (2019.07.23)
 - RTK2_Offset.py (2019.07.22)
 - With_Open.py (2019.07.21)
+
+## My Python Practice - Stuff
+- Password.py (2019.05.24)
+- Player.py (2019.03.12) - maybe?
+- Class_Test.py (2018.02.07)
+- Nirvana.py (2017.05.15)
 
 ## My R Practice
 - Grade_Cancel_Effect.R (2019.07.19)
