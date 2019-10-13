@@ -35,6 +35,9 @@ print("메세지를 보냈습니다.")
 connectionSock.close() # close the connection
 server_sock.close() # close the server
 ```
+> ('127.0.0.1', 54476) 에서 접속이 확인되었습니다.  
+> 받는 데이터 : 저는 클라이언트입니다.  
+> 메세지를 보냈습니다.  
 
 ### TCP_Client.py (2019.10.13)
 
@@ -60,6 +63,9 @@ print("받는 데이터 :", data.decode('utf-8'))
 
 client_sock.close() # close the client's socket
 ```
+> 연결이 확인되었습니다.  
+> 메세지를 전송했습니다.  
+> 받는 데이터 : 저는 서버입니다.  
 
 ### UDP_Server.py (2019.10.13)
 
@@ -83,6 +89,8 @@ print("받은 데이터 : ", data.decode())
 
 server_sock.close() # close the server
 ```
+> 보낸 IP :  ('127.0.0.1', 64201)  
+> 받은 데이터 :  Hi! Server.  
 
 ### UDP_Client.py (2019.10.13)
 
