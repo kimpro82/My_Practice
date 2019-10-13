@@ -6,7 +6,9 @@
 
 
 ## TCP/UDP Server-Client Programming Basic Practice (2019.10.13)
-Each server/client side codes should be run different kernel from each other.
+Each server/client side codes should be run different kernel from each other.  
+![TCPUDP](https://github.com/kimpro82/My_Practice/blob/master/images/범죄와의전쟁_최민식_느그서장이랑.jpg)  
+내가 인마! 서버랑 클라이언트랑 마! 소켓 열고! 메세지 보내고! TCP랑 UDP랑 다 했어!
 
 ### TCP_Server.py (2019.10.13)
 
