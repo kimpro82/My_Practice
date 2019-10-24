@@ -45,6 +45,12 @@ connectionSock.close() # close the connection
 server_sock.close() # close the server
 
 ```
+> ('127.0.0.1', 53013) 에서 접속이 확인되었습니다.  
+> 받은 데이터 : 안녕하세요  
+> 송신 데이터 : 안녕하세요 메세지를 보냈습니다.  
+> 받은 데이터 : 저는 임꺽정이라고 합니다  
+> 송신 데이터 : 저는 임꺽정이라고 합니다 메세지를 보냈습니다.  
+
 
 ### TCP_Echo_Client.py (2019.10.20)
 
@@ -68,6 +74,13 @@ while True :
 
 client_sock.close() # close the client's socket
 ```
+
+> 데이터 입력 :안녕하세요  
+> 받은 데이터 : 안녕하세요  
+>  
+> 데이터 입력 :저는 임꺽정이라고 합니다  
+> 받은 데이터 : 저는 임꺽정이라고 합니다  
+
 
 ### UDP_Echo_Server.py (2019.10.20)
 
@@ -94,6 +107,16 @@ while data != "끝" : # program ending message : "끝"
 server_sock.close() # close the server
 ```
 
+> 보낸 IP :  ('127.0.0.1', 50561)  
+> 받은 데이터 :  안녕하세요  
+>  
+> 보낸 IP :  ('127.0.0.1', 50561)  
+> 받은 데이터 :  저는 임꺽정입니다  
+>  
+> 보낸 IP :  ('127.0.0.1', 50561)  
+> 받은 데이터 :  끝  
+
+
 ### UDP_Echo_Client.py (2019.10.20)
 
 ```python
@@ -117,6 +140,14 @@ while inputData != "끝" : # program ending message : "끝"
 
 client_sock.close() # close the client's socket
 ```
+
+> 데이터 입력 :안녕하세요  
+> Echo data : 안녕하세요  
+>  
+> 데이터 입력 :저는 임꺽정입니다  
+> Echo data : 저는 임꺽정입니다  
+>  
+> 데이터 입력 :끝  
 
 
 ## TCP/UDP Server-Client Programming 1 - Basic Practice (2019.10.13)
