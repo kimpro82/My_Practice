@@ -2,7 +2,8 @@
 miscellaneous petty works
 
 ## My Python Practice - Network & Security
-- TCP/UDP Server-Client Programming Basic Practice (2019.10.13)
+- TCP/UDP Server-Client Programming 2 - Reflect Echo (2019.10.20)
+- TCP/UDP Server-Client Programming 1 - Basic Practice (2019.10.13)
 
 ## My Python Practice - RTK2 ERP
 a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) ERP
