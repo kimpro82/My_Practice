@@ -2,6 +2,8 @@
 miscellaneous petty works
 
 ## My Python Practice - Network & Security
+- FTP Client Pragramming 2 - File Upload to the FTP Server (2019.10.27)
+- FTP Client Pragramming 1 - Get the Server's File List (2019.10.27)
 - TCP/UDP Server-Client Programming 2 - Reflect Echo (2019.10.20)
 - TCP/UDP Server-Client Programming 1 - Basic Practice (2019.10.13)
 
