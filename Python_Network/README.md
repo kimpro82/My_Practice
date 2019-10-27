@@ -1,11 +1,10 @@
-
-
-
 # My Python Practice - Network & Security
 
 ![TCPUDP](https://github.com/kimpro82/My_Practice/blob/master/images/범죄와의전쟁_최민식_느그서장이랑.jpg)  
 "내가 인마! 서버랑 클라이언트랑 마! 소켓 열고! 메세지 보내고! TCP랑 UDP랑 다 했어!"
 
+- 5_FTP_1.py (2019.10.27)
+- 5_FTP_2.py (2019.10.27)
 - 2_TCP_Echo_Server.py (2019.10.20)
 - 2_TCP_Echo_Client.py (2019.10.20)
 - 2_UDP_Echo_Server.py (2019.10.20)
@@ -17,7 +16,62 @@
 
 ※ Each server/client side codes should be run by different kernel from each other. 
 
-## TCP/UDP Server-Client Programming 2 - Reflect Echo (2019.10.20)
+
+## 5. FTP Client Programming (2019.10.27)
+
+### 5_FTP_1.py (2019.10.27)
+get the server's file list
+```python
+import ftplib # import a module about ftp
+
+# declare parameters for ftplib.FTP()
+FTP_SERVER_URL = "ftp.gnu.org"
+username = "anonymous"
+email = ""
+
+# generate FTP clent's session
+ftp = ftplib.FTP(FTP_SERVER_URL, username, email)
+
+ftp.cwd("/pub") # change FTP directory
+print("사이트 : ", FTP_SERVER_URL, "의 파일목록")
+ftp.dir() # get the list of the server's directories
+```
+![ftp.dir()](https://github.com/kimpro82/My_Practice/blob/master/images/2019-10-27%2020%3B29%3B39%20HW3-1%20Result.PNG)  
+
+### 5_FTP_2.py (2019.10.27)
+file upload to the FTP server
+```python
+import ftplib
+import os
+
+# declare parameters
+FTP_SERVER = "localhost"
+FILE_NAME = "sample.txt"
+username = ""
+password = ""
+
+print(FTP_SERVER, "FTP 서버에 접속합니다.")
+ftp = ftplib.FTP(FTP_SERVER) # connectthe FTP server
+print(username, "가 서버에 로그인합니다.")
+ftp.login(username, password) # login the server
+
+os.chdir("c:\\ftp_test2")
+myfile = open(FILE_NAME, 'rb')
+
+ftp.storbinary("STOR sample.txt", myfile) # upload a binary file to the server
+
+print(FILE_NAME, "파일을 업로드 하였습니다.")
+myfile.close() # finish file uploading
+
+ftp.quit() # finish the connection with the server
+```
+> localhost FTP 서버에 접속합니다.  
+> test 가 서버에 로그인합니다.  
+> sample.txt 파일을 업로드 하였습니다.  
+> Out[3]: '221 Goodbye'  
+
+
+## 2. TCP/UDP Server-Client Programming 2 - Reflect Echo (2019.10.20)
 
 ### TCP_Echo_Server.py (2019.10.20)
 
@@ -152,7 +206,7 @@ client_sock.close() # close the client's socket
 > 데이터 입력 :끝  
 
 
-## TCP/UDP Server-Client Programming 1 - Basic Practice (2019.10.13)
+## 1. TCP/UDP Server-Client Programming 1 - Basic Practice (2019.10.13)
 
 ### TCP_Server.py (2019.10.13)
 
