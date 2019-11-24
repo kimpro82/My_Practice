@@ -60,7 +60,7 @@ practice
 ```python
 if __name__ == '__main__' :
     plain_text = 'live for your smile and die for your kiss'
-    print("Original Meassage : ", plain_text)
+    print("Original Message : ", plain_text)
     
     encbook, decbook = createCodebook()
     cipher_text = encrypt(plain_text, encbook)
@@ -69,7 +69,7 @@ if __name__ == '__main__' :
     decipher_text = decrypt(cipher_text, decbook)
     print("Decrypted Message : ", decipher_text)
 ```
-> Original Meassage :  live for your smile and die for your kiss  
+> Original Message :  live for your smile and die for your kiss  
 > Encrypted Message :  ,)6% &/2 9/52 3-),% !.$ $)% &/2 9/52 +)33  
 > Decrypted Message :  live for your smile and die for your kiss
 
