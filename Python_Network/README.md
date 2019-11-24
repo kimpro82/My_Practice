@@ -3,6 +3,7 @@
 ![TCPUDP](https://github.com/kimpro82/My_Practice/blob/master/images/범죄와의전쟁_최민식_느그서장이랑.jpg)  
 "내가 인마! 서버랑 클라이언트랑 마! 소켓 열고! 메세지 보내고! TCP랑 UDP랑 다 했어!"
 
+- 7_Basic_Encryption.py (2019.11.24)
 - 5_FTP_1.py (2019.10.27)
 - 5_FTP_2.py (2019.10.27)
 - 2_TCP_Echo_Server.py (2019.10.20)
@@ -16,6 +17,63 @@
 
 ※ Each server/client side codes should be run by different kernel from each other. 
 
+## 7. Basic Encryption & Decryption (2019.11.24)
+
+### 7_Basic_Encryption.py (2019.11.24)
+make functions for generating codebook, encryption and decryption
+
+```python
+# Function of Generating Encryption Codebook
+def createCodebook() :
+    key = []
+    value = []
+    
+    for i in list(range(97, 123)) :
+        key.append(chr(i))
+        value.append(chr(i-64))
+
+    encbook = dict(zip(key, value))
+    decbook = dict(zip(value, key))
+
+    return encbook, decbook    
+```
+```python
+# Function of Encryption
+def encrypt(msg, encbook) :
+    for c in msg :
+        if c in encbook :
+            msg = msg.replace(c, encbook[c])
+    
+    return msg
+```
+```python
+# Function of Decryption
+def decrypt(msg, encbook) :
+    for c in msg :
+        if c in decbook :
+            msg = msg.replace(c, decbook[c])
+    
+    return msg
+```
+
+practice
+```python
+if __name__ == '__main__' :
+    plain_text = 'live for your smile and die for your kiss'
+    print("Original Meassage : ", plain_text)
+    
+    encbook, decbook = createCodebook()
+    cipher_text = encrypt(plain_text, encbook)
+    print("Encrypted Message : ", cipher_text)
+    
+    decipher_text = decrypt(cipher_text, decbook)
+    print("Decrypted Message : ", decipher_text)
+```
+> Original Meassage :  live for your smile and die for your kiss  
+> Encrypted Message :  ,)6% &/2 9/52 3-),% !.$ $)% &/2 9/52 +)33  
+> Decrypted Message :  live for your smile and die for your kiss
+
+## 6. E-mail Program
 
 ## 5. FTP Client Programming (2019.10.27)
 
@@ -70,6 +128,9 @@ ftp.quit() # finish the connection with the server
 > sample.txt 파일을 업로드 하였습니다.  
 > Out[3]: '221 Goodbye'  
 
+## 4. Advanced Chating Program with Threading
+
+## 3. Chating Program
 
 ## 2. TCP/UDP Server-Client Programming 2 - Reflect Echo (2019.10.20)
 
