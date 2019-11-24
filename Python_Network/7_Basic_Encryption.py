@@ -34,7 +34,7 @@ def decrypt(msg, encbook) :
 # Do
 if __name__ == '__main__' :
     plain_text = 'live for your smile and die for your kiss'
-    print("Original Meassage : ", plain_text)
+    print("Original Message : ", plain_text)
     
     encbook, decbook = createCodebook()
     cipher_text = encrypt(plain_text, encbook)
