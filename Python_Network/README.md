@@ -3,6 +3,9 @@
 ![TCPUDP](https://github.com/kimpro82/My_Practice/blob/master/images/범죄와의전쟁_최민식_느그서장이랑.jpg)  
 "내가 인마! 서버랑 클라이언트랑 마! 소켓 열고! 메세지 보내고! TCP랑 UDP랑 다 했어!"
 
+- 10_RSA_Encryption.py (2019.12.01)
+- 10_RSA_Encryption_with_Generated_Key.py (2019.12.01)
+- 10_RSA_Signature_Tool.py (2019.12.01)
 - 8_Columnar_Transformation_Cipher.py (2019.11.24)
 - 7_Basic_Encryption.py (2019.11.24)
 - 5_FTP_1.py (2019.10.27)
@@ -17,6 +20,165 @@
 - 1_UDP_Client.py (2019.10.13)
 
 ※ Each server/client side codes should be run by different kernel from each other. 
+
+## 10. Encryption & Decryption by RSA (2019.12.01)
+
+### 10_RSA_Encryption.py (2019.12.01)
+
+```python
+# import packages related with RSA encryption
+from Crypto.Cipher import PKCS1_OAEP
+from Crypto.PublicKey import RSA
+```
+
+```python
+# function of RSA enctyption
+def rsa_enc(msg) :
+    private_key = RSA.generate(1024)
+        # 1024 : must be a multiple of 256 and >=1024
+    public_key = private_key.publickey() # call public key from private key
+    cipher = PKCS1_OAEP.new(public_key) # add padding to public key
+    enc_data=cipher.encrypt(msg) # message encryption
+    print('cipher text : ', enc_data)
+    
+    cipher = PKCS1_OAEP.new(private_key) ## add padding to private key
+    dec_data = cipher.decrypt(enc_data) # message decryption
+    print('plain_text : ', dec_data)
+```
+
+```python
+msg = 'I love you'
+rsa_enc(msg.encode('utf-8'))
+```
+
+> cipher text :  b'=\r\x0bD%\xc5$\xbcU\x02\xca\xed\x87!\x81\'\xa7]\xb4\x98\xcd\x8c\xd7\xdc\xf3\xd0\x10G\xaa\x98\x0e\x8aJ \xa7M\x1f\x90\xca7?\xbf/g"|\x813\xf4\xb7k\xd1h\x01t\xe7\xc1\x00u\xb9b6\x8fc\xf8P@\xb9\r\xa9\xd6\xc8\x90\xfa\xef+\xd7\xf3iG\x15\x12\xf7/\xe6\xee\xb6\x16?\xec\xbfp\x8c\x8a\xa8\x82\xa7<r%\x03\\\x9c\xf1\x98\xae/P\xedkA9\xdd\xda\xc2\x8c\xfcG\xc7F8\xed\x1b\x9a\x182\xd78'  
+> plain_text :  b'I love you'  
+
+Do you listen to me?
+
+### 10_RSA_Encryption_with_Generated_Key.py (2019.12.01)
+
+```python
+# import packages related with RSA encryption
+from Crypto.Cipher import PKCS1_OAEP
+from Crypto.PublicKey import RSA
+from Crypto.Hash import SHA256 as SHA
+```
+
+```python
+# function of generating private key and public key
+def create_PEM() :
+    private_key = RSA.generate(1024) # generate private key
+    h = open('private_key.pem', 'wb+')
+    h.write(private_key.exportKey('PEM')) # write private key on file
+    h.close()
+    
+    public_key = private_key.publickey() # generate public key
+    h = open('public_key.pem', 'wb+')
+    h.write(public_key.exportKey('PEM')) # write public key on file
+    h.close()
+
+create_PEM()
+```
+
+```python
+# function of reading key
+def readPEM(pemfile) :
+    h = open(pemfile, 'r')
+    key = RSA.importKey(h.read())
+    h.close()
+    return key
+```
+
+```python
+# function of RSA enctyption
+def rsa_enc2(msg) :
+    public_key = readPEM('public_key.pem') # read public key
+    cipher = PKCS1_OAEP.new(public_key) # add padding to public key
+    enc_data=cipher.encrypt(msg) # message encryption
+    return enc_data
+
+# function of RSA decryption
+def rsa_dec2(msg) :
+    private_key = readPEM('private_key.pem') # read private key
+    cipher = PKCS1_OAEP.new(private_key) ## add padding to private key
+    dec_data = cipher.decrypt(msg) # message decryption
+    return dec_data
+```
+
+```python
+# do
+if __name__ == '__main__' :
+    msg = 'I love red taste'
+    cipher_text = rsa_enc2(msg.encode('utf-8'))
+    print('cipher text : ', cipher_text)
+    
+    plain_text = rsa_dec2(cipher_text)
+    print('plain text : ', plain_text)
+```
+
+> cipher text :  b'\x8f\x9a\x97\xa8\x1d\xe1b\x9e\xben\x13&\x82\x7f\x9b\\\xac\x918G>\x1a\x19\x86\xa6\xfa^\xfc\x1aX7\x1e\xfa"\x91\x17L[f6]\xdar\r\xd5sqWB\xee\xb4\xa6G(\xee\xd5[\t\xc8\x86\x1b\x95\xeb\xdb\x94[}{\xf8uT\xea\x1f\x86W\x9b\xd3\xec\xe6\xfb\x88\xfaJz(\xeal]\x19(\x18\x9e\xd5\xa5\xb0\xc7\x12W2\x82\xc9<\xae\xa8\xdf\xfc\xb0\x8b\xad\xeef=e\x8fW\x01\xc2\xbe0{\xcc\x9a\x85\x9f\xa2\xf0\x81\xc4'  
+> plain text :  b'I love red taste'  
+
+빨간 맛!
+
+### 10_RSA_Signature_Tool.py (2019.12.01)
+
+```python
+# import packages related with RSA encryption
+from Crypto.Signature import pkcs1_15
+from Crypto.PublicKey import RSA
+from Crypto.Hash import SHA256 as SHA
+import os
+```
+
+```python
+# function of reading key
+def readPEM2(pemfile) :
+    h = open(pemfile, 'r')
+    key = RSA.importKey(h.read())
+    h.close()
+    return key
+```
+
+```python
+# function of RSA sign
+def rsa_sign(msg) :
+    private_key = readPEM2('private_key.pem') # read private key
+    public_key = private_key.publickey() # generate public key from private key
+    h = SHA.new(msg) # hashing msg by SHA256
+    sign = pkcs1_15.new(private_key).sign(h) # sign by private key
+    return public_key, sign
+```
+
+```python
+# function of verification by piblic key
+def rsa_verify(msg, public_key, sign) :
+    h = SHA.new(msg)
+    
+    try :
+        pkcs1_15.new(public_key).verify(h, sigh)
+        print('인증합니다')
+    except Exception as e :
+        print(e)
+        print('인증 못 합니다.')
+```
+
+```python
+# do
+if __name__ == '__main__' :
+    msg = 'I love strawberry'
+    public_key, sign = rsa_sign(msg.encode('utf-8'))
+    rsa_verify(msg.encode('utf-8'), public_key, sign)
+```
+
+> ImportError: cannot import name 'pkcs1_15'
+
+I guess codes are not wrong, but looking for the way how call `plcs1_15` successfully.  
+https://stackoverflow.com/questions/59126819/py-error-message-cannot-import-name-pkcs1-15  
+
+## 9. Encryption & Decryption by DES3/AES
+
 
 ## 8. Columnar Transformation Cipher (2019.11.24)
 
@@ -125,6 +287,7 @@ if __name__ == '__main__' :
 > Key :  2413  
 > Encrypted Message :  c0aed0bf  
 > Decrypted Message :  abcdef  
+
 
 ## 7. Basic Encryption & Decryption (2019.11.24)
 
