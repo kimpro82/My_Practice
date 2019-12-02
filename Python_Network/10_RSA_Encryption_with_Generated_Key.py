@@ -42,7 +42,7 @@ def rsa_dec2(msg) :
 
 # do
 if __name__ == '__main__' :
-    msg = 'I love red taste'
+    msg = 'I love red flavor'
     cipher_text = rsa_enc2(msg.encode('utf-8'))
     print('cipher text : ', cipher_text)
     
