@@ -2,6 +2,7 @@
 miscellaneous petty works
 
 ## My Python Practice - Network & Security
+- Encryption & Decryption by RSA (2019.12.01)
 - Basic Encryption & Decryption (2019.11.24)
 - FTP Client Pragramming 2 - File Upload to the FTP Server (2019.10.27)
 - FTP Client Pragramming 1 - Get the Server's File List (2019.10.27)
