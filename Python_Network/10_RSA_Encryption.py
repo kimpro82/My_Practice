@@ -4,7 +4,7 @@
 from Crypto.Cipher import PKCS1_OAEP
 from Crypto.PublicKey import RSA
 
-# function of RSA enctyption
+# function of RSA encryption
 def rsa_enc(msg) :
     private_key = RSA.generate(1024)
         # 1024 : must be a multiple of 256 and >=1024
