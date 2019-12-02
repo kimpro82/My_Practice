@@ -18,7 +18,7 @@
 
 ※ Each server/client side codes should be run by different kernel from each other. 
 
-## 8. Encryption & Decryption by Columnar Transformation Cipher (2019.11.24)
+## 8. Columnar Transformation Cipher (2019.11.24)
 
 ### 8_Columnar_Transformation_Cipher.py (2019.11.24)
 make functions of generating key tables, plain text(add padding), encryption and decryption
