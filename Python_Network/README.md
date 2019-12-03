@@ -32,7 +32,7 @@ from Crypto.PublicKey import RSA
 ```
 
 ```python
-# function of RSA enctyption
+# function of RSA encryption
 def rsa_enc(msg) :
     private_key = RSA.generate(1024)
         # 1024 : must be a multiple of 256 and >=1024
@@ -91,7 +91,7 @@ def readPEM(pemfile) :
 ```
 
 ```python
-# function of RSA enctyption
+# function of RSA encryption
 def rsa_enc2(msg) :
     public_key = readPEM('public_key.pem') # read public key
     cipher = PKCS1_OAEP.new(public_key) # add padding to public key

@@ -26,7 +26,7 @@ def readPEM(pemfile) :
     h.close()
     return key
 
-# function of RSA enctyption
+# function of RSA encryption
 def rsa_enc2(msg) :
     public_key = readPEM('public_key.pem') # read public key
     cipher = PKCS1_OAEP.new(public_key) # add padding to public key
