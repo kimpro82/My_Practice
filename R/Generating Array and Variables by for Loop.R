@@ -11,6 +11,12 @@ for (i in 1:10) {
 mylist
 
 
+# 1.1 generating array more efficiently
+mylist2 = c(1:10)
+
+mylist2
+
+
 # 2. generating variable names
 for (i in 1:10) { 
   name <- paste("mylist_", i, sep = "")
