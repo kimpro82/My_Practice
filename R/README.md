@@ -6,7 +6,7 @@
 - Plotting_RGB.R (2017.04.14)
 
 ## Generating Array and Variables by for Loop.R (2019.12.06)
-an answer for a question at chatting room
+answer for a question at chatting room
 
 ```R
 # 1. generating array by for loop
