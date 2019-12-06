@@ -1,6 +1,13 @@
 # [My_Practice]
 miscellaneous petty works
 
+## My R Practice
+- Generating Array and Variables by for Loop.R (2019.12.06)
+- Grade_Cancel_Effect.R (2019.07.19)
+- CF_Affection.R (2019.05.25)
+- Plotting_Fibonacci Tornado.R (2017.05.07)
+- Plotting_RGB.R (2017.04.14)
+
 ## My Python Practice - Network & Security
 - Encryption & Decryption by RSA (2019.12.01)
 - Columnar Transformation Cipher (2019.11.24)
@@ -17,12 +24,6 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 - RTK2_CallData.py (2019.07.23)
 - RTK2_Offset.py (2019.07.22)
 - With_Open.py (2019.07.21)
-
-## My R Practice
-- Grade_Cancel_Effect.R (2019.07.19)
-- CF_Affection.R (2019.05.25)
-- Plotting_Fibonacci Tornado.R (2017.05.07)
-- Plotting_RGB.R (2017.04.14)
 
 ## My Python Practice - Stuff
 - Password.py (2019.05.24)
