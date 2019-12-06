@@ -1,8 +1,47 @@
 # [My R Practice]
+- Generating Array and Variables by for Loop.R (2019.12.06)
 - Grade_Cancel_Effect.R (2019.07.19)
 - CF_Affection.R (2019.05.25)
 - Plotting_Fibonacci Tornado.R (2017.05.07)
 - Plotting_RGB.R (2017.04.14)
+
+## Generating Array and Variables by for Loop.R (2019.12.06)
+an answer for a question at chatting room
+
+```R
+# 1. generating array by for loop
+mylist = c()
+
+for (i in 1:10) {
+  mylist[i] = i
+}
+
+mylist
+```
+>  [1]  1  2  3  4  5  6  7  8  9 10
+
+```R
+# 2. generating variable names
+for (i in 1:10) { 
+  name <- paste("mylist_", i, sep = "")
+  assign(name, c())
+}
+
+```
+![generating variable names](https://github.com/kimpro82/My-Practice/blob/master/images/R%2020191206%202.%20generating%20variable%20names.PNG)
+
+```R
+# 2.1 generating variable names with considering sort
+for (i in 1:10) { 
+  if (i < 10) {
+    name <- paste("mylist_0", i, sep = "")
+  } else {
+    name <- paste("mylist_", i, sep = "")
+  }
+  assign(name, c())
+}
+```
+![generating variable names with considering sort](https://github.com/kimpro82/My-Practice/blob/master/images/R%2020191206%202.1%20generating%20variable%20names%20with%20considering%20sort.PNG)
 
 
 ## Grade_Cancel_Effect.R (2019.07.19)
