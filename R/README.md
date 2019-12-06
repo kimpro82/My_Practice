@@ -6,7 +6,9 @@
 - Plotting_RGB.R (2017.04.14)
 
 ## Generating Array and Variables by for Loop.R (2019.12.06)
-answer for a question at chatting room
+answer for a question at chatting room  
+\* R array-related data structure is actually defined as vector, matrix and array about each dimension's array.  
+\* I call it just 'array' by common mathematical notion here, but it is different from R's strict data structure definition.  
 
 ```R
 # 1. generating array by for loop
@@ -17,6 +19,14 @@ for (i in 1:10) {
 }
 
 mylist
+```
+>  [1]  1  2  3  4  5  6  7  8  9 10
+
+```R
+# 1.1 generating array more efficiently
+mylist2 = c(1:10)
+
+mylist2
 ```
 >  [1]  1  2  3  4  5  6  7  8  9 10
 
