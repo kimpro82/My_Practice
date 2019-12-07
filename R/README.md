@@ -53,6 +53,25 @@ for (i in 1:10) {
 ```
 ![generating variable names with considering sort](https://github.com/kimpro82/My-Practice/blob/master/images/R%2020191206%202.1%20generating%20variable%20names%20with%20considering%20sort.PNG)
 
+```R
+# 2.1.1 code improvement trial of 2.1
+
+name_head_original = "mylist_"
+
+for (i in 1:10) { 
+  if (i < 10) {
+    name_head = paste(name_head_original, "0", sep = "")
+  } else {
+    name_head = name_head_original
+  }
+  name <- paste(name_head, i, sep = "")
+  assign(name, c())
+}
+```
+![code improvement trial of 2.1](https://github.com/kimpro82/My-Practice/blob/master/images/R%2020191207%202.1.1%20code%20improvement%20trial%20of%202.1.PNG)  
+Hmm …… is it too much?  
+It can be more clearly effective when *n* is larger, but now seems not yet.  
+
 
 ## Grade_Cancel_Effect.R (2019.07.19)
 try simulating grade cancel effect for my sister
