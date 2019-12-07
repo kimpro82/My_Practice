@@ -1,6 +1,13 @@
 # [My_Practice]
 miscellaneous petty works
 
+## My Python Practice - Stuff
+- Generate_List.py (2019.12.07)
+- Password.py (2019.05.24)
+- Player.py (2019.03.12) - maybe?
+- Class_Test.py (2018.02.07)
+- Nirvana.py (2017.05.15)
+
 ## My R Practice
 - Generating Array and Variables by for Loop.R (2019.12.06)
 - Grade_Cancel_Effect.R (2019.07.19)
@@ -24,12 +31,6 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 - RTK2_CallData.py (2019.07.23)
 - RTK2_Offset.py (2019.07.22)
 - With_Open.py (2019.07.21)
-
-## My Python Practice - Stuff
-- Password.py (2019.05.24)
-- Player.py (2019.03.12) - maybe?
-- Class_Test.py (2018.02.07)
-- Nirvana.py (2017.05.15)
 
 ## Python_Lesson (2018.11.11~12.16)
 6-weeks python lesson for making cryptocurrency automated trading system  
