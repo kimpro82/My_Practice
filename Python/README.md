@@ -1,8 +1,27 @@
 # [My Python Practice]
+- Generate_List.py (2019.12.07)
 - Password.py (2019.05.24)
 - Player.py (2019.03.12) - maybe?
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
+
+
+## Generate_List.py (2019.12.07)
+generate lists by various ways
+
+```python
+list1 = [[0,0], [0,0], [0,0], [0,0]]
+list2 = [[0,0]] * 4
+list3 = [0,0] * 4
+
+print(list1, "\n", list2, "\n", list3)
+list1 == list2
+```
+
+> [[0, 0], [0, 0], [0, 0], [0, 0]]  
+> [[0, 0], [0, 0], [0, 0], [0, 0]]  
+> [0, 0, 0, 0, 0, 0, 0, 0]  
+> True  
 
 
 ## Password.py (2019.05.24)
