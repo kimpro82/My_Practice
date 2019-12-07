@@ -4,3 +4,4 @@ list2 = [[0,0]] * 4
 list3 = [0,0] * 4
 
 print(list1, "\n", list2, "\n", list3)
+list1 == list2
