@@ -2,6 +2,7 @@
 miscellaneous petty works
 
 ## My Python Practice - Stuff
+- Player2.py (2019.12.15)
 - Generate_List.py (2019.12.07)
 - Password.py (2019.05.24)
 - Player.py (2019.03.12) - maybe?
