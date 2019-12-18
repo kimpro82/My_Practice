@@ -1,4 +1,5 @@
 # [My Python Practice]
+- Fibonacci_Series.py (2019.12.18)
 - Player2.py (2019.12.15)
 - Generate_List.py (2019.12.07)
 - Password.py (2019.05.24)
@@ -6,6 +7,20 @@
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
+## Fibonacci_Series.py (2019.12.18)
+Simply Generating `Fibonacci Series` by Python
+
+```python
+a = [1, 1]
+n = 1
+
+while n<10 :
+    a.append(a[n-1] + a[n])
+    n += 1
+
+print(a)
+```
+> [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]  
 
 ## Player2 (2019.12.15)
 Updates : correct use of `__init__`, add validation of variables and use `return` in each method
