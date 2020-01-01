@@ -8,6 +8,7 @@ n = 2 # should be larger than 1
 k = 20 # run loop k times
 
 lowerlimit, upperlimit = 1, n
+
 random.seed(20200101)
 squareroot = [random.uniform(lowerlimit, upperlimit)]
 
