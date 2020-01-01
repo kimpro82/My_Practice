@@ -2,7 +2,7 @@
 miscellaneous petty works
 
 ## My Python Practice - Stuff
-- Square_Root.py (2019.12.30)
+- Square_Root.py (2020.01.01)
 - Fibonacci_Series.py (2019.12.18)
 - Player2.py (2019.12.15)
 - Generate_List.py (2019.12.07)
