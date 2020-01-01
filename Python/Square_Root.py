@@ -12,7 +12,6 @@ lowerlimit, upperlimit = 1, n
 random.seed(20200101)
 squareroot = [random.uniform(lowerlimit, upperlimit)]
 
-k = 20 # run loop k times
 for i in range(k) :
 
     square = squareroot[i] ** 2
