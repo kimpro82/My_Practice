@@ -18,12 +18,12 @@ import math
 import matplotlib.pyplot as plt
 
 n = 2 # should be larger than 1
-
-random.seed(20200101)
-squareroot = [random.uniform(1, n)]
-lowerlimit, upperlimit = 1, n
-
 k = 20 # run loop k times
+
+lowerlimit, upperlimit = 1, n
+random.seed(20200101)
+squareroot = [random.uniform(lowerlimit, upperlimit)]
+
 for i in range(k) :
 
     square = squareroot[i] ** 2
