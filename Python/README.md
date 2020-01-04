@@ -10,7 +10,8 @@
 
 
 ## Square_Root.py (2020.01.01)
-an algorithm to find n's square root without math.sqrt()
+an algorithm to find n's square root without `math.sqrt()`  
+- adjusted 2020.01.04 : rearrange methods' order in for Loop for improving intuitive understanding
 
 ```python
 import random
