@@ -7,13 +7,13 @@ import matplotlib.pyplot as plt
 n = 2 # should be larger than 1
 k = 20 # run loop k times
 
+squareroot = []
 lowerlimit, upperlimit = 1, n
-
-random.seed(20200101)
-squareroot = [random.uniform(lowerlimit, upperlimit)]
 
 for i in range(k) :
 
+    random.seed(20200104) # can be removed
+    squareroot.append(random.uniform(lowerlimit, upperlimit))
     square = squareroot[i] ** 2
     print(i+1, squareroot[i], square, square-n)
 
@@ -26,9 +26,7 @@ for i in range(k) :
         # print("larger")
         upperlimit = min(squareroot[i], upperlimit)
 
-    squareroot.append(random.uniform(lowerlimit, upperlimit))
-
-myplot = plt.plot(range(k+1), squareroot)
+myplot = plt.plot(range(k), squareroot)
 # myplot.hlines(math.sqrt(n), color="red", linestyle="--") # doesn't work
 
 
