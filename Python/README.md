@@ -1,5 +1,5 @@
 # [My Python Practice]
-- Square_Root.py (2020.01.01)
+- Square_Root.py (2020.01.01) (adjusted 2020.01.04)
 - Fibonacci_Series.py (2019.12.18)
 - Player2.py (2019.12.15)
 - Generate_List.py (2019.12.07)
@@ -18,14 +18,15 @@ import math
 import matplotlib.pyplot as plt
 
 n = 2 # should be larger than 1
+k = 20 # run loop k times
 
-random.seed(20200101)
-squareroot = [random.uniform(1, n)]
+squareroot = []
 lowerlimit, upperlimit = 1, n
 
-k = 20 # run loop k times
 for i in range(k) :
 
+    random.seed(20200104) # can be removed
+    squareroot.append(random.uniform(lowerlimit, upperlimit))
     square = squareroot[i] ** 2
     print(i+1, squareroot[i], square, square-n)
 
@@ -38,19 +39,17 @@ for i in range(k) :
         # print("larger")
         upperlimit = min(squareroot[i], upperlimit)
 
-    squareroot.append(random.uniform(lowerlimit, upperlimit))
-
-myplot = plt.plot(range(k+1), squareroot)
+myplot = plt.plot(range(k), squareroot)
 # myplot.hlines(math.sqrt(n), color="red", linestyle="--") # doesn't work
 ```
-> 1 1.122733720559369 1.2605310072810834 -0.7394689927189166  
-> 2 1.7599794873175498 3.0975277957785456 1.0975277957785456  
-> 3 1.3090078515307688 1.7135015553691992 -0.28649844463080076  
+> 1 1.224709461308563 1.4999132646187106 -0.5000867353812894  
+> 2 1.3989245806155413 1.956989982250368 -0.04301001774963198  
+> 3 1.5339919143112415 2.3531311931722674 0.3531311931722674  
 > (중략)  
-> 19 1.414220824726189 2.000020541089222 2.0541089222003706e-05  
-> 20 1.4142176799584678 2.000011646307111 1.1646307111146115e-05  
+> 19 1.4141854421168503 1.9999204646952313 -7.953530476867421e-05  
+> 20 1.4141980335178153 1.9999560780056558 -4.3921994344220394e-05 
 
-![approximate to the exact square root](https://github.com/kimpro82/My_Practice/blob/master/images/Square_Root_20200101.png)
+![approximate to the exact square root](https://github.com/kimpro82/My_Practice/blob/master/images/Square_Root_20200104.png)
 
 ```python
 # practice
