@@ -1,5 +1,5 @@
 # [My Python Practice]
-- Square_Root.py (2020.01.01) (adjusted 2020.01.14)
+- Square_Root.py (2020.01.01) (adjusted 2020.01.04)
 - Fibonacci_Series.py (2019.12.18)
 - Player2.py (2019.12.15)
 - Generate_List.py (2019.12.07)
