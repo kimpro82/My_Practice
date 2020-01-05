@@ -1,4 +1,5 @@
 # [My Python Practice]
+- Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01) (adjusted 2020.01.04)
 - Fibonacci_Series.py (2019.12.18)
 - Player2.py (2019.12.15)
@@ -8,10 +9,68 @@
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
+## Random_Seed_Influence.py (2020.01.05)
+make sure the range og `random.seed()`'s influence  
+☞ `random.seed()` affects just one time!
+
+```python
+import random
+```
+
+```python
+# case 1
+print(random.random())
+print(random.random())
+print(random.random())
+```
+> 0.48515227527760874  
+> 0.48808537244754757  
+> 0.9509662749522355
+
+```python
+# case 2
+random.seed(105)
+print(random.random())
+print(random.random())
+print(random.random())
+```
+> **0.8780993490764925**  
+> 0.3491186468357038  
+> 0.7907236599059974
+
+```python
+# case 2-1
+random.seed(105); print(random.random())
+random.seed(105); print(random.random())
+random.seed(105); print(random.random())
+```
+> **0.8780993490764925**  
+> **0.8780993490764925**  
+> **0.8780993490764925**
+
+```python
+# case 3
+random.seed(105)
+for i in range(0,3) :
+    print(random.random())
+```
+> **0.8780993490764925**  
+> 0.3491186468357038  
+> 0.7907236599059974
+
+```python
+# case 3-1
+for i in range(0,3) :
+    random.seed(105); print(random.random())
+```
+> **0.8780993490764925**  
+> **0.8780993490764925**  
+> **0.8780993490764925**
+
 
 ## Square_Root.py (2020.01.01)
 an algorithm to find n's square root without `math.sqrt()`  
-- adjusted 2020.01.04 : rearrange methods' order in for Loop for improving intuitive understanding
+- adjusted 2020.01.04 : rearrange methods' order in `for` Loop for improving intuitive understanding
 
 ```python
 import random
