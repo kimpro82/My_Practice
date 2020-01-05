@@ -2,6 +2,7 @@
 miscellaneous petty works
 
 ## My Python Practice - Stuff
+- Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01)
 - Fibonacci_Series.py (2019.12.18)
 - Player2.py (2019.12.15)
