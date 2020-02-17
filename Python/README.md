@@ -10,7 +10,7 @@
 - Nirvana.py (2017.05.15)
 
 ## Random_Seed_Influence.py (2020.01.05)
-make sure the range og `random.seed()`'s influence  
+make sure the range of `random.seed()`'s influence  
 ☞ `random.seed()` affects just one time!
 
 ```python
