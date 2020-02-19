@@ -36,11 +36,6 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 - RTK2_Offset.py (2019.07.22)
 - With_Open.py (2019.07.21)
 
-## ~~Python_Lesson (2018.11.11~12.16)~~
-~~6-weeks python lesson for making cryptocurrency automated trading system~~  
-~~http://learningspoons.com/offline-class/offline-invest/cryptocurrency/~~  
-moved to new repository <[My-Learning/Python(Pystock)/](https://github.com/kimpro82/My-Learning/tree/master/Python(Pystock))>.
-
 ## My JavaScript Practice
 - Ganzi.html (2017.04.03)
 
