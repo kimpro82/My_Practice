@@ -19,15 +19,6 @@ miscellaneous petty works
 - Plotting_Fibonacci Tornado.R (2017.05.07)
 - Plotting_RGB.R (2017.04.14)
 
-## My Python Practice - Network & Security
-- Encryption & Decryption by RSA (2019.12.01)
-- Columnar Transformation Cipher (2019.11.24)
-- Basic Encryption & Decryption (2019.11.24)
-- FTP Client Pragramming 2 - File Upload to the FTP Server (2019.10.27)
-- FTP Client Pragramming 1 - Get the Server's File List (2019.10.27)
-- TCP/UDP Server-Client Programming 2 - Reflect Echo (2019.10.20)
-- TCP/UDP Server-Client Programming 1 - Basic Practice (2019.10.13)
-
 ## My Python Practice - RTK2 ERP
 a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) ERP
 - Generate_Limited_Range_ND.py (2019.9.22)
