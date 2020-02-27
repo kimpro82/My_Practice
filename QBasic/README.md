@@ -2,37 +2,37 @@
 
 ### HelloWorld.bas (2020.2.27)
 
-```
-' print "Hello World!"
-```
-> Call to undefined sub 'print'
-
-```
-' print("Hello World!")
+```QBasic
+print "Hello World!"
 ```
 > Call to undefined sub 'print'
 
+```QBasic
+print("Hello World!")
 ```
-' print 'Hello World!'
+> Call to undefined sub 'print'
+
+```QBasic
+print 'Hello World!'
 ```
 > Call to undefined sub 'print'
 
 How can I make `print` work?
 
-```
+```QBasic
 PRINT "Hello World!"
 ```
 > Hello World!
 
 The secret was UPPER CLASS!
 
-```
+```QBasic
 PRINT 'Hello World!'
 ```
 >
 `''` seems to be used for single-line comments.
 
-```
+```QBasic
 'You can't see what I'm saying.'
 ```
 ㅋ
