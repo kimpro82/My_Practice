@@ -1,6 +1,6 @@
 ## QBasic Practice
 
-### HelloWorld.bas (2020.2.27)
+### HelloWorld.bas (2020.02.27)
 
 ```QBasic
 print "Hello World!"
