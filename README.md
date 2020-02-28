@@ -32,8 +32,3 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 
 ## My QBasic Practice
 - HelloWorld.bas (2020.02.27)
-
-## ~~Oncoder Official Coding Test~~
-I decided all the details from here to the new repository <[Oncoder-Coding-Test](https://github.com/kimpro82/Oncoder-Coding-Test)>.  
-Nothing will be updated here anymore.  
-(Other small practices, of courese, will go on here.)
