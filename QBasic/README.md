@@ -24,7 +24,7 @@ PRINT "Hello World!"
 ```
 > Hello World!
 
-The secret was UPPER CLASS!
+The secret was UPPER CASE!
 
 ```QBasic
 PRINT 'Hello World!'
