@@ -28,7 +28,7 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 - Plotting_RGB.R (2017.04.14)
 
 ## My Web Practice
-- ColorfulShow.html/css/js (2020.03.04)
+- ColorfulShow (2020.03.04)
 - Ganzi.html (2017.04.03)
 
 ## My QBasic Practice
