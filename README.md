@@ -27,7 +27,7 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 - Plotting_Fibonacci Tornado.R (2017.05.07)
 - Plotting_RGB.R (2017.04.14)
 
-## My JavaScript Practice
+## My Web Practice
 - Ganzi.html (2017.04.03)
 
 ## My QBasic Practice
