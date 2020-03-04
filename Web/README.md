@@ -1,5 +1,8 @@
-# [My JavaScript Practice]
+# [My Web Practice]
+- HTML, CSS and JavaScript
 
+## ColorfulShow (2020.3.4)
+(Preparing)
 
 ## Ganzi.html (2017.04.03)
 a simple Javascript practice
