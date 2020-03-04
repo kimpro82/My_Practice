@@ -1,7 +1,7 @@
 # [My Web Practice]
 - HTML, CSS and JavaScript
 
-## ColorfulShow (2020.3.4)
+## ColorfulShow (2020.03.04)
 This is a colorful 'Show'.
 
 #### ColorfulShow.html
