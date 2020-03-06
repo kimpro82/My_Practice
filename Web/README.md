@@ -1,7 +1,9 @@
 # [My Web Practice]
-- HTML, CSS and JavaScript
+HTML, CSS and JavaScript
+- Colorful Show (2020.03.04)
+- Ganzi.html (2017.04.03)
 
-## ColorfulShow (2020.03.04)
+## Colorful Show (2020.03.04)
 This is a colorful 'Show'.
 
 #### ColorfulShow.html
