@@ -1,6 +1,7 @@
 # [My Web Practice]
-- HTML, CSS and JavaScript
-
+HTML, CSS and JavaScript
+- Colorful Show (2020.03.04)
+- Ganzi.html (2017.04.03)
 
 ## Wedding Anniversary (2020.03.07)
 application of Colorful Show
@@ -9,7 +10,7 @@ application of Colorful Show
 ![Wedding Anniversary](https://github.com/kimpro82/My_Practice/blob/master/images/WeddingAnniversary.gif)
 
 
-## ColorfulShow (2020.03.04)
+## Colorful Show (2020.03.04)
 This is a colorful 'Show'.
 
 #### ColorfulShow.html
@@ -71,6 +72,9 @@ function changeColor() {
 
 setInterval(changeColor, 1000);
 ```
+
+#### Result
+![Colorful Show](https://github.com/kimpro82/My_Practice/blob/master/images/2020-03-05-23%20Colorful-Show.gif)
 
 
 ## Ganzi.html (2017.04.03)
