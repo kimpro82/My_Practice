@@ -1,4 +1,5 @@
 # [My Python Practice]
+- Print.py (2020.03.31)
 - Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01) (adjusted 2020.01.04)
 - Fibonacci_Series.py (2019.12.18)
@@ -8,6 +9,34 @@
 - Player.py (2019.03.12) - maybe?
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
+
+
+## Print.py (2020.03.31)
+simple practice with `print()`
+
+```python
+#1. Print normally
+print("위")
+print("아래")
+```
+> 위  
+> 아래
+
+```python
+#2. Write on the same line
+print("왼쪽", end='')
+print("에 붙여서 계속")
+```
+> 왼쪽에 붙여서 계속
+
+```python
+#3. Change lines within one function
+print("줄을\n막\n바꿔")
+```
+> 줄을  
+> 막  
+> 바꿔
+
 
 ## Random_Seed_Influence.py (2020.01.05)
 make sure the range of `random.seed()`'s influence  
