@@ -8,7 +8,7 @@
 
 
 ## Get_Sample_Number.R (2020.6.10)
-get each branch's sample number inspection work
+get each branch's sample number for inspection work
 
 ```R
 num = c(2, 10, 30, 50, 100) # input
