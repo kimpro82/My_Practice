@@ -1,9 +1,53 @@
 # [My R Practice]
+- Get_Sample_Number.R (2020.06.10)
 - Generating Array and Variables by for Loop.R (2019.12.06)
 - Grade_Cancel_Effect.R (2019.07.19)
 - CF_Affection.R (2019.05.25)
 - Plotting_Fibonacci Tornado.R (2017.05.07)
 - Plotting_RGB.R (2017.04.14)
+
+
+## Get_Sample_Number.R (2020.6.10)
+get each branch's sample number inspection work
+
+```R
+num = c(2, 10, 30, 50, 100) # input
+length(num)
+```
+> 5
+
+```R
+for (i in (1:length(num))) {
+  set.seed(0610)
+  print(sample(x= 1:num[i], size = ceiling(num[i]/10), replace =F))
+  # 10% sample, at least one although num < 10, no duplication
+}
+```
+> [1] 1  
+> [1] 3  
+> [1] 27 19  8  
+> [1] 19 40 12  9 23  
+> [1] 19 40 12 55 73 52 87 78 17 46
+
+
+#### Test
+```R
+# test
+for (i in (1:length(num))) {
+  print(num[i])
+}
+```
+> [1] 2  
+> [1] 10  
+> [1] 30  
+> [1] 50  
+> [1] 100
+
+```R
+ceiling(3/10) # rounding up
+```
+> 1
+
 
 ## Generating Array and Variables by for Loop.R (2019.12.06)
 answer for a question at chatting room  
