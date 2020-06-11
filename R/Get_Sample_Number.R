@@ -1,5 +1,5 @@
 # get each branch's sample number
-num = c(3, 5, 7, 9, 11) # input
+num = c(2, 10, 30, 50, 100) # input
 length(num)
 
 for (i in (1:length(num))) {
