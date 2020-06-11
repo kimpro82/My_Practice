@@ -22,6 +22,7 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 - With_Open.py (2019.07.21)
 
 ## My R Practice
+- Get_Sample_Number.R (2020.6.10)
 - Generating Array and Variables by for Loop.R (2019.12.06)
 - Grade_Cancel_Effect.R (2019.07.19)
 - CF_Affection.R (2019.05.25)
