@@ -32,7 +32,7 @@ for (i in (1:length(num))) {
     samplenum <- c(samplenum,
                    sample(x = 1:num[i], size = ceiling(num[i] * rate), replace = F)
                    ) 
-    # at least one although num < 10, no duplication
+    # at least 1 although num * rate < 1, no duplication
   } else {
     sum = sum + num[i-1]
     set.seed(seednum)
