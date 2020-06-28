@@ -7,7 +7,7 @@ print("F" == "M")
 print(bool("m"))
 # True
 
-# '=='' runs prior to 'or' in Python
+# '==' runs prior to 'or' in Python
 print("F" == "M" or "m")
 print(("F" == "M") or "m") # the same with the above line
 # False or True →  True
