@@ -36,8 +36,6 @@ print(("F" == "M") or "m") # the same with the above line
 ☞ reference : https://www.programiz.com/python-programming/precedence-associativity
 
 
-
-
 ## Print.py (2020.03.31)
 simple practice with `print()`
 
