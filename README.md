@@ -2,6 +2,7 @@
 miscellaneous petty works
 
 ## My Python Practice - Stuff
+- Operator_Precedence_Test.py (2020.06.28)
 - Print.py (2020.03.31)
 - Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01)

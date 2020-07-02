@@ -1,4 +1,5 @@
 # [My Python Practice]
+- Operator_Precedence_Test.py (2020.06.28)
 - Print.py (2020.03.31)
 - Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01) (adjusted 2020.01.04)
@@ -9,6 +10,30 @@
 - Player.py (2019.03.12) - maybe?
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
+
+
+## Operator_Precedence_Test.py (2020.06.28)
+answer for my friend YW Jang's quastion
+
+```python
+print("F" == "M")
+```
+> False
+
+```python
+print(bool("m"))
+```
+> True
+
+`==` runs prior to `or` in Python
+
+```python
+print("F" == "M" or "m")
+print(("F" == "M") or "m") # the same with the above line
+```
+> True
+
+☞ reference : https://www.programiz.com/python-programming/precedence-associativity
 
 
 ## Print.py (2020.03.31)
