@@ -11,6 +11,7 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 ## RTK2_Call_General_Taiki.py (2020.03.01)
 - partial module of a gaming utility for `Romance of The Three Kingdoms II` (KOEI, 1989)
 - call outside generals' data from `TAIKI.DAT`
+- succeed in separating each general's data, but they should convert from `ASCII Code(int)` to `string`
 - use `os`
 
 ```python
