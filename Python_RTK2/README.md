@@ -23,6 +23,8 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 import os
 
 path = "C:\Game\KOEI\RTK2\TAIKI.DAT"
+```
+```python
 os.path.isfile(path)
 ```
 > True
@@ -31,6 +33,8 @@ os.path.isfile(path)
 ```python
 filelenth = os.path.getsize(path)
 num = int((filelenth - 6) / 46)
+```
+```python
 print(num) # There're 420 General's Data
 ```
 > 420
@@ -63,12 +67,10 @@ with open(path,'rb') as f:
 
         general_data.append(general_data_row)
 ```
-
 ```python
 print(general_data[0:3])
 ```
 > [[190, 255, 20, 0, 0, 0, 0, 51, 92, 52, 79, 56, 71, 255, 0, 0, 255, 0, 98, 0, 0, 0, 0, 0, 0, 0, 0, 0, 175, 39, 0, 71, 97, 110, 32, 78, 105, 110, 103, 0, 0, 0, 0, 0, 0, 0], [190, 255, 8, 0, 0, 0, 0, 34, 52, 53, 60, 47, 52, 255, 0, 0, 255, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 167, 83, 145, 87, 97, 110, 103, 32, 90, 104, 111, 110, 103, 0, 0, 0, 0, 0], [190, 255, 20, 0, 0, 0, 0, 25, 31, 15, 16, 18, 32, 255, 0, 0, 255, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 153, 31, 152, 72, 97, 110, 32, 72, 97, 111, 0, 0, 0, 0, 0, 0, 0, 0]]
-
 ```python
 chr(general_data[0][0])
 # Should Convert The Whole List from ASCII Code(int) to string
