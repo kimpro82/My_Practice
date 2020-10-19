@@ -1,4 +1,5 @@
 # [My Python Practice]
+- Suffle_List.py (2020.03.30)
 - Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01) (adjusted 2020.01.04)
 - Fibonacci_Series.py (2019.12.18)
@@ -8,6 +9,60 @@
 - Player.py (2019.03.12) - maybe?
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
+
+
+## Suffle_List.py (2020.03.30)
+- find how to get random lists without overlapping values
+- use `random`
+
+```python
+import random
+```
+
+#### Trial 1 : Use `random.randint()`
+```python
+sufflelist = []
+
+for i in range(0,20) :
+    random.seed(330 + i)
+    sufflelist.append(random.randint(1, 20))
+
+print(sufflelist) # There are overlapping values.
+```
+> [20, 11, 8, 18, 8, 5, 1, 7, 4, 5, 13, 19, 4, 7, 13, 10, 18, 12, 11, 14]
+
+#### Trial 2 : Use `random.sample()`
+```python
+sufflelist = []
+
+for i in range(0,20) :
+    random.seed(330 + i)
+    sufflelist.append(random.sample(range(1, 20), 1))
+
+print(sufflelist)
+# The values are in nested lists and overlapping ones still remains.
+```
+> [[3], [11], [8], [18], [8], [5], [1], [7], [4], [5], [13], [19], [4], [7], [13], [10], [18], [12], [11], [14]]
+
+#### Trial 3 : Use `while` Statement
+```python
+list=[]
+loopnum = 0
+
+while len(list) < 20 :
+    random.seed(330 + loopnum)
+    r = random.randint(1,20)
+    if r not in list: list.append(r)
+    loopnum += 1
+
+print(list) # There's no more overlapping values.
+```
+> [20, 11, 8, 18, 5, 1, 7, 4, 13, 19, 10, 12, 14, 6, 2, 3, 17, 16, 15, 9]
+```python
+print(loopnum) # It shows how many times overlapping numbers are rejected.
+```
+> 87
+
 
 ## Random_Seed_Influence.py (2020.01.05)
 make sure the range of `random.seed()`'s influence  
