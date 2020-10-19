@@ -1,4 +1,4 @@
-# Python_GithubDashboard
+# My Python Practice - Github Dashboard
 
 
 ## Outline (2020.4.19)
