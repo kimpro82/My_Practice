@@ -8,6 +8,89 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 - With_Open.py (2019.07.21)
 
 
+## RTK2_Call_General_Taiki.py (2020.03.01)
+- partial module of a gaming utility for `Romance of The Three Kingdoms II` (KOEI, 1989)
+- call outside generals' data from `TAIKI.DAT`
+- use `os`
+
+```python
+# Each Geneal's Data Length : 46 bytes
+# Header Data : 6 bytes
+```
+
+#### Check If TAIKI.DAT Exists
+```python
+import os
+
+path = "C:\Game\KOEI\RTK2\TAIKI.DAT"
+os.path.isfile(path)
+```
+> True
+
+#### Get the file length
+```python
+filelenth = os.path.getsize(path)
+num = int((filelenth - 6) / 46)
+print(num) # There're 420 General's Data
+```
+> 420
+
+#### Make Offset Initial Information
+1) Generate an Arithmetic Progression : a1 = 7, d = 46
+2) make (i. j) list from 1)
+```python
+len(general_offset_init)
+len(general_offset_data)
+print(general_offset_init[0:10])
+print(general_offset_data[0:2])
+```
+> 420  
+> 420  
+> [6, 52, 98, 144, 190, 236, 282, 328, 374, 420]  
+> [[6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], [52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97]]
+
+#### Call TAIKI.DAT
+```python
+with open(path,'rb') as f:
+    general_raw_data = f.read()
+    general_data = []
+    
+    for i in list(range(0,num)) :
+        general_data_row = []
+
+        for j in list(range(0,distance)) :    
+            general_data_row.append(general_raw_data[general_offset_data[i][j]])
+
+        general_data.append(general_data_row)
+```
+
+```python
+print(general_data[0:3])
+```
+> [[190, 255, 20, 0, 0, 0, 0, 51, 92, 52, 79, 56, 71, 255, 0, 0, 255, 0, 98, 0, 0, 0, 0, 0, 0, 0, 0, 0, 175, 39, 0, 71, 97, 110, 32, 78, 105, 110, 103, 0, 0, 0, 0, 0, 0, 0], [190, 255, 8, 0, 0, 0, 0, 34, 52, 53, 60, 47, 52, 255, 0, 0, 255, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 167, 83, 145, 87, 97, 110, 103, 32, 90, 104, 111, 110, 103, 0, 0, 0, 0, 0], [190, 255, 20, 0, 0, 0, 0, 25, 31, 15, 16, 18, 32, 255, 0, 0, 255, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 153, 31, 152, 72, 97, 110, 32, 72, 97, 111, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+```python
+chr(general_data[0][0])
+# Should Convert The Whole List from ASCII Code(int) to string
+```
+> '¾'
+
+#### Practice
+```python
+for i in range(1,10) :
+    print(i)
+```
+> 1  
+> 2  
+> 3  
+> 4  
+> 5  
+> 6  
+> 7  
+> 8  
+> 9
+
+
 ## Generate_Limited_Range_ND.py (2019.09.22)
 - partial module of a gaming utility for `Romance of The Three Kingdoms II` (KOEI, 1989)
 - generate market rate data sample for practicing `gold`-`food` arbitrage
