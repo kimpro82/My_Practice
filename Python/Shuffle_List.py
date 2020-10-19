@@ -25,7 +25,7 @@ print(sufflelist)
 # The values are in nested lists and overlapping ones still remains.
 
 
-# Trial 3 : Use While Statement
+# Trial 3 : Use while Statement
 
 list=[]
 loopnum = 0
