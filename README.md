@@ -14,7 +14,7 @@ miscellaneous petty works
 
 ## My Python Practice - RTK2 ERP
 a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) ERP
-- RTK2_General.py (2020.03.01)
+- RTK2_Call_General_Taiki.py.py (2020.03.01)
 - Generate_Limited_Range_ND.py (2019.09.22)
 - RTK2_CallData_Pandas.py (2019.08.12)
 - RTK2_CallData.py (2019.07.23)
