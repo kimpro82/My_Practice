@@ -13,7 +13,7 @@
 
 
 ## Operator_Precedence_Test.py (2020.06.28)
-answer for my friend YW Jang's quastion
+answer for my friend YW Jang's question
 
 ```python
 print("F" == "M")
