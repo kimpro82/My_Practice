@@ -1,9 +1,80 @@
 # [My R Practice]
+- Get_Sample_Number_2.R (2020.06.16)
+- Get_Sample_Number.R (2020.06.10)
 - Generating Array and Variables by for Loop.R (2019.12.06)
 - Grade_Cancel_Effect.R (2019.07.19)
 - CF_Affection.R (2019.05.25)
 - Plotting_Fibonacci Tornado.R (2017.05.07)
 - Plotting_RGB.R (2017.04.14)
+
+
+## Get_Sample_Number_2.R (2020.6.16)
+get each branch's sample number for inspection work
+
+```R
+###################################
+num = c(2, 10, 30, 50, 100) # input
+length(num)
+
+seednum = 0616 # for enhancing objectivity
+rate = 0.05 # sampling ratio
+###################################
+```
+> 5
+
+```R
+sum = 0
+samplenum = c()
+
+for (i in (1:length(num))) {
+  if (i == 1) {
+    set.seed(seednum)
+    samplenum <- c(samplenum,
+                   sample(x = 1:num[i], size = ceiling(num[i] * rate), replace = F)
+                   ) 
+    # at least 1 although num * rate < 1, no duplication
+  } else {
+    sum = sum + num[i-1]
+    set.seed(seednum)
+    samplenum <- c(samplenum, 
+                   sample(x = (sum+1):(sum+num[i]), size = ceiling(num[i] * rate), replace =F)
+                   )  
+  }
+}
+
+length(samplenum) # length of the sample
+print(samplenum) # print without sorting
+sort(samplenum) # print with sorting
+```
+> [1] 12  
+> [1]   2   4  14  15  74  76  45 124 126 159 167 120  
+> [1]   2   4  14  15  45  74  76 120 124 126 159 167
+
+
+#### Test
+```R
+sum = 0
+
+for (i in (1:length(num))) {
+  if (i == 1 ) {
+    print(num[i])
+  } else {
+    sum = sum + num[i-1]
+    print(paste(num[i], sum, sum + num[i]))
+  }
+}
+```
+> [1] 2  
+> [1] "10 2 12"  
+> [1] "30 12 42"  
+> [1] "50 42 92"  
+> [1] "100 92 192"
+
+```R
+ceiling(3/10) # rounding up
+```
+> 1
+
 
 ## Generating Array and Variables by for Loop.R (2019.12.06)
 answer for a question at chatting room  

@@ -2,6 +2,8 @@
 miscellaneous petty works
 
 ## My Python Practice - Stuff
+- Operator_Precedence_Test.py (2020.06.28)
+- Print.py (2020.03.31)
 - Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01)
 - Fibonacci_Series.py (2019.12.18)
@@ -22,13 +24,18 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 - With_Open.py (2019.07.21)
 
 ## My R Practice
+- Get_Sample_Number_2.R (2020.06.16)
+- Get_Sample_Number.R (2020.06.10)
 - Generating Array and Variables by for Loop.R (2019.12.06)
 - Grade_Cancel_Effect.R (2019.07.19)
 - CF_Affection.R (2019.05.25)
 - Plotting_Fibonacci Tornado.R (2017.05.07)
 - Plotting_RGB.R (2017.04.14)
 
-## My JavaScript Practice
+## My Web Practice
+- Wedding Anniversary 2 (2020.03.11)
+- Wedding Anniversary (2020.03.07)
+- Colorful Show (2020.03.04)
 - Ganzi.html (2017.04.03)
 
 ## My QBasic Practice
