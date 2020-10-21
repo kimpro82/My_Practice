@@ -1,5 +1,7 @@
 # [My Python Practice]
 - Suffle_List.py (2020.03.30)
+- Operator_Precedence_Test.py (2020.06.28)
+- Print.py (2020.03.31)
 - Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01) (adjusted 2020.01.04)
 - Fibonacci_Series.py (2019.12.18)
@@ -62,6 +64,57 @@ print(list) # There's no more overlapping values.
 print(loopnum) # It shows how many times overlapping numbers are rejected.
 ```
 > 87
+
+
+## Operator_Precedence_Test.py (2020.06.28)
+answer for my friend YW Jang's quastion
+
+```python
+print("F" == "M")
+```
+> False
+
+```python
+print(bool("m"))
+```
+> True
+
+`==` runs prior to `or` in Python
+
+```python
+print("F" == "M" or "m")
+print(("F" == "M") or "m") # the same with the above line
+```
+> True
+
+☞ reference : https://www.programiz.com/python-programming/precedence-associativity
+
+
+## Print.py (2020.03.31)
+simple practice with `print()`
+
+```python
+#1. Print normally
+print("위")
+print("아래")
+```
+> 위  
+> 아래
+
+```python
+#2. Write on the same line
+print("왼쪽", end='')
+print("에 붙여서 계속")
+```
+> 왼쪽에 붙여서 계속
+
+```python
+#3. Change lines within one function
+print("줄을\n막\n바꿔")
+```
+> 줄을  
+> 막  
+> 바꿔
 
 
 ## Random_Seed_Influence.py (2020.01.05)
