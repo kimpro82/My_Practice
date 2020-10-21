@@ -16,6 +16,7 @@ print(sufflelist) # There are overlapping values.
 
 random.seed(330)
 sufflelist2 = random.sample(range(1, 21), 20)
+
 print(sufflelist2) # random.sample() offers values without overlapping.
 
 
@@ -30,5 +31,7 @@ while len(sufflelist3) < 20 :
     if r not in sufflelist3 : sufflelist3.append(r)
     loopnum += 1
 
-print(sufflelist3) # There's no more overlapping values.
+print(sufflelist3)
+# It seems similar with Trial 1's sequence but there's no overlapping values.
+
 print(loopnum) # It shows how many times overlapping numbers are rejected.
