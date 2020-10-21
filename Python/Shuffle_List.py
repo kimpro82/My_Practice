@@ -9,7 +9,7 @@ for i in range(0,20) :
     random.seed(330 + i)
     sufflelist1.append(random.randint(1, 20))
 
-print(sufflelist) # There are overlapping values.
+print(sufflelist1) # There are overlapping values.
 
 
 # Trial 2 : Use random.sample()
