@@ -15,7 +15,7 @@
 
 ## Suffle_List.py (2020.03.30)
 - find how to get random lists without overlapping values
-- use `random`
+- use `random` `random.randint` `random.sample`
 
 ```python
 import random
@@ -23,11 +23,11 @@ import random
 
 #### Trial 1 : Use `random.randint()`
 ```python
-sufflelist = []
+sufflelist1 = []
 
 for i in range(0,20) :
     random.seed(330 + i)
-    sufflelist.append(random.randint(1, 20))
+    sufflelist1.append(random.randint(1, 20))
 
 print(sufflelist) # There are overlapping values.
 ```
@@ -35,31 +35,28 @@ print(sufflelist) # There are overlapping values.
 
 #### Trial 2 : Use `random.sample()`
 ```python
-sufflelist = []
+random.seed(330)
+sufflelist2 = random.sample(range(1, 21), 20)
 
-for i in range(0,20) :
-    random.seed(330 + i)
-    sufflelist.append(random.sample(range(1, 20), 1))
-
-print(sufflelist)
-# The values are in nested lists and overlapping ones still remains.
+print(sufflelist2) # random.sample() offers values without overlapping.
 ```
-> [[3], [11], [8], [18], [8], [5], [1], [7], [4], [5], [13], [19], [4], [7], [13], [10], [18], [12], [11], [14]]
+> [20, 3, 2, 13, 1, 6, 10, 9, 15, 11, 14, 4, 18, 8, 16, 17, 7, 19, 12, 5]
 
 #### Trial 3 : Use `while` Statement
 ```python
-list=[]
+sufflelist3 = []
 loopnum = 0
 
-while len(list) < 20 :
+while len(sufflelist3) < 20 :
     random.seed(330 + loopnum)
     r = random.randint(1,20)
-    if r not in list: list.append(r)
+    if r not in sufflelist3 : sufflelist3.append(r)
     loopnum += 1
 
-print(list) # There's no more overlapping values.
+print(sufflelist3)
+# It seems similar with Trial 1's sequence but there's no overlapping values.
 ```
-> [20, 11, 8, 18, 5, 1, 7, 4, 13, 19, 10, 12, 14, 6, 2, 3, 17, 16, 15, 9]
+> [20, 11, 8, 18, 5, 1, 7, 4, 13, 19, 10, 12, 14, 6, 2, 3, 17, 16, 15, 9]  
 ```python
 print(loopnum) # It shows how many times overlapping numbers are rejected.
 ```
