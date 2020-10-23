@@ -24,6 +24,10 @@ a great journey to construct RTK2(Romance of The Three Kingdoms II, KOEI, 1989) 
 - RTK2_Offset.py (2019.07.22)
 - With_Open.py (2019.07.21)
 
+## My Python Practice - Github Dashboard
+making a dashboard for managing Gitgub contributions by using `Github API`
+- Outline (2020.04.19)
+
 ## My R Practice
 - Get_Sample_Number_2.R (2020.06.16)
 - Get_Sample_Number.R (2020.06.10)
