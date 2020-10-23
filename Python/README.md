@@ -1,5 +1,7 @@
 # [My Python Practice]
+- Operator_Precedence_Test.py (2020.06.28)
 - Print.py (2020.03.31)
+- Suffle_List.py (2020.03.30)
 - Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01) (adjusted 2020.01.04)
 - Fibonacci_Series.py (2019.12.18)
@@ -9,6 +11,30 @@
 - Player.py (2019.03.12) - maybe?
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
+
+
+## Operator_Precedence_Test.py (2020.06.28)
+answer for my friend YW Jang's question
+
+```python
+print("F" == "M")
+```
+> False
+
+```python
+print(bool("m"))
+```
+> True
+
+`==` runs prior to `or` in Python
+
+```python
+print("F" == "M" or "m")
+print(("F" == "M") or "m") # the same with the above line
+```
+> True
+
+☞ reference : https://www.programiz.com/python-programming/precedence-associativity
 
 
 ## Print.py (2020.03.31)
@@ -36,6 +62,56 @@ print("줄을\n막\n바꿔")
 > 줄을  
 > 막  
 > 바꿔
+
+
+## Suffle_List.py (2020.03.30)
+- find how to get random lists without overlapping values
+- use `random` `random.randint` `random.sample`
+
+```python
+import random
+```
+
+#### Trial 1 : Use `random.randint()`
+```python
+sufflelist1 = []
+
+for i in range(0,20) :
+    random.seed(330 + i)
+    sufflelist1.append(random.randint(1, 20))
+
+print(sufflelist1) # There are overlapping values.
+```
+> [20, 11, 8, 18, 8, 5, 1, 7, 4, 5, 13, 19, 4, 7, 13, 10, 18, 12, 11, 14]
+
+#### Trial 2 : Use `random.sample()`
+```python
+random.seed(330)
+sufflelist2 = random.sample(range(1, 21), 20)
+
+print(sufflelist2) # random.sample() offers values without overlapping.
+```
+> [20, 3, 2, 13, 1, 6, 10, 9, 15, 11, 14, 4, 18, 8, 16, 17, 7, 19, 12, 5]
+
+#### Trial 3 : Use `while` Statement
+```python
+sufflelist3 = []
+loopnum = 0
+
+while len(sufflelist3) < 20 :
+    random.seed(330 + loopnum)
+    r = random.randint(1,20)
+    if r not in sufflelist3 : sufflelist3.append(r)
+    loopnum += 1
+
+print(sufflelist3)
+# It seems similar with Trial 1's sequence but there's no overlapping values.
+```
+> [20, 11, 8, 18, 5, 1, 7, 4, 13, 19, 10, 12, 14, 6, 2, 3, 17, 16, 15, 9]  
+```python
+print(loopnum) # It shows how many times overlapping numbers are rejected.
+```
+> 87
 
 
 ## Random_Seed_Influence.py (2020.01.05)
