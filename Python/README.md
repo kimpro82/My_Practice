@@ -1,4 +1,5 @@
 # [My Python Practice]
+- Count_Words.py (2020.11.10)
 - Operator_Precedence_Test.py (2020.06.28)
 - Print.py (2020.03.31)
 - Suffle_List.py (2020.03.30)
@@ -12,6 +13,37 @@
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
+
+## Count_Words.py (2020.11.10)
+- Count words without duplication from .txt file
+- import `re` for using `regular expression`
+
+```python
+import os
+import re
+```
+
+```python
+# Check if the target file exists
+path = "C:\\...\\Python\\subtitle - 1.1.txt"
+os.path.isfile(path)
+```
+> True
+
+```python
+# Call words' list with duplication
+document_raw = open(path, 'r')
+document_lower = document_raw.read().lower()
+words_duplication = re.findall(r'\b[a-z]{3,15}\b', document_lower)
+# Regular expression to avoid meaningless or wrong words
+```
+
+```python
+# Remove duplication from the list
+words = set(words_duplication)
+print(len(words))
+```
+> 455
 
 ## Operator_Precedence_Test.py (2020.06.28)
 answer for my friend YW Jang's question
