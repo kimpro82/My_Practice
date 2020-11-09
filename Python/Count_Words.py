@@ -2,7 +2,7 @@ import os
 import re
 
 # Check if the target file exists
-path = "C:\\Users\\fya\\Documents\\Python\\subtitle - 1.1.txt"
+path = "C:\\...\\Python\\subtitle - 1.1.txt"
 os.path.isfile(path)
 
 # Call words' list with duplication
