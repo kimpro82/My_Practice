@@ -2,6 +2,7 @@
 miscellaneous petty works
 
 ## My Python Practice - Stuff
+- Count_Words.py (2020.11.10)
 - Operator_Precedence_Test.py (2020.06.28)
 - Print.py (2020.03.31)
 - Suffle_List.py (2020.03.30)
