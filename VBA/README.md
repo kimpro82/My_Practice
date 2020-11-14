@@ -19,8 +19,8 @@ Sub Color_Scroll()
     
     StartRow = 1
     StartColumn = 1
-    Width = 112
-    Height = 50
+    Width = 56
+    Height = 56
         
     Range(Cells(StartRow, StartColumn), Cells(Height, Width)).Select
     Selection.RowHeight = 10
