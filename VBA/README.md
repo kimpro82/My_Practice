@@ -28,7 +28,7 @@ Sub Color_Scroll()
     
     For i = 1 To Height
         For j = 1 To Width
-            Cells(i, j).Interior.ColorIndex = (i + j) Mod 56 + 1 '
+            Cells(i, j).Interior.ColorIndex = (i + j) Mod 56 + 1
         Next j
     Next i
     
