@@ -3,7 +3,7 @@ VBA, it may be my ancient futures
 - Color_Scroll (2020.11.14)
 
 ## Color_Scroll (2020.11.14)
-- Make color matrix by `Nested For` statement
+- Make a color matrix by `Nested For` statement
 - Want to make it flow, but it doesn't work well yet
 
 ![Color_Scroll](https://github.com/kimpro82/MyPractice/blob/master/images/VBA_Color_Scroll.png)
