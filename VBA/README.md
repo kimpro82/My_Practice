@@ -1,6 +1,29 @@
 # My VBA Practice
 VBA, it may be my ancient futures
+- Sigma (2021.01.02)
 - Color_Scroll (2020.11.14)
+
+
+## Sigma (2021.01.02)
+- Make a function to calculate `summation` (a.k.a. Sigma, Σ)
+- Define all the variables as `integer`
+
+```vba
+Option Explicit
+
+
+Function Sigma(n As Integer) As Integer
+
+    Dim i As Integer, Sum As Integer
+
+    For i = 1 To n
+        Sum = Sum + i
+    Next i
+
+    Sigma = Sum
+
+End Function
+```
 
 ## Color_Scroll (2020.11.14)
 - Make a color matrix by `Nested For` statement
