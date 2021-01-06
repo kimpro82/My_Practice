@@ -8,6 +8,8 @@ VBA, it may be my ancient futures
 ## Sigma2 (2021.01.03)
 - Add a parameter of _k_ that indicates a starting point
 
+![Sigma2](https://github.com/kimpro82/MyPractice/blob/master/images/VBA_Sigma2.PNG)
+
 ```vba
 Option Explicit
 
@@ -29,6 +31,8 @@ End Function
 ## Sigma (2021.01.02)
 - Make a function to calculate `summation` (a.k.a. Sigma, Σ)
 - Define all the variables as `integer`
+
+![Sigma](https://github.com/kimpro82/MyPractice/blob/master/images/VBA_Sigma.PNG)
 
 ```vba
 Option Explicit
