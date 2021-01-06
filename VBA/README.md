@@ -7,6 +7,7 @@ VBA, it may be my ancient futures
 
 ## Sigma2 (2021.01.03)
 - Add a parameter of _k_ that indicates a starting point
+- Need to add codes for handling errors.
 
 ![Sigma2](https://github.com/kimpro82/MyPractice/blob/master/images/VBA_Sigma2.PNG)
 
