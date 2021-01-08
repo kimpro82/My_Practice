@@ -1,12 +1,39 @@
 # My VBA Practice
 VBA, it may be my ancient futures
+- Sigma2 (2021.01.03)
 - Sigma (2021.01.02)
 - Color_Scroll (2020.11.14)
+
+
+## Sigma2 (2021.01.03)
+- Add a parameter of _k_ that indicates a starting point
+- Need to add codes for handling errors.
+
+![Sigma2](https://github.com/kimpro82/MyPractice/blob/master/images/VBA_Sigma2.PNG)
+
+```vba
+Option Explicit
+
+
+Function Sigma2(k As Integer, n As Integer) As Integer
+
+    Dim i As Integer, Sum As Integer
+
+    For i = k To n
+        Sum = Sum + i
+    Next i
+
+    Sigma2 = Sum
+
+End Function
+```
 
 
 ## Sigma (2021.01.02)
 - Make a function to calculate `summation` (a.k.a. Sigma, Σ)
 - Define all the variables as `integer`
+
+![Sigma](https://github.com/kimpro82/MyPractice/blob/master/images/VBA_Sigma.PNG)
 
 ```vba
 Option Explicit
@@ -24,6 +51,7 @@ Function Sigma(n As Integer) As Integer
 
 End Function
 ```
+
 
 ## Color_Scroll (2020.11.14)
 - Make a color matrix by `Nested For` statement
