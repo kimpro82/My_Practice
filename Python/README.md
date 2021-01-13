@@ -1,4 +1,5 @@
 # [My Python Practice]
+- WordsMix.py (2021.01.13)
 - Count_Words.py (2020.11.10)
 - Operator_Precedence_Test.py (2020.06.28)
 - Print.py (2020.03.31)
@@ -12,6 +13,70 @@
 - Player.py (2019.03.12) - maybe?
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
+
+
+## WordsMix.py (2021.01.13)
+- Read a _csv_ file into a _dictionary_
+- Import `csv`
+- Seems that _dictionary type_ is not so suitable to generate random paragraphs
+
+#### 0. Check If Words.csv Exists
+```python
+import os
+```
+```python
+path = "C:\\Users\\……\\Python\\Words.csv"
+# \\ : escape character of \
+os.path.isfile(path)
+```
+> True
+
+#### 1. Read Words.csv simply 
+```python
+import csv
+```
+```python
+with open(path,'r', encoding='utf-8') as f:
+    reader = csv.DictReader(f)
+
+    for c in reader:
+        for k, v in c.items():
+            print(v, end= ' ')
+        print("\n")
+```
+> 멍청하게 떡볶이 먹고 배탈 나는 똥개  
+> 어리석게 꼭지에서 주식 사는 너구리  
+> 정신 못 차리고 반바지에 긴 양말 신은 코흘리개  
+> 한심하게 노래방 가서 고해 부르는 개미햝기  
+> 아무 생각없이 담뱃불 붙이다 앞머리 불 붙은 이등병
+
+#### 1-1. Read Words.csv as dictionary type
+```python
+with open(path,'r', encoding='utf-8') as f:
+    reader = csv.DictReader(f)
+
+    for row in reader:
+        print(row)
+```
+> {'\ufeff수식어1': '멍청하게', '수식어2': '떡볶이 먹고 배탈 나는', '명사': '똥개'}  
+> {'\ufeff수식어1': '어리석게', '수식어2': '꼭지에서 주식 사는', '명사': '너구리'}  
+> {'\ufeff수식어1': '정신 못 차리고', '수식어2': '반바지에 긴 양말 신은', '명사': '코흘리개'}  
+> {'\ufeff수식어1': '한심하게', '수식어2': '노래방 가서 고해 부르는', '명사': '개미햝기'}  
+> {'\ufeff수식어1': '아무 생각없이', '수식어2': '담뱃불 붙이다 앞머리 불 붙은', '명사': '이등병'}
+
+#### 1-2. Get rid of '\ufeff' from the head of data
+```python
+with open(path,'r', encoding='utf-8-sig') as f:
+    reader = csv.DictReader(f)
+
+    for row in reader:
+        print(row)
+```
+> {'수식어1': '멍청하게', '수식어2': '떡볶이 먹고 배탈 나는', '명사': '똥개'}  
+> {'수식어1': '어리석게', '수식어2': '꼭지에서 주식 사는', '명사': '너구리'}  
+> {'수식어1': '정신 못 차리고', '수식어2': '반바지에 긴 양말 신은', '명사': '코흘리개'}  
+> {'수식어1': '한심하게', '수식어2': '노래방 가서 고해 부르는', '명사': '개미햝기'}  
+> {'수식어1': '아무 생각없이', '수식어2': '담뱃불 붙이다 앞머리 불 붙은', '명사': '이등병'}
 
 
 ## Count_Words.py (2020.11.10)
