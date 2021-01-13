@@ -2,7 +2,8 @@
 
 import os
 
-path = "C:\\Users\\fya\\Documents\\신랑\\개발\\Python\\Words.csv"
+path = "C:\\Users\\……\\Python\\Words.csv"
+# \\ : escape character of \
 os.path.isfile(path)
 
 
