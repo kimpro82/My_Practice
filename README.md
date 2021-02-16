@@ -2,6 +2,7 @@
 miscellaneous petty works
 
 ## My Python Practice - Stuff
+- Map.py (2021.02.16)
 - WordsMix.py (2021.01.13)
 - Count_Words.py (2020.11.10)
 - Operator_Precedence_Test.py (2020.06.28)
