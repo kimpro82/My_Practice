@@ -1,4 +1,5 @@
 # [My Python Practice]
+- Map.py (2021.02.16)
 - WordsMix.py (2021.01.13)
 - Count_Words.py (2020.11.10)
 - Operator_Precedence_Test.py (2020.06.28)
@@ -13,6 +14,54 @@
 - Player.py (2019.03.12) - maybe?
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
+
+
+## Map.py (2021.02.16)
+- To find how `map()` runs
+- I guessed the result of running `map()` would be something to contain hidden elements.
+- But it was a `generator type object`.
+
+#### Codes
+```python
+def details(txt) :
+    print("elements :", txt)
+    print("type :", type(txt))
+    try :
+        print("elements' type :", type(txt[0]), "\n")
+    except :
+        print("elements' type : an error occurs.\n")
+
+txt = "1 2 3 4 5"
+details(txt)
+
+txtsplit = txt.split()
+details(txtsplit)
+
+txtmap = map(int, txt.split())
+details(txtmap) # an error occurs
+
+txtlist = list(txtmap)
+details(txtlist)
+```
+
+#### Results
+```python
+elements : 1 2 3 4 5
+type : <class 'str'>
+elements' type : <class 'str'>
+
+elements : ['1', '2', '3', '4', '5']
+type : <class 'list'>
+elements' type : <class 'str'>
+
+elements : <map object at 0x7fefcdfe8dc0>
+type : <class 'map'>
+elements' type : an error occurs.
+
+elements : [1, 2, 3, 4, 5]
+type : <class 'list'>
+elements' type : <class 'int'>
+```
 
 
 ## WordsMix.py (2021.01.13)
@@ -109,6 +158,7 @@ words = set(words_duplication)
 print(len(words))
 ```
 > 455
+
 
 ## Operator_Precedence_Test.py (2020.06.28)
 answer for my friend YW Jang's question
