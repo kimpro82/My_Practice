@@ -19,7 +19,7 @@
 ## Map.py (2021.02.16)
 - To find how `map()` runs
 - I guessed the result of running `map()` would be something to contain hidden elements.
-- But it was a `generator type object`, so has not futural list data before I request by `list()`.
+- But actually it is a `generator type object`, so has not futural list data before I request by `list()`.
 - StackOverflow ☞ https://stackoverflow.com/questions/66225592/
 - Additional reference ☞ https://realpython.com/python-map-function/#getting-started-with-pythons-map
 
