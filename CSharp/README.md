@@ -72,7 +72,7 @@ class MainClass
 }
 ```
 
-#### The results that I mean to get (impossible because of compiling errors)
+#### The results that I mean to get (but impossible because of compiling errors)
 > Abstract class can't be instantiated.  
 > MichaelJackson : Billie Jean is not my lover.  
 > MichaelJackson : The kid is not my son.
