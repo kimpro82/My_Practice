@@ -1,16 +1,17 @@
 # My C# Practice
 Python seems kind of ugly, but `C#` is the orthodox.
-- Polymorphism.cs (2021.2.18)
+- Polymorphism.cs (2021.02.18)
 - Overloading.cs (2021.02.02)
 
 
-## Polymorphism.cs (2021.2.18)
+## Polymorphism.cs (2021.02.18)
 - A practice of writing `class` with `abstract` and `sealed` keywords.
 - **This code doesn't work.**
 - It can't be treated by `try~catch` statement to try instantiating an `abstrat` class or inhreiting `sealed` one.
 - Because they belong to `compile-time errors`, not `run-time errors`.
 - Compile-time errors must be dealed with by `debugging` process.
 
+#### Codes :
 ```cs
 using System;
 
@@ -71,8 +72,11 @@ class MainClass
 }
 ```
 
+#### The results that I mean to get (impossible because of compiling errors)
 ```cs
-
+Abstract class can't be instantiated.
+MichaelJackson : Billie Jean is not my lover.
+MichaelJackson : The kid is not my son.
 ```
 
 ## Overloading.cs (2021.02.02)
