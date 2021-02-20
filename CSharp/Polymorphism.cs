@@ -1,3 +1,8 @@
+// This code doesn't work.
+// It can't be treated by try~catch statement to try instantiating an abstrat class or inhreiting sealed one.
+// Because they belong to compile-time errors, not run-time errors.
+// Compile-time errors must be dealed with by debugging process.
+
 using System;
 
 abstract class Person
@@ -30,9 +35,8 @@ class BilleJean : MichaelJackson
 
 class MainClass
 {
-	static void Main(string[] args)
-	{
-        
+    static void Main(string[] args)
+    {
         try
         {
             new Person();
@@ -53,5 +57,5 @@ class MainClass
         {
             Console.WriteLine("MichaelJackson : The kid is not my son");
         }
-	}
+    }
 }
