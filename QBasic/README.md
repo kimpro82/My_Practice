@@ -33,7 +33,7 @@ SLEEP 1
 'SOUND
 
 PRINT "SOUND" + CHR$(13) 'CHR$(13) : line break
-SOUND 37, 5 'Freqency, Duration
+SOUND 37, 5 'Frequency, Duration
 SOUND 100, 5
 SOUND 200, 5
 SLEEP 1
