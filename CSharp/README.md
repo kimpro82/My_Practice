@@ -73,11 +73,10 @@ class MainClass
 ```
 
 #### The results that I mean to get (impossible because of compiling errors)
-```cs
-Abstract class can't be instantiated.
-MichaelJackson : Billie Jean is not my lover.
-MichaelJackson : The kid is not my son.
-```
+> Abstract class can't be instantiated.  
+> MichaelJackson : Billie Jean is not my lover.  
+> MichaelJackson : The kid is not my son.
+ 
 
 ## Overloading.cs (2021.02.02)
 - A practice of `overloading`
