@@ -42,12 +42,10 @@ class BilleJean : MichaelJackson
     }
 }
 
-
 class MainClass
 {
-	static void Main(string[] args)
-	{
-        
+    static void Main(string[] args)
+    {
         try
         {
             new Person();
@@ -68,7 +66,7 @@ class MainClass
         {
             Console.WriteLine("MichaelJackson : The kid is not my son");
         }
-	}
+    }
 }
 ```
 
