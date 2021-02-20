@@ -19,7 +19,7 @@ sealed class MichaelJackson : Person
 }
 
 class BilleJean : MichaelJackson
-// An error will occurs because it try to inherit a sealed class
+// An error will occurs because it tries to inherit a sealed class
 {
     public void Say()
     {
@@ -36,7 +36,7 @@ class MainClass
         try
         {
             new Person();
-            // An error will occurs because it try to be instantiated as an abstract class
+            // An error will occurs because it tries to be instantiated as an abstract class
         }
         catch (Exception e)
         {
