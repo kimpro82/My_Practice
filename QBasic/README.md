@@ -67,7 +67,8 @@ PLAY "MS G8G8A-8A-8 G8G8E-4 G8G8E-8E-8 D6 P8"
 PLAY "MS G8G8A-8A-8 G8G8E-4 G8E-8D8E-8 C6 P8"
 ```
 **Results** :
-[C major](./Sounds/QB_PLAY_C major.wav) [C minor](./Sounds/QB_PLAY_C minor.wav)  
+![C major]() ![C minor]()  
+[Cmajor](./Sounds/QB_PLAY_C major.wav) [C minor](./Sounds/QB_PLAY_C minor.wav)  
 (* These can't be played directly, but played after downloading.)
 
 
