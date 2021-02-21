@@ -47,7 +47,7 @@ PLAY "L16 CDEFGAB>C" '> : Move up one octave
 SLEEP
 ```
 **Results** : [BEEP](./Sounds/QB_SOUND_BEEP.wav) [SOUND](./Sounds/QB_SOUND_SOUND.wav) [PLAY](./Sounds/QB_SOUND_PLAY.wav)  
-
+(* These can't be played directly, but played after downloading.)
 
 #### SchoolBell.bas
 Play the same song with the keys of both C major and C minor
