@@ -47,9 +47,9 @@ PLAY "L16 CDEFGAB>C" '> : Move up one octave
 SLEEP
 ```
 **Results** :  
-![BEEP](/Sounds/QB_SOUND_BEEP.wav)  
-![SOUND](/Sounds/QB_SOUND_SOUND.wav)  
-![PLAY](/Sounds/QB_SOUND_PLAY.wav)  
+![BEEP](./Sounds/QB_SOUND_BEEP.wav)  
+![SOUND](./Sounds/QB_SOUND_SOUND.wav)  
+![PLAY](./Sounds/QB_SOUND_PLAY.wav)  
 
 
 #### SchoolBell.bas
