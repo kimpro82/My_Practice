@@ -10,7 +10,7 @@ Nostalgia!
 
 #### Xerxes.bas
 Using `SHELL` function to borrow the `CLS` command from DOS
-```QBasic
+```Bas
  SHELL "CLS"
  PRINT "I am generous"
 ```
@@ -18,7 +18,7 @@ Using `SHELL` function to borrow the `CLS` command from DOS
 
 #### Sound.bas
 Refer to ☞ https://en.wikibooks.org/wiki/QBasic/Sound
-```QBasic
+```Bas
 SHELL "CLS"
 
 'BEEP
@@ -44,7 +44,7 @@ SLEEP
 
 #### SchoolBell.bas
 Play the same song with the keys of both C major and C minor
-```QBasic
+```Bas
 SHELL "CLS"
 
 PRINT "School Bell"
@@ -65,37 +65,37 @@ PLAY "MS G8G8A-8A-8 G8G8E-4 G8E-8D8E-8 C6 P8"
 
 #### HelloWorld.bas
 
-```QBasic
+```Bas
 print "Hello World!"
 ```
 > Call to undefined sub 'print'
 
-```QBasic
+```Bas
 print("Hello World!")
 ```
 > Call to undefined sub 'print'
 
-```QBasic
+```Bas
 print 'Hello World!'
 ```
 > Call to undefined sub 'print'
 
 How can I make `print` work?
 
-```QBasic
+```Bas
 PRINT "Hello World!"
 ```
 > Hello World!
 
 The secret was UPPER CASE!
 
-```QBasic
+```Bas
 PRINT 'Hello World!'
 ```
 >
 `''` seems to be used for single-line comments.
 
-```QBasic
+```Bas
 'You can't see what I'm saying.'
 ```
 ㅋ
