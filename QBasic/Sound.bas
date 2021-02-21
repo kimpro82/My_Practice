@@ -6,20 +6,21 @@ SHELL "CLS"
 PRINT "BEEP"
 BEEP
 PRINT CHR$(7)
-SLEEP 1
+SLEEP
 
 
 'SOUND
 
-PRINT "SOUND" + CHR$(13) 'CHR$(13) : line break
-SOUND 37, 5 'Frequency, Duration
-SOUND 100, 5
-SOUND 200, 5
-SLEEP 1
+PRINT "SOUND" + CHR$(13) 'CHR$(13) : Line break
+
+FOR i% = 1 TO 30
+        SOUND i% * 100, 1  'Freqency, Duration
+NEXT
+SLEEP
 
 
 'PLAY
 
 PRINT "PLAY" + CHR$(13)
 PLAY "L16 CDEFGAB>C" '> : Move up one octave
-SLEEP 1
+SLEEP
