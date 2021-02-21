@@ -21,27 +21,20 @@ Refer to ☞ https://en.wikibooks.org/wiki/QBasic/Sound
 ```QBasic
 SHELL "CLS"
 
-
 'BEEP
-
 PRINT "BEEP"
 BEEP
 PRINT CHR$(7)
 SLEEP
 
-
 'SOUND
-
 PRINT "SOUND" + CHR$(13) 'CHR$(13) : Line break
-
 FOR i% = 1 TO 30
-        SOUND i% * 100, 1  'Freqency, Duration
+        SOUND i% * 100, 1  'Frequency, Duration
 NEXT
 SLEEP
 
-
 'PLAY
-
 PRINT "PLAY" + CHR$(13)
 PLAY "L16 CDEFGAB>C" '> : Move up one octave
 SLEEP
@@ -57,12 +50,10 @@ SHELL "CLS"
 PRINT "School Bell"
 
 PRINT "C major"
-
 PLAY "MS G8G8A8A8 G8G8E4 G8G8E8E8 D6 P8"
 PLAY "MS G8G8A8A8 G8G8E4 G8E8D8E8 C6 P8"
 
 PRINT "C minor"
-
 PLAY "MS G8G8A-8A-8 G8G8E-4 G8G8E-8E-8 D6 P8"
 PLAY "MS G8G8A-8A-8 G8G8E-4 G8E-8D8E-8 C6 P8"
 ```
