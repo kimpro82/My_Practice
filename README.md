@@ -11,10 +11,8 @@ miscellaneous petty works
 - Random_Seed_Influence.py (2020.01.05)
 - Square_Root.py (2020.01.01)
 - Fibonacci_Series.py (2019.12.18)
-- Player2.py (2019.12.15)
 - Generate_List.py (2019.12.07)
 - Password.py (2019.05.24)
-- Player.py (2019.03.12) - maybe?
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
