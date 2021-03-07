@@ -1,16 +1,16 @@
 # [My Web Practice]
 HTML, CSS and JavaScript
 
-- Wedding Anniversary 6 (2021.03.07)
-- Wedding Anniversary 5 - 2 (2020.03.11)
-- Wedding Anniversary 5 (2020.03.07)
+- 6th Wedding Anniversary (2021.03.07)
+- 5th Wedding Anniversary 2 (2020.03.11)
+- 5th Wedding Anniversary (2020.03.07)
 - Colorful Show (2020.03.04)
 - Ganzi.html (2017.04.03)
 
 
-## Wedding Anniversary 6 (2021.03.11)
+## 6th Wedding Anniversary (2021.03.11)
 - Annual Update : change images of the heart and number
-- Seperate css id `name` to `name1` and `name2` and maintain the words in a line
+- Seperate css id `name` to `name1` and `name2` and maintain the texts in a line
 - Enhancement of Javascript : use `for` statement
 
 #### Mainly changed part of WeddingAnniversary6.html
@@ -56,7 +56,7 @@ setInterval(changeColor, 500);
 ![Wedding Anniversary 6](./Image/2021-03-07%20Wedding%20Anniversary%206.gif)
 
 
-## Wedding Anniversary 5 - 2 (2020.03.11)
+## 5th Wedding Anniversary 2 (2020.03.11)
 - Enhancement of `vertical-align` between text and image
 - No change in `.js` file
 
@@ -68,6 +68,13 @@ setInterval(changeColor, 500);
 			<img src="heart.gif">
 		</div>
 		E Y
+	</div>
+	<div id='chameleon1'>
+		Celebrate Our
+		<div id='year'>
+			<img src="5.gif">
+		</div>
+		th
 	</div>
 ```
 
@@ -95,7 +102,7 @@ setInterval(changeColor, 500);
 ![Wedding Anniversary 5 - 2](./Image/2020-03-11%20Wedding%20Anniversary%205_2.gif)
 
 
-## Wedding Anniversary 5(2020.03.07)
+## 5th Wedding Anniversary (2020.03.07)
 - Application of Colorful Show
 
 #### WeddingAnniversary5.html
