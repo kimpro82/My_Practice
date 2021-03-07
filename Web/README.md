@@ -1,15 +1,45 @@
 # [My Web Practice]
 HTML, CSS and JavaScript
 
-- Wedding Anniversary 2 (2020.03.11)
-- Wedding Anniversary (2020.03.07)
+- Wedding Anniversary 6 (2021.03.07)
+- Wedding Anniversary 5 - 2 (2020.03.11)
+- Wedding Anniversary 5 (2020.03.07)
 - Colorful Show (2020.03.04)
 - Ganzi.html (2017.04.03)
 
-## Wedding Anniversary 2 (2020.03.11)
-enhancement of `vertical-align` between text and image
 
-#### WeddingAnniversary2.html
+## Wedding Anniversary 6 (2021.03.11)
+- Annual Update : change images of the heart and number
+- Seperate css id `name` to `name1` and `name2`
+- Enhancement of Javascript : use `for` statement
+
+#### WeddingAnniversary6.html
+```js
+function changeColor() {
+
+	const randNumDec = []; 	// for containing random numbers decimally
+	const randNumHex = []; 	// for containing converted numbers hexdecimally
+	const cssIdList = ["name1", "name2", "chameleon1", "chameleon2"]; // css id list to change colors
+
+	for (let i = 0; i < 4 ; i++) {
+		randNumDec[i] = Math.floor(Math.random() * Math.pow(256, 3)); // generate RGB color (decimal)
+		randNumHex[i] = randNumDec[i].toString(16); // turn to the hexdecimal
+		document.getElementById(cssIdList[i]).style.color = '#' + randNumHex[i]; // style-color requires #XXXXXX
+	}
+
+}
+
+setInterval(changeColor, 500);
+```
+
+#### Result
+![Wedding Anniversary 6](./Image/2021-03-07%20Wedding%20Anniversary%206.gif)
+
+
+## Wedding Anniversary 5 - 2 (2020.03.11)
+- Enhancement of `vertical-align` between text and image
+
+#### WeddingAnniversary5_2.html
 ```html
 <!DOCTYPE html>
 
@@ -46,7 +76,7 @@ enhancement of `vertical-align` between text and image
 </html>
 ```
 
-#### WeddingAnniversary2.css
+#### WeddingAnniversary5.css
 ```css
 @charset "EUC-KR";
 
@@ -87,13 +117,14 @@ enhancement of `vertical-align` between text and image
 ```
 
 #### Result
-![Wedding Anniversary 2](https://github.com/kimpro82/My_Practice/blob/master/images/2020-03-11-Wedding-Anniversary-2.gif)
+![Wedding Anniversary 5 - 2](./Image/2020-03-11%20Wedding%20Anniversary%205_2.gif)
+
 
 ## Wedding Anniversary (2020.03.07)
-application of Colorful Show
+- Application of Colorful Show
 
 #### Result
-![Wedding Anniversary](https://github.com/kimpro82/My_Practice/blob/master/images/WeddingAnniversary.gif)
+![Wedding Anniversary](./Image/2020-03-07%20Wedding%20Anniversary%205.gif)
 
 
 ## Colorful Show (2020.03.04)
@@ -160,11 +191,11 @@ setInterval(changeColor, 1000);
 ```
 
 #### Result
-![Colorful Show](https://github.com/kimpro82/My_Practice/blob/master/images/2020-03-05-23%20Colorful-Show.gif)
+![Colorful Show](./Image/2020-03-05-23%20Colorful-Show.gif)
 
 
 ## Ganzi.html (2017.04.03)
-a simple Javascript practice
+- A simple Javascript practice
 
 ```html
 <div id ="Zure">Ganzi</div>
