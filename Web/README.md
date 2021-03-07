@@ -10,10 +10,30 @@ HTML, CSS and JavaScript
 
 ## Wedding Anniversary 6 (2021.03.11)
 - Annual Update : change images of the heart and number
-- Seperate css id `name` to `name1` and `name2`
+- Seperate css id `name` to `name1` and `name2` and maintain the words in a line
 - Enhancement of Javascript : use `for` statement
 
-#### WeddingAnniversary6.html
+#### Mainly changed part of WeddingAnniversary6.html
+```html
+	<div id='name1' style="display:inline">
+		K R
+		<div id='heart' style="display:inline">
+			<img src="heart2.gif">
+		</div>
+	</div>
+	<div id='name2' style="display:inline">
+		E Y
+	</div>
+```
+
+#### Mainly changed part of WeddingAnniversary6.css
+```css
+body {
+	text-align: center;
+}
+```
+
+#### WeddingAnniversary6.js
 ```js
 function changeColor() {
 
@@ -38,20 +58,10 @@ setInterval(changeColor, 500);
 
 ## Wedding Anniversary 5 - 2 (2020.03.11)
 - Enhancement of `vertical-align` between text and image
+- No change in `.js` file
 
-#### WeddingAnniversary5_2.html
+#### Mainly changed part of WeddingAnniversary5_2.html
 ```html
-<!DOCTYPE html>
-
-<html>
-
-<head>
-	<meta charset="EUC-KR">
-	<title>Wedding Anniversary 2</title>
-  	<link rel="stylesheet" href="WeddingAnniversary2.css">
-</head>
-
-<body>
 	<div id='name'>
 		K R
 		<div id='heart'>
@@ -59,45 +69,10 @@ setInterval(changeColor, 500);
 		</div>
 		E Y
 	</div>
-	<div id='chameleon1'>
-		Celebrate Our
-		<div id='year'>
-			<img src="5.gif">
-		</div>
-		th
-	</div>
-	<div id='chameleon2'>
-		Wedding Anniversary
-	</div>
-  	<script src="WeddingAnniversary.js">
-	</script> 
-</body>
-
-</html>
 ```
 
-#### WeddingAnniversary5.css
+#### Mainly changed part of WeddingAnniversary5_2.css
 ```css
-@charset "EUC-KR";
-
-#name {
-	text-align: center;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 700%;
-}
-
-#chameleon1 {
-	text-align: center;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 550%;
-}
-
-#chameleon2 {
-	text-align: center;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 550%;
-}
-
 #heart {
 	display: inline;
 }
@@ -120,8 +95,79 @@ setInterval(changeColor, 500);
 ![Wedding Anniversary 5 - 2](./Image/2020-03-11%20Wedding%20Anniversary%205_2.gif)
 
 
-## Wedding Anniversary (2020.03.07)
+## Wedding Anniversary 5(2020.03.07)
 - Application of Colorful Show
+
+#### WeddingAnniversary5.html
+```html
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="EUC-KR">
+    <title>Wedding Anniversary 5</title>
+    <link rel="stylesheet" href="WeddingAnniversary5.css">
+</head>
+
+<body>
+    <div id='name'>
+        K R <img src="https://thumbs.gfycat.com/ZigzagJauntyHapuku-small.gif"  height="70" width="70"> E Y
+    </div>
+    <div id='chameleon1'>
+        Celebrate Our <img src="https://media.giphy.com/media/jQWTJf2Ch2ANz2DdqU/giphy.gif"  height="80" width="80">th
+    </div>
+    <div id='chameleon2'>
+        Wedding Anniversary
+    </div>
+    <script src="WeddingAnniversary5.js">
+    </script> 
+</body>
+
+</html>
+```
+
+#### WeddingAnniversary5.css
+```css
+@charset "EUC-KR";
+
+#name {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 450%;
+}
+
+#chameleon1 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 400%;
+}
+
+#chameleon2 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 400%;
+}
+```
+
+#### WeddingAnniversary5.js
+```js
+function changeColor() {
+	randNumDec1 = Math.floor(Math.random() * Math.pow(256, 3));
+	randNumDec2 = Math.floor(Math.random() * Math.pow(256, 3));
+	randNumDec3 = Math.floor(Math.random() * Math.pow(256, 3));
+	
+	randNumHex1 = randNumDec1.toString(16);
+	randNumHex2 = randNumDec2.toString(16);
+	randNumHex3 = randNumDec3.toString(16);
+
+	document.getElementById('name').style.color = '#' + randNumHex1;
+	document.getElementById('chameleon1').style.color = '#' + randNumHex2;
+	document.getElementById('chameleon2').style.color = '#' + randNumHex3;
+}
+
+setInterval(changeColor, 500);
+```
 
 #### Result
 ![Wedding Anniversary](./Image/2020-03-07%20Wedding%20Anniversary%205.gif)
