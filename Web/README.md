@@ -1,27 +1,67 @@
 # [My Web Practice]
 HTML, CSS and JavaScript
 
-- Wedding Anniversary 2 (2020.03.11)
-- Wedding Anniversary (2020.03.07)
+- 6th Wedding Anniversary (2021.03.07)
+- 5th Wedding Anniversary 2 (2020.03.11)
+- 5th Wedding Anniversary (2020.03.07)
 - Colorful Show (2020.03.04)
 - Ganzi.html (2017.04.03)
 
-## Wedding Anniversary 2 (2020.03.11)
-enhancement of `vertical-align` between text and image
 
-#### WeddingAnniversary2.html
+## 6th Wedding Anniversary (2021.03.11)
+- Annual Update : change images of the heart and number
+- Seperate css id `name` to `name1` and `name2` and maintain the texts in a line
+- Enhancement of Javascript : use `for` statement
+
+#### Mainly changed part of WeddingAnniversary6.html
 ```html
-<!DOCTYPE html>
+	<div id='name1' style="display:inline">
+		K R
+		<div id='heart' style="display:inline">
+			<img src="heart2.gif">
+		</div>
+	</div>
+	<div id='name2' style="display:inline">
+		E Y
+	</div>
+```
 
-<html>
+#### Mainly changed part of WeddingAnniversary6.css
+```css
+body {
+	text-align: center;
+}
+```
 
-<head>
-	<meta charset="EUC-KR">
-	<title>Wedding Anniversary 2</title>
-  	<link rel="stylesheet" href="WeddingAnniversary2.css">
-</head>
+#### WeddingAnniversary6.js
+```js
+function changeColor() {
 
-<body>
+	const randNumDec = []; 	// for containing random numbers decimally
+	const randNumHex = []; 	// for containing converted numbers hexdecimally
+	const cssIdList = ["name1", "name2", "chameleon1", "chameleon2"]; // css id list to change colors
+
+	for (let i = 0; i < 4 ; i++) {
+		randNumDec[i] = Math.floor(Math.random() * Math.pow(256, 3)); // generate RGB color (decimal)
+		randNumHex[i] = randNumDec[i].toString(16); // turn to the hexdecimal
+		document.getElementById(cssIdList[i]).style.color = '#' + randNumHex[i]; // style-color requires #XXXXXX
+	}
+
+}
+
+setInterval(changeColor, 500);
+```
+
+#### Result
+![Wedding Anniversary 6](./Image/2021-03-07%20Wedding%20Anniversary%206.gif)
+
+
+## 5th Wedding Anniversary 2 (2020.03.11)
+- Enhancement of `vertical-align` between text and image
+- No change in `.js` file
+
+#### Mainly changed part of WeddingAnniversary5_2.html
+```html
 	<div id='name'>
 		K R
 		<div id='heart'>
@@ -36,38 +76,10 @@ enhancement of `vertical-align` between text and image
 		</div>
 		th
 	</div>
-	<div id='chameleon2'>
-		Wedding Anniversary
-	</div>
-  	<script src="WeddingAnniversary.js">
-	</script> 
-</body>
-
-</html>
 ```
 
-#### WeddingAnniversary2.css
+#### Mainly changed part of WeddingAnniversary5_2.css
 ```css
-@charset "EUC-KR";
-
-#name {
-	text-align: center;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 700%;
-}
-
-#chameleon1 {
-	text-align: center;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 550%;
-}
-
-#chameleon2 {
-	text-align: center;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 550%;
-}
-
 #heart {
 	display: inline;
 }
@@ -87,13 +99,85 @@ enhancement of `vertical-align` between text and image
 ```
 
 #### Result
-![Wedding Anniversary 2](https://github.com/kimpro82/My_Practice/blob/master/images/2020-03-11-Wedding-Anniversary-2.gif)
+![Wedding Anniversary 5 - 2](./Image/2020-03-11%20Wedding%20Anniversary%205_2.gif)
 
-## Wedding Anniversary (2020.03.07)
-application of Colorful Show
+
+## 5th Wedding Anniversary (2020.03.07)
+- Application of Colorful Show
+
+#### WeddingAnniversary5.html
+```html
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="EUC-KR">
+    <title>Wedding Anniversary 5</title>
+    <link rel="stylesheet" href="WeddingAnniversary5.css">
+</head>
+
+<body>
+    <div id='name'>
+        K R <img src="https://thumbs.gfycat.com/ZigzagJauntyHapuku-small.gif"  height="70" width="70"> E Y
+    </div>
+    <div id='chameleon1'>
+        Celebrate Our <img src="https://media.giphy.com/media/jQWTJf2Ch2ANz2DdqU/giphy.gif"  height="80" width="80">th
+    </div>
+    <div id='chameleon2'>
+        Wedding Anniversary
+    </div>
+    <script src="WeddingAnniversary5.js">
+    </script> 
+</body>
+
+</html>
+```
+
+#### WeddingAnniversary5.css
+```css
+@charset "EUC-KR";
+
+#name {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 450%;
+}
+
+#chameleon1 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 400%;
+}
+
+#chameleon2 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 400%;
+}
+```
+
+#### WeddingAnniversary5.js
+```js
+function changeColor() {
+	randNumDec1 = Math.floor(Math.random() * Math.pow(256, 3));
+	randNumDec2 = Math.floor(Math.random() * Math.pow(256, 3));
+	randNumDec3 = Math.floor(Math.random() * Math.pow(256, 3));
+	
+	randNumHex1 = randNumDec1.toString(16);
+	randNumHex2 = randNumDec2.toString(16);
+	randNumHex3 = randNumDec3.toString(16);
+
+	document.getElementById('name').style.color = '#' + randNumHex1;
+	document.getElementById('chameleon1').style.color = '#' + randNumHex2;
+	document.getElementById('chameleon2').style.color = '#' + randNumHex3;
+}
+
+setInterval(changeColor, 500);
+```
 
 #### Result
-![Wedding Anniversary](https://github.com/kimpro82/My_Practice/blob/master/images/WeddingAnniversary.gif)
+![Wedding Anniversary](./Image/2020-03-07%20Wedding%20Anniversary%205.gif)
 
 
 ## Colorful Show (2020.03.04)
@@ -160,11 +244,11 @@ setInterval(changeColor, 1000);
 ```
 
 #### Result
-![Colorful Show](https://github.com/kimpro82/My_Practice/blob/master/images/2020-03-05-23%20Colorful-Show.gif)
+![Colorful Show](./Image/2020-03-05-23%20Colorful-Show.gif)
 
 
 ## Ganzi.html (2017.04.03)
-a simple Javascript practice
+- A simple Javascript practice
 
 ```html
 <div id ="Zure">Ganzi</div>
