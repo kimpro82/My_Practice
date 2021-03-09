@@ -45,7 +45,7 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Overloading.cs (2021.02.02)
 
 ## My Java Practice
-- MyDate.cs (2021.03.08)
+- MyDate.java (2021.03.08)
 
 ## My QBasic Practice
 - Play Music (2021.02.20)
