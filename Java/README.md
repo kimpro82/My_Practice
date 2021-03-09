@@ -1,9 +1,9 @@
 # My Java Practice
 N/A Java Boa~
-- MyDate.cs (2021.03.08)
+- MyDate.java (2021.03.08)
 
 
-## MyDate.cs (2021.03.08)
+## MyDate.java (2021.03.08)
 - A practice of **deprecated** class `java.util.Date`
 - So terrible
 
