@@ -45,3 +45,20 @@ public class MyDate {
 
 }
 ```
+
+#### Results :
+
+> Tue Mar 09 09:37:35 KST 2021  
+> 2021. 3. 9 오전 9:37:35  
+> 2021  
+> 2
+
+> Sat Mar 07 00:00:00 KST 2015  
+> 124  
+> 115 2 7  
+> 2015-3-7
+
+> 2015-00-07  
+> 2015-03-07
+
+> 2194 days have been gone since we got married.
