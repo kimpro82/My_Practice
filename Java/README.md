@@ -38,9 +38,9 @@ public class MyDate {
 		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd");
 		System.out.println(sdf2.format(date2)); // crazy
 
-		// minus(-) operation between two times differnt to each other
+		// minus(-) operation between two times different to each other
 		long dateDiff = date.getTime() - date2.getTime();
-		System.out.println("\n" + dateDiff/1000/60/60/24 + " days have been gone since we got married.");
+		System.out.println("\nIt has been " + dateDiff/1000/60/60/24 + " days since we got married.");
 		// 1 from getTime() means 1/1,000 second
 	}
 
@@ -62,4 +62,4 @@ public class MyDate {
 > 2015-00-07  
 > 2015-03-07
 
-> 2194 days have been gone since we got married.
+> It has been 2194 days since we got married.
