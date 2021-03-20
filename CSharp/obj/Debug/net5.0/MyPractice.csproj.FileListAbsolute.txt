@@ -1,0 +1,5 @@
+C:\GitHub\MyPractice-CS-ConsoleUI\MyPractice\CSharp\obj\Debug\net5.0\MyPractice.csprojAssemblyReference.cache
+C:\GitHub\MyPractice-CS-ConsoleUI\MyPractice\CSharp\obj\Debug\net5.0\MyPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\MyPractice-CS-ConsoleUI\MyPractice\CSharp\obj\Debug\net5.0\MyPractice.AssemblyInfoInputs.cache
+C:\GitHub\MyPractice-CS-ConsoleUI\MyPractice\CSharp\obj\Debug\net5.0\MyPractice.AssemblyInfo.cs
+C:\GitHub\MyPractice-CS-ConsoleUI\MyPractice\CSharp\obj\Debug\net5.0\MyPractice.csproj.CoreCompileInputs.cache
