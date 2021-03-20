@@ -83,11 +83,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHub\\MyPractice-CS-ConsoleUI\\MyPractice\\CSharp\\MyPractice.csproj",
+      "projectUniqueName": "C:\\GitHub\\MyPractice-CS-ConsoleUI\\MyPractice\\CSharp\\ConsoleUI\\MyPractice.csproj",
       "projectName": "MyPractice",
-      "projectPath": "C:\\GitHub\\MyPractice-CS-ConsoleUI\\MyPractice\\CSharp\\MyPractice.csproj",
+      "projectPath": "C:\\GitHub\\MyPractice-CS-ConsoleUI\\MyPractice\\CSharp\\ConsoleUI\\MyPractice.csproj",
       "packagesPath": "C:\\Users\\fya\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub\\MyPractice-CS-ConsoleUI\\MyPractice\\CSharp\\obj\\",
+      "outputPath": "C:\\GitHub\\MyPractice-CS-ConsoleUI\\MyPractice\\CSharp\\ConsoleUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
