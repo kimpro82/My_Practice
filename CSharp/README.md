@@ -1,11 +1,11 @@
 # My C# Practice
 Python seems kind of ugly, but `C#` is the orthodox.
-- ConsoleUI.cs (2021.03.20)
+- TerminalGUI.cs (2021.03.22)
 - Polymorphism.cs (2021.02.18)
 - Overloading.cs (2021.02.02)
 
 
-## ConsoleUI.cs (2021.03.20)
+## TerminalGUI.cs (2021.03.22)
 - A practice of `console UI` from C#
 
 ```cs
