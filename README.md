@@ -37,7 +37,7 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Ganzi.html (2017.04.03)
 
 ## My C# Practice
-- TerminalGUI.cs (2021.03.22)
+- TerminalGUI.cs (2021.03.24)
 - Polymorphism.cs (2021.02.18)
 - Overloading.cs (2021.02.02)
 
