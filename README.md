@@ -1,7 +1,12 @@
 # [My_Practice]
 miscellaneous petty works
 
+## Github Dashboard
+making a dashboard for managing Gitgub contributions by using `Github API`
+- Outline (2020.04.19)
+
 ## My Python Practice - Stuff
+- Turtle.py (2021.03.24)
 - Map.py (2021.02.16)
 - WordsMix.py (2021.01.13)
 - Count_Words.py (2020.11.10)
@@ -15,10 +20,6 @@ miscellaneous petty works
 - Password.py (2019.05.24)
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
-
-## My Python Practice - Github Dashboard
-making a dashboard for managing Gitgub contributions by using `Github API`
-- Outline (2020.04.19)
 
 ## My R Practice
 - Get_Sample_Number_2.R (2020.06.16)

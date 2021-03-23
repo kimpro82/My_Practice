@@ -1,4 +1,5 @@
 # [My Python Practice]
+- Turtle.py (2021.03.24)
 - Map.py (2021.02.16)
 - WordsMix.py (2021.01.13)
 - Count_Words.py (2020.11.10)
@@ -13,6 +14,45 @@
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
+
+## Turtle.py (2021.03.24)
+- A practice of python module `turtle`
+- Very easy!
+
+![Turtle Practice](./image/Python%20Turtle.gif)
+
+#### Codes
+```python
+import turtle
+
+
+turtle.setup(width = 300, height = 300)
+turtle.title("My turtle practice")
+
+turtle.hideturtle()         # hide turtle : make the moving speed faster
+
+
+turtle.home()               # set the position (0, 0)
+turtle.position()
+
+turtle.penup()              # penup() = pu() = up() : move without drawing
+turtle.setpos(0, -100)
+
+turtle.pendown()            # pendown() = pd() = down() : move with drawing
+turtle.circle(100)
+turtle.circle(100, steps=3) # 1st triangle
+
+turtle.penup()
+turtle.setpos(0, 100)
+turtle.right(180)
+
+turtle.pendown()
+turtle.circle(100, steps=3) # 2nd triangle
+turtle.circle(100, steps=6) # hexagon
+
+
+turtle.mainloop()           # avoid the screen closing
+```
 
 ## Map.py (2021.02.16)
 - To find how `map()` runs
