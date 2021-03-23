@@ -24,9 +24,17 @@ namespace TerminalGUI
             Application.Init ();
             var top = Application.Top;
 
-            // top.Add (win);
+            // Creates the top-level window to show
+            // Dynamically computed
+            var win = new Window ("Dec ↔ Hex")
+            {
+                X = 0,
+                Y = 1,
+                Width = Dim.Fill (),
+                Height = Dim.Fill ()
+            };
 
-            // Creates a menubar, the item "New" has a help menu.
+            // Creates a menubar
             var menu = new MenuBar(new MenuBarItem[]
             {
                 new MenuBarItem("_File", new MenuItem[]
@@ -40,17 +48,16 @@ namespace TerminalGUI
                 }) // end of the help menu
             });
 
-            // Creates the top-level window to show
-            // Dynamically computed
-            var win = new Window ()
-            {
-                X = 0,
-                Y = 1,
-                Width = Dim.Fill (),
-                Height = Dim.Fill () - 1
-            };
+            // Creat contents
+            win.Add
+            (
+                new Label (3, 2, "Decimal    : "),
+                new TextField (16, 2, 20, ""),
+                new Label (3, 4, "Hexdecimal : "),
+                new TextField (16, 4, 20, "") {  }
+            );
 
-            top.Add(menu, win);
+            top.Add(win, menu);
             Application.Run();
 
         }
