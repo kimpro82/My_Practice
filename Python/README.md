@@ -401,7 +401,7 @@ myplot = plt.plot(range(k), squareroot)
 > 19 1.4141854421168503 1.9999204646952313 -7.953530476867421e-05  
 > 20 1.4141980335178153 1.9999560780056558 -4.3921994344220394e-05 
 
-![approximate to the exact square root](https://github.com/kimpro82/My_Practice/blob/master/images/Square_Root_20200104.png)
+![approximate to the exact square root](./image/Square_Root_20200104.png)
 
 ```python
 # practice
@@ -499,7 +499,7 @@ Do.Family("Shin", "Wife")
 Do.Family("Kim", "Future Baby")
 ```
 
-![Python_Class_Test](https://github.com/kimpro82/My_Practice/blob/master/images/2018-02-07%20Python_Class_Test.PNG)
+![Python_Class_Test](./image/Python_Class_Test.PNG)
 
 I found that a simple `class` in Python doesn't need stuffs like `__main__`, `__init__` and so on.
 What the `__hell__`?
