@@ -16,7 +16,7 @@ Python seems kind of ugly, but `C#` is the orthodox.
   https://youtu.be/sVYiDboAe_E
 - Terminal Command for installation : `dotnet add package Terminal.Gui`
 
-![Terminal GUI Practice](\image\CSharp%20TerminalGUI%20Output.PNG)
+![Terminal GUI Practice](./image/CSharp%20TerminalGUI%20Output.PNG)
 
 ```cs
 using System;
