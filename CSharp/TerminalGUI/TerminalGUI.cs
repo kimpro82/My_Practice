@@ -44,7 +44,7 @@ namespace TerminalGUI
                 new MenuBarItem("_Help", new MenuItem[]
                 {
                     new MenuItem("_About", "", () 
-                    => MessageBox.Query(10, 5, "About", "C# - Terminal GUI Practice\n2021.03.22.", "Ok"))
+                    => MessageBox.Query(10, 5, "About", "C# - Terminal GUI Practice\n2021.03.24.", "Ok"))
                 }) // end of the help menu
             });
 
@@ -52,9 +52,8 @@ namespace TerminalGUI
             win.Add
             (
                 new Label (3, 2, "Decimal    : "),
-                new TextField (16, 2, 20, ""),
-                new Label (3, 4, "Hexdecimal : "),
-                new TextField (16, 4, 20, "") {  }
+                new TextField (16, 2, 40, "Enter your number to convert"), // need to declare a variable to contain inputed number
+                new Label (3, 4, "Hexdecimal : ")                          // need to print a hexdecimal number converted from input
             );
 
             top.Add(win, menu);
