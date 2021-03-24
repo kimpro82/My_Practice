@@ -47,7 +47,7 @@ turtle.setpos(0, 100)
 
 turtle.pendown()
 time.sleep(0.3)
-turtle.circle(100)          # 2st circle
+turtle.circle(100)          # 2nd circle
 
 turtle.delay(20)
 
