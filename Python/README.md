@@ -1,4 +1,5 @@
 # [My Python Practice]
+- Turtle.py (2021.03.24)
 - Map.py (2021.02.16)
 - WordsMix.py (2021.01.13)
 - Count_Words.py (2020.11.10)
@@ -13,6 +14,65 @@
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
+
+## Turtle.py (2021.03.24)
+- A practice of python module `turtle`
+- Very easy!
+
+![Turtle Practice](./image/Python%20Turtle.gif)
+
+#### Codes
+```python
+import turtle
+import time
+
+turtle.setup(width = 300, height = 300)
+turtle.title("My turtle practice")
+
+turtle.hideturtle()         # hide turtle : make the moving speed faster
+
+
+turtle.home()               # set the position (0, 0)
+turtle.position()
+
+turtle.penup()              # penup() = pu() = up() : move without drawing
+turtle.setpos(0, 125)
+
+turtle.pendown()            # pendown() = pd() = down() : move with drawing
+turtle.right(180)
+turtle.circle(125)          # 1st circle
+
+turtle.penup()
+turtle.setpos(0, 100)
+
+turtle.pendown()
+time.sleep(0.3)
+turtle.circle(100)          # 2nd circle
+
+turtle.delay(20)
+
+time.sleep(0.5)
+turtle.circle(100, steps=3) # 1st triangle
+
+turtle.penup()
+turtle.setpos(0, -100)
+turtle.right(180)
+
+turtle.pendown()
+turtle.circle(100, steps=3) # 2nd triangle
+
+turtle.penup()
+turtle.setpos(0, 100)
+turtle.right(180)
+
+turtle.delay(30)
+
+turtle.pendown()
+turtle.circle(100, steps=6) # hexagon
+
+
+turtle.mainloop()           # avoid the screen closing
+```
 
 ## Map.py (2021.02.16)
 - To find how `map()` runs
@@ -361,7 +421,7 @@ myplot = plt.plot(range(k), squareroot)
 > 19 1.4141854421168503 1.9999204646952313 -7.953530476867421e-05  
 > 20 1.4141980335178153 1.9999560780056558 -4.3921994344220394e-05 
 
-![approximate to the exact square root](https://github.com/kimpro82/My_Practice/blob/master/images/Square_Root_20200104.png)
+![approximate to the exact square root](./image/Square_Root_20200104.png)
 
 ```python
 # practice
@@ -459,7 +519,7 @@ Do.Family("Shin", "Wife")
 Do.Family("Kim", "Future Baby")
 ```
 
-![Python_Class_Test](https://github.com/kimpro82/My_Practice/blob/master/images/2018-02-07%20Python_Class_Test.PNG)
+![Python_Class_Test](./image/Python_Class_Test.PNG)
 
 I found that a simple `class` in Python doesn't need stuffs like `__main__`, `__init__` and so on.
 What the `__hell__`?
