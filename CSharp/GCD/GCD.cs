@@ -3,7 +3,7 @@ using System.Linq;  // for .Select()
 
 // I hate math.
 
-namespace GCD       // Greatest Common Divisor; Euclidean Algorithm
+namespace GCD       // Greatest Common Divisor by Euclidean Algorithm
 {
     class MainClass
     {
