@@ -6,7 +6,7 @@ Python seems kind of ugly, but `C#` is the orthodox.
 - Overloading.cs (2021.02.02)
 
 
-## GCD.cs (2021.03.30)21.03.24)
+## GCD.cs (2021.03.30)
 - A practice of calculating `GCD` (Greatest Common Divisor by Euclidean algorithm)
 - I hate math
 
@@ -17,25 +17,25 @@ using System.Linq;  // for .Select()
 ```
 
 ```cs
-            Console.Write("Enter two integers : "); // .Write : no line-break
-            int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            int a = input[0];
-            int b = input[1];
+Console.Write("Enter two integers : "); // .Write : no line-break
+int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+int a = input[0];
+int b = input[1];
 
-            int max = Math.Max(a, b);
-            int min = Math.Min(a, b);
-            int mod = max;
+int max = Math.Max(a, b);
+int min = Math.Min(a, b);
+int mod = max;
 
-            int i = 0;
-            while(mod != 0)
-            {
-                mod = max % min;
-                Console.WriteLine("{0} : {1} {2} {3}", ++i, max, min, mod); // test
-                max = min;
-                min = mod;
-            } // gcd = max when escape while loop
+int i = 0;
+while(mod != 0)
+{
+    mod = max % min;
+    Console.WriteLine("{0} : {1} {2} {3}", ++i, max, min, mod); // test
+    max = min;
+    min = mod;
+} // gcd = max when escape while loop
 
-            Console.WriteLine("GCD : {0}", max);
+Console.WriteLine("GCD : {0}", max);
 ```
 ```
 Enter two integers : 1432423425 8907080
