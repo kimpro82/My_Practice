@@ -5,7 +5,16 @@ miscellaneous petty works
 making a dashboard for managing Gitgub contributions by using `Github API`
 - Outline (2020.04.19)
 
-## My Python Practice - Stuff
+## My R Practice
+- Get_Sample_Number_2.R (2020.06.16)
+- Get_Sample_Number.R (2020.06.10)
+- Generating Array and Variables by for Loop.R (2019.12.06)
+- Grade_Cancel_Effect.R (2019.07.19)
+- CF_Affection.R (2019.05.25)
+- Plotting_Fibonacci Tornado.R (2017.05.07)
+- Plotting_RGB.R (2017.04.14)
+
+## My Python Practice
 - Turtle.py (2021.03.24)
 - Map.py (2021.02.16)
 - WordsMix.py (2021.01.13)
@@ -21,14 +30,11 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
-## My R Practice
-- Get_Sample_Number_2.R (2020.06.16)
-- Get_Sample_Number.R (2020.06.10)
-- Generating Array and Variables by for Loop.R (2019.12.06)
-- Grade_Cancel_Effect.R (2019.07.19)
-- CF_Affection.R (2019.05.25)
-- Plotting_Fibonacci Tornado.R (2017.05.07)
-- Plotting_RGB.R (2017.04.14)
+## My C# Practice
+- GCD.cs (2021.03.30)
+- TerminalGUI.cs (2021.03.24)
+- Polymorphism.cs (2021.02.18)
+- Overloading.cs (2021.02.02)
 
 ## My Web Practice
 - 6th Wedding Anniversary (2021.03.07)
@@ -36,11 +42,6 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - 5th Wedding Anniversary (2020.03.07)
 - Colorful Show (2020.03.04)
 - Ganzi.html (2017.04.03)
-
-## My C# Practice
-- TerminalGUI.cs (2021.03.24)
-- Polymorphism.cs (2021.02.18)
-- Overloading.cs (2021.02.02)
 
 ## My VBA Practice
 - Sigma2 (2021.01.03)

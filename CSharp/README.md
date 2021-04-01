@@ -1,8 +1,60 @@
 # My C# Practice
 Python seems kind of ugly, but `C#` is the orthodox.
+- GCD.cs (2021.03.30)
 - TerminalGUI.cs (2021.03.24)
 - Polymorphism.cs (2021.02.18)
 - Overloading.cs (2021.02.02)
+
+
+## GCD.cs (2021.03.30)
+- A practice of calculating `GCD` (Greatest Common Divisor by Euclidean algorithm)
+- I hate math
+
+#### Codes :
+```cs
+using System;
+using System.Linq;  // for .Select()
+```
+
+```cs
+Console.Write("Enter two integers : "); // .Write : no line-break
+int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+int a = input[0];
+int b = input[1];
+
+int max = Math.Max(a, b);
+int min = Math.Min(a, b);
+int mod = max;
+
+int i = 0;
+while(mod != 0)
+{
+    mod = max % min;
+    Console.WriteLine("{0} : {1} {2} {3}", ++i, max, min, mod); // test
+    max = min;
+    min = mod;
+} // gcd = max when escape while loop
+
+Console.WriteLine("GCD : {0}", max);
+```
+```
+Enter two integers : 1432423425 8907080
+```
+> 1 : 1432423425 8907080 7290625  
+> 2 : 8907080 7290625 1616455  
+> 3 : 7290625 1616455 824805  
+> 4 : 1616455 824805 791650  
+> 5 : 824805 791650 33155  
+> 6 : 791650 33155 29085  
+> 7 : 33155 29085 4070  
+> 8 : 29085 4070 595  
+> 9 : 4070 595 500  
+> 10 : 595 500 95  
+> 11 : 500 95 25  
+> 12 : 95 25 20  
+> 13 : 25 20 5  
+> 14 : 20 5 0  
+> GCD : 5
 
 
 ## TerminalGUI.cs (2021.03.24)
@@ -18,6 +70,7 @@ Python seems kind of ugly, but `C#` is the orthodox.
 
 ![Terminal GUI Practice](./TerminalGUI/image/CSharp%20TerminalGUI%20Output.PNG)
 
+#### Codes :
 ```cs
 using System;
 
@@ -73,7 +126,6 @@ namespace TerminalGUI
 ```
 
 
-
 ## Polymorphism.cs (2021.02.18)
 - A practice of writing `class` with `abstract` and `sealed` keywords.
 - **This code doesn't work.**
@@ -84,7 +136,9 @@ namespace TerminalGUI
 #### Codes :
 ```cs
 using System;
+```
 
+```cs
 abstract class Person
 // abstract : can be inherited but can't be instantiated
 {
@@ -111,7 +165,9 @@ class BilleJean : MichaelJackson
         Console.WriteLine("You are the one.");
     }
 }
+```
 
+```cs
 class MainClass
 {
     static void Main(string[] args)
@@ -151,7 +207,9 @@ class MainClass
 
 ```cs
 using System;
+```
 
+```cs
 class Wife
 {
 
@@ -183,8 +241,9 @@ class Wife
   }
 
 }
+```
 
-
+```cs
 class MainClass
 {
 
