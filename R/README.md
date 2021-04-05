@@ -42,7 +42,6 @@ balls <- c("Red", "Yellow", "Blue")
 ```R
 permutations(3, 2, v = balls, repeats.allowed = TRUE)  # 3Π2
 ```
->       [,1]     [,2]  
 > [1,] "Blue"   "Blue"  
 > [2,] "Blue"   "Red"  
 > [3,] "Blue"   "Yellow"  
@@ -56,7 +55,6 @@ permutations(3, 2, v = balls, repeats.allowed = TRUE)  # 3Π2
 permutations(3, 2, v = balls, repeats.allowed = FALSE) # 3P2
 permutations(3, 2, v = balls)
 ```
->      [,1]     [,2]  
 > [1,] "Blue"   "Red"  
 > [2,] "Blue"   "Yellow"  
 > [3,] "Red"    "Blue"  
@@ -68,13 +66,11 @@ permutations(3, 2, v = balls)
 ```R
 combn(balls, 2)
 ```
->      [,1]     [,2]   [,3]  
 > [1,] "Red"    "Red"  "Yellow"  
 > [2,] "Yellow" "Blue" "Blue"
 ```R
 combinations(3, 2, v = balls, repeats.allowed = TRUE)  # 3H2
 ```
->      [,1]     [,2]  
 > [1,] "Blue"   "Blue"  
 > [2,] "Blue"   "Red"  
 > [3,] "Blue"   "Yellow"  
@@ -84,7 +80,6 @@ combinations(3, 2, v = balls, repeats.allowed = TRUE)  # 3H2
 ```R
 combinations(3, 2, v = balls, repeats.allowed = FALSE) # 3C2
 ```
->      [,1]   [,2]  
 > [1,] "Blue" "Red"  
 > [2,] "Blue" "Yellow"  
 > [3,] "Red"  "Yellow"
