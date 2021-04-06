@@ -43,13 +43,14 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Colorful Show (2020.03.04)
 - Ganzi.html (2017.04.03)
 
+## My Java Practice
+- Swing.java (2021.04.06)
+- MyDate.java (2021.03.08)
+
 ## My VBA Practice
 - Sigma2 (2021.01.03)
 - Sigma (2021.01.02)
 - Color_Scroll.bas (2020.11.14)
-
-## My Java Practice
-- MyDate.java (2021.03.08)
 
 ## My QBasic Practice
 - Play Music (2021.02.20)
