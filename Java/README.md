@@ -118,7 +118,7 @@ import java.text.SimpleDateFormat;
 		System.out.println(date.getDay()); // int, 0 = Sunday
 ```
 > Tue Mar 09 09:37:35 KST 2021  
-> 2021. 3. 9 �삤�쟾 9:37:35  
+> 2021. 3. 9 오전 9:37:35  
 > 2021  
 > 2
 
