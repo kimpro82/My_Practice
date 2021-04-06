@@ -71,7 +71,8 @@ public class Swing
 		f.add(menuBar);
 		
 		f.setSize(600, 600);
-        f.setLayout(new GridLayout(3, 3));
+		f.setLayout(new GridLayout(3, 3));
 		f.setVisible(true);
+
 	}
 }
