@@ -14,6 +14,8 @@ import java.awt.GridLayout;
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 ```
+
+#### A frame to contain components
 ```java
 		// JFrame : initialize a window
 		JFrame f = new JFrame("My Java Swing GUI Practice");
@@ -24,6 +26,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 		f.setLayout(new GridLayout(3, 3));
 		f.setVisible(true);
 ```
+
+#### Components
 ```java
 		// JLabel()
 		JLabel l1 = new JLabel("This is a text label.");
