@@ -8,7 +8,7 @@ public class Swing
 	{
 
 		// JFrame : initialize a window
-		JFrame f = new JFrame(); 
+		JFrame f = new JFrame("My Java Swing GUI Practice"); 
 
 		// JLabel()
 		JLabel l1 = new JLabel("This is a text label.");
