@@ -1,0 +1,6 @@
+/.git
+
+*.class
+
+.classpath
+.project
