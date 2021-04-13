@@ -1,4 +1,7 @@
-/.git/
-/.metadata/
+/.git
 
+*.class
+
+.settings
+.classpath
 .project

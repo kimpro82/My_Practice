@@ -1,7 +1,64 @@
 # My Java Practice
-N/A Java Boa~
+N/A Java BoA~
+- MyThread.java (2021.04.13)
 - Swing.java (2021.04.06)
 - MyDate.java (2021.03.08)
+
+
+## MyThread.java (2021.04.13)
+- A practice of `Multi-Thread`
+- Using `java.lang.Thread`
+
+```java
+class NumThread extends Thread
+{
+	public void run()
+	{
+		for (int i = 0; i <= 26; i++)
+		{
+			System.out.print(i);
+			try
+			{
+				Thread.sleep(250);				
+			}
+			catch (Exception e) {}
+		}
+	}
+}
+```
+
+```java
+class CharThread extends Thread
+{
+	public void run()
+	{
+		for (char letter = 'A'; letter <='Z' ; letter++)
+		{
+			System.out.print(letter);
+			try
+			{
+				Thread.sleep(250);				
+			}
+			catch (Exception e) {}
+		}
+	}
+}
+```
+
+```java
+public class MyThread
+{
+	public static void main(String args[])
+	{
+		Thread thread1 = new NumThread();
+		Thread thread2 = new CharThread();
+		thread1.start();
+		thread2.start();
+	}
+} 
+```
+
+> 0A1B2C3D4E5F6G7H8I9J10K11L12M13N14O15P16Q17R18S19T20U21V22W23X24Y25Z26
 
 
 ## Swing.java (2021.04.06)
