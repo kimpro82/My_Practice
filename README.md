@@ -31,6 +31,12 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
+## My Java Practice
+- ActionListener.java (2021.04.22)
+- MyThread.java (2021.04.13)
+- Swing.java (2021.04.06)
+- MyDate.java (2021.03.08)
+
 ## My C# Practice
 - GCD.cs (2021.03.30)
 - TerminalGUI.cs (2021.03.24)
@@ -44,19 +50,10 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Colorful Show (2020.03.04)
 - Ganzi.html (2017.04.03)
 
-## My Java Practice
-- Swing.java (2021.04.06)
-- MyDate.java (2021.03.08)
-
 ## My VBA Practice
 - Sigma2 (2021.01.03)
 - Sigma (2021.01.02)
 - Color_Scroll.bas (2020.11.14)
-
-## My Java Practice
-- MyThread.java (2021.04.13)
-- Swing.java (2021.04.06)
-- MyDate.java (2021.03.08)
 
 ## My QBasic Practice
 - Play Music (2021.02.20)
