@@ -1,0 +1,3 @@
+import ModuleSample
+
+ModuleSample.call()
