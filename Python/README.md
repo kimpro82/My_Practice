@@ -1,4 +1,5 @@
 # [My Python Practice]
+- ModuleSample.py & ModuleRun.py (2021.04.26)
 - Turtle.py (2021.03.24)
 - Map.py (2021.02.16)
 - WordsMix.py (2021.01.13)
@@ -13,6 +14,31 @@
 - Password.py (2019.05.24)
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
+
+
+## ModuleSample.py & ModuleRun.py (2021.04.26)
+- A practice of importing and running `module` in Python
+- Using `__name__` and `__main__`
+
+```python
+# ModuleSample.py
+
+if __name__ == '__main__' :
+    print("Don't call me yet.")
+
+def call() :
+    print("Call me now.")
+```
+> Don't call me yet.
+
+```python
+# ModuleRun.py
+
+import ModuleSample
+
+ModuleSample.call()
+```
+> Call me now.
 
 
 ## Turtle.py (2021.03.24)

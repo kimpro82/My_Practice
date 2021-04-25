@@ -16,6 +16,7 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Plotting_RGB.R (2017.04.14)
 
 ## My Python Practice
+- ModuleSample.py & ModuleRun.py (2021.04.26)
 - Turtle.py (2021.03.24)
 - Map.py (2021.02.16)
 - WordsMix.py (2021.01.13)
