@@ -20,9 +20,8 @@
 - A practice of importing and running `module` in Python
 - Using `__name__` and `__main__`
 
+#### ModuleSample.py
 ```python
-# ModuleSample.py
-
 if __name__ == '__main__' :
     print("Don't call me yet.")
 
@@ -31,9 +30,8 @@ def call() :
 ```
 > Don't call me yet.
 
+#### ModuleRun.py
 ```python
-# ModuleRun.py
-
 import ModuleSample
 
 ModuleSample.call()
