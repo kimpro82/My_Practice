@@ -1,4 +1,5 @@
 # [My Python Practice]
+- ReSplit.py (2021.04.29)
 - ModuleSample.py & ModuleRun.py (2021.04.26)
 - Turtle.py (2021.03.24)
 - Map.py (2021.02.16)
@@ -14,6 +15,29 @@
 - Password.py (2019.05.24)
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
+
+
+## ReSplit.py (2021.04.29)
+- Seperating a `string` by plural delimiters
+- Using regular expression ('`re`')
+
+```Python
+txt = 'one two/three.four'
+
+# 1. string.split()
+print(txt.split())                  # default : ' '
+print(txt.split('/'))
+# print(txt.split(' ').split('/'))    # Error
+
+# 2. Regular Expression
+import re
+print(re.split("[ /.]", txt))       # Enter delimiters directly
+print(re.split("\W", txt))          # \W = a-zA-Z0-9
+```
+> ['one', 'two/three.four']  
+> ['one two', 'three.four']  
+> ['one', 'two', 'three', 'four']  
+> ['one', 'two', 'three', 'four']
 
 
 ## ModuleSample.py & ModuleRun.py (2021.04.26)
