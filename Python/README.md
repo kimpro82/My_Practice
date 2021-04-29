@@ -19,7 +19,7 @@
 
 ## ReSplit.py (2021.04.29)
 - Seperating a `string` by plural delimiters
-- Using regular expression ('`re`')
+- Using regular expression (`re`)
 
 ```Python
 txt = 'one two/three.four'
