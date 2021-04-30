@@ -16,6 +16,7 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Plotting_RGB.R (2017.04.14)
 
 ## My Python Practice
+- ReSplit.py (2021.04.29)
 - ModuleSample.py & ModuleRun.py (2021.04.26)
 - Turtle.py (2021.03.24)
 - Map.py (2021.02.16)
@@ -38,6 +39,11 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Polymorphism.cs (2021.02.18)
 - Overloading.cs (2021.02.02)
 
+## My Java Practice
+- MyThread.java (2021.04.13)
+- Swing.java (2021.04.06)
+- MyDate.java (2021.03.08)
+
 ## My Web Practice
 - 6th Wedding Anniversary (2021.03.07)
 - 5th Wedding Anniversary 2 (2020.03.11)
@@ -45,19 +51,10 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Colorful Show (2020.03.04)
 - Ganzi.html (2017.04.03)
 
-## My Java Practice
-- Swing.java (2021.04.06)
-- MyDate.java (2021.03.08)
-
 ## My VBA Practice
 - Sigma2 (2021.01.03)
 - Sigma (2021.01.02)
 - Color_Scroll.bas (2020.11.14)
-
-## My Java Practice
-- MyThread.java (2021.04.13)
-- Swing.java (2021.04.06)
-- MyDate.java (2021.03.08)
 
 ## My QBasic Practice
 - Play Music (2021.02.20)
