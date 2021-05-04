@@ -20,7 +20,7 @@
 
 ## IfWhileTrue.py (2021.05.04)
 - A practice of using `if` and `while`
-- All the strings and numbers *except* `0` and `False` are regrarded as `True`
+- All the strings and numbers *except* `0` and `False` are regarded as `True`
 
 ```python
 if True :
