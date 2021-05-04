@@ -1,4 +1,5 @@
 # [My Python Practice]
+- IfWhileTrue.py (2021.05.04)
 - ReSplit.py (2021.04.29)
 - ModuleSample.py & ModuleRun.py (2021.04.26)
 - Turtle.py (2021.03.24)
@@ -16,6 +17,53 @@
 - Class_Test.py (2018.02.07)
 - Nirvana.py (2017.05.15)
 
+
+## IfWhileTrue.py (2021.05.04)
+- A practice of using `if` and `while`
+- All the strings and numbers *except* `0` and `False` are regrarded as `True`
+
+```python
+if True :
+    print(True)
+
+if False :
+    print(False)
+
+if 'abc' :
+    print('abc')
+
+a = 1
+if a :
+    print(a)
+
+b = 0
+if b :
+    print(b)
+
+c = -1
+if c :
+    print(c)
+```
+> True  
+> abc  
+> 1  
+> -1
+
+```python
+while True :
+    print(True)
+    break
+
+while False :
+    print(False)
+    break
+
+while '123' :
+    print('123')
+    break
+```
+> True  
+> 123
 
 ## ReSplit.py (2021.04.29)
 - Seperating a `string` by plural delimiters
