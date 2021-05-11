@@ -4,9 +4,9 @@ The final destination
 
 
 ## Hello World (2021.05.12)
-- My first run of `C/C++` code in `VS Code`
+- My first run of **`C`/`C++`** code in **Visual Studio Code**
 - Environmental setting is harder than coding
-- Find how to complie and run (rather easier than VSC menu)
+- Find how to **complie** and **run** (rather easier than VSC menu)
 - `gcc` (for `C`) and `g++` (for `C++`) seem not so different
 
 #### IamYourFather.c :
