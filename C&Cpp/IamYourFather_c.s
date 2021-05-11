@@ -3,8 +3,6 @@
 	.section .rdata,"dr"
 LC0:
 	.ascii "I am your father.\0"
-LC1:
-	.ascii "pause\0"
 	.text
 	.globl	_main
 	.def	_main;	.scl	2;	.type	32;	.endef
@@ -21,8 +19,6 @@ LFB21:
 	call	___main
 	movl	$LC0, (%esp)
 	call	_puts
-	movl	$LC1, (%esp)
-	call	_system
 	movl	$0, %eax
 	leave
 	.cfi_restore 5
@@ -32,4 +28,3 @@ LFB21:
 LFE21:
 	.ident	"GCC: (MinGW.org GCC-6.3.0-1) 6.3.0"
 	.def	_puts;	.scl	2;	.type	32;	.endef
-	.def	_system;	.scl	2;	.type	32;	.endef

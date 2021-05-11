@@ -4,6 +4,6 @@
 int main()
 {
     printf("I am your father.\n");
-    system("pause");
+    // system("pause");
     return 0;
 }

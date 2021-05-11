@@ -7,6 +7,31 @@ The final destination
 - My first run of `C/C++` code in `VS Code`
 - Environmental setting is harder than coding
 - Find how to complie and run (rather easier than VSC menu)
+- `gcc` (for `C`) and `g++` (for `C++`) seem not so different
+
+#### IamYourFather.c :
+```c
+#include <stdio.h>
+#include <windows.h>    // for using system()
+
+int main()
+{
+    printf("I am your father.\n");
+    // system("pause");
+    return 0;
+}
+```
+
+##### Command Line
+```
+gcc --help
+gcc -S IamYourFather_c.c
+gcc IamYourFather_c.c -o IamYourFather_c.exe
+```
+```
+.\IamYourFather_c
+```
+> I am your father.
 
 #### IamYourFather.cpp :
 ```cpp
@@ -17,36 +42,18 @@ using namespace std;
 int main()
 {
     cout << "I am your father." << endl;
-    system("pause");
+    // system("pause");
     return 0;
 }
 ```
 
 ##### Command Line
 ```
-gcc IamYourFather_c.c -o IamYourFather_c.exe
+g++ --help
+g++ -S IamYourFather_cpp.cpp
+g++ IamYourFather_cpp.cpp -o IamYourFather_cpp.exe
 ```
 ```
-.\IamYourFather
+.\IamYourFather_cpp
 ```
-
-#### IamYourFather_c.c :
-```c
-#include <stdio.h>
-#include <windows.h>    // for using system()
-
-int main()
-{
-    printf("I am your father.\n");
-    system("pause");
-    return 0;
-}
-```
-
-##### Command Line
-```
-g++ IamYourFather.cpp -o IamYourFather.exe
-```
-```
-.\IamYourFather_c
-```
+> I am your father.

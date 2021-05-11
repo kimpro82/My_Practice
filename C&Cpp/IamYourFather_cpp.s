@@ -1,4 +1,4 @@
-	.file	"IamYourFather.cpp"
+	.file	"IamYourFather_cpp.cpp"
 	.section .rdata,"dr"
 __ZStL19piecewise_construct:
 	.space 1
@@ -6,8 +6,6 @@ __ZStL19piecewise_construct:
 	.def	___main;	.scl	2;	.type	32;	.endef
 LC0:
 	.ascii "I am your father.\0"
-LC1:
-	.ascii "pause\0"
 	.text
 	.globl	_main
 	.def	_main;	.scl	2;	.type	32;	.endef
@@ -32,8 +30,6 @@ LFB1445:
 	movl	%eax, %ecx
 	call	__ZNSolsEPFRSoS_E
 	subl	$4, %esp
-	movl	$LC1, (%esp)
-	call	_system
 	movl	$0, %eax
 	movl	-4(%ebp), %ecx
 	.cfi_def_cfa 1, 0
@@ -114,7 +110,6 @@ LFE1879:
 	.def	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc;	.scl	2;	.type	32;	.endef
 	.def	__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_;	.scl	2;	.type	32;	.endef
 	.def	__ZNSolsEPFRSoS_E;	.scl	2;	.type	32;	.endef
-	.def	_system;	.scl	2;	.type	32;	.endef
 	.def	__ZNSt8ios_base4InitD1Ev;	.scl	2;	.type	32;	.endef
 	.def	__ZNSt8ios_base4InitC1Ev;	.scl	2;	.type	32;	.endef
 	.def	_atexit;	.scl	2;	.type	32;	.endef
