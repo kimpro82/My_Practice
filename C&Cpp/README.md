@@ -9,7 +9,7 @@ The final destination
 - Find how to **complie** and **run** (rather easier than VSC menu)
 - `gcc` (for `C`) and `g++` (for `C++`) seem not so different
 
-#### IamYourFather.c :
+#### IamYourFather_c.c :
 ```c
 #include <stdio.h>
 #include <windows.h>    // for using system()
@@ -33,7 +33,7 @@ gcc IamYourFather_c.c -o IamYourFather_c.exe
 ```
 > I am your father.
 
-#### IamYourFather.cpp :
+#### IamYourFather_cpp.cpp :
 ```cpp
 #include <iostream>
 
