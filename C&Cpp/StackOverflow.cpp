@@ -55,3 +55,5 @@ int main()
 
     return 0;
 }
+
+// Improvement point : use function for repetitive works
