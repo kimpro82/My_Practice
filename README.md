@@ -16,6 +16,7 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Plotting_RGB.R (2017.04.14)
 
 ## My Python Practice
+- CallBro.py (2021.06.16)
 - IfWhileTrue.py (2021.05.04)
 - ReSplit.py (2021.04.29)
 - ModuleSample.py & ModuleRun.py (2021.04.26)
@@ -27,7 +28,7 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Print.py (2020.03.31)
 - Suffle_List.py (2020.03.30)
 - Random_Seed_Influence.py (2020.01.05)
-- Square_Root.py (2020.01.01)
+- Square_Root.py (2020.01.01) (adjusted 2020.01.04)
 - Fibonacci_Series.py (2019.12.18)
 - Generate_List.py (2019.12.07)
 - Password.py (2019.05.24)
