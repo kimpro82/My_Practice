@@ -1,5 +1,5 @@
 # [My Python Practice]
-- CallBro.py (2021.06.16)
+- CallBro.py (2021.06.17)
 - IfWhileTrue.py (2021.05.04)
 - ReSplit.py (2021.04.29)
 - ModuleSample.py & ModuleRun.py (2021.04.26)
@@ -19,7 +19,49 @@
 - Nirvana.py (2017.05.15)
 
 
-## CallBro.py (2021.06.16)
+## CallBro.py (2021.06.17)
+- Originally started from a stupid question : Can a `method` call other method in the same class?
+- I've just realized it was really obvious (Why does `the constructor` exist?)
+- This code is a strange station, that two methods call each other with `iterator`
+
+```python
+class Bros :
+
+    def __init__(self) :
+        self.conversation = iter(["Hey bro", "Wassup"])
+        self.n = 0
+
+    def bros1(self) :
+        print(self.bros1.__name__ + " : " + next(self.conversation))
+        if (self.n < 1) :
+            self.n += 1
+            self.bros2()
+        else :
+            print()
+
+    def bros2(self) :
+        print(self.bros2.__name__ + " : " + next(self.conversation))
+        if (self.n < 1) :
+            self.n += 1
+            self.bros1()
+        else :
+            print()
+```
+```python
+if __name__ == "__main__" :
+
+    Bros1 = Bros()
+    Bros1.bros1()
+
+    Bros2 = Bros()
+    Bros2.bros2()
+```
+
+> bros1 : Hey bro  
+> bros2 : Wassup
+
+> bros2 : Hey bro  
+> bros1 : Wassup
 
 
 ## IfWhileTrue.py (2021.05.04)

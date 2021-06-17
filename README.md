@@ -16,7 +16,7 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Plotting_RGB.R (2017.04.14)
 
 ## My Python Practice
-- CallBro.py (2021.06.16)
+- CallBro.py (2021.06.17)
 - IfWhileTrue.py (2021.05.04)
 - ReSplit.py (2021.04.29)
 - ModuleSample.py & ModuleRun.py (2021.04.26)
