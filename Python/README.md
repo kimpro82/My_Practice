@@ -25,9 +25,14 @@
 - This code is a strange station, that two methods call each other with `iterator`
 
 ```python
+turn = 0
+
 class Bros :
 
     def __init__(self) :
+        global turn
+        turn += 1
+        print("<Conversation " + str(turn) + ">")
         self.conversation = iter(["Hey bro", "Wassup"])
         self.n = 0
 
@@ -57,9 +62,11 @@ if __name__ == "__main__" :
     Bros2.bros2()
 ```
 
+> <Conversation 1>  
 > bros1 : Hey bro  
 > bros2 : Wassup
 
+> <Conversation 2>  
 > bros2 : Hey bro  
 > bros1 : Wassup
 

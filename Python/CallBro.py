@@ -1,6 +1,11 @@
+turn = 0
+
 class Bros :
 
     def __init__(self) :
+        global turn
+        turn += 1
+        print("<Conversation " + str(turn) + ">")
         self.conversation = iter(["Hey bro", "Wassup"])
         self.n = 0
 
