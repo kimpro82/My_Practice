@@ -54,6 +54,7 @@ making a dashboard for managing Gitgub contributions by using `Github API`
 - Ganzi.html (2017.04.03)
 
 ## My VBA Practice
+- Sigma3
 - Sigma2 (2021.01.03)
 - Sigma (2021.01.02)
 - Color_Scroll.bas (2020.11.14)
