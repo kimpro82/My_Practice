@@ -8,7 +8,7 @@ VBA, maybe it could my ancient future
 
 ## Sigma3 (2021.07.07)
 - Add `Error Handler` 
-- How about naming labels such like `try`~`catch`~`finally`?
+- How about naming labels such like `try` ~ `catch` ~ `finally`?
 
 ![Sigma3](Images/VBA_Sigma3.PNG)
 
