@@ -1,15 +1,55 @@
 # My VBA Practice
-VBA, it may be my ancient futures
+VBA, maybe it could my ancient future
+- Sigma3 (2021.07.07)
 - Sigma2 (2021.01.03)
 - Sigma (2021.01.02)
 - Color_Scroll (2020.11.14)
+
+
+## Sigma3 (2021.07.07)
+- Add `Error Handler` 
+- How about naming labels such like `try` ~ `catch` ~ `finally`?
+
+![Sigma3](Images/VBA_Sigma3.PNG)
+
+![Sigma3_ErrorMsgBox](Images/VBA_Sigma3_ErrorMsgBox.PNG)
+
+```vba
+Option Explicit
+
+
+Function Sigma3(k As Integer, n As Integer) As Integer
+
+    On Error GoTo ErrorHandler
+
+    If k > n Then
+        Err.Raise 380   'Error Code 380 : Invalid property value.
+    End If
+
+    Dim i As Integer, Sum As Integer
+
+    For i = k To n      'including both of k and n
+        Sum = Sum + i
+    Next i
+
+    Sigma3 = Sum
+    
+    Exit Function
+    
+
+ErrorHandler:
+    
+    MsgBox "Error occurs : Starting number k is greater than final number n."
+    
+End Function
+```
 
 
 ## Sigma2 (2021.01.03)
 - Add a parameter of _k_ that indicates a starting point
 - Need to add codes for handling errors.
 
-![Sigma2](https://github.com/kimpro82/MyPractice/blob/master/images/VBA_Sigma2.PNG)
+![Sigma2](Images/VBA_Sigma2.PNG)
 
 ```vba
 Option Explicit
@@ -33,7 +73,7 @@ End Function
 - Make a function to calculate `summation` (a.k.a. Sigma, Σ)
 - Define all the variables as `integer`
 
-![Sigma](https://github.com/kimpro82/MyPractice/blob/master/images/VBA_Sigma.PNG)
+![Sigma](Images/VBA_Sigma.PNG)
 
 ```vba
 Option Explicit
@@ -57,7 +97,7 @@ End Function
 - Make a color matrix by `Nested For` statement
 - Want to make it flow, but it doesn't work well yet
 
-![Color_Scroll](https://github.com/kimpro82/MyPractice/blob/master/images/VBA_Color_Scroll.png)
+![Color_Scroll](Images/VBA_Color_Scroll.png)
 
 ```vba
 Option Explicit
