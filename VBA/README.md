@@ -12,6 +12,8 @@ VBA, maybe it could my ancient future
 
 ![Sigma3](Images/VBA_Sigma3.PNG)
 
+![Sigma3_ErrorMsgBox](Images/VBA_Sigma3_ErrorMsgBox.PNG)
+
 ```vba
 Option Explicit
 
