@@ -21,7 +21,7 @@ Function Sigma3(k As Integer, n As Integer) As Integer
     On Error GoTo ErrorHandler
 
     If k > n Then
-        Err.Raise 380
+        Err.Raise 380   'Error Code 380 : Invalid property value.
     End If
 
     Dim i As Integer, Sum As Integer
