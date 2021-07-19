@@ -56,4 +56,4 @@ int main()
     return 0;
 }
 
-// Improvement point : use function for repetitive works
+// Improvement point : find how to use a function for repetitive works → template & generic function!
