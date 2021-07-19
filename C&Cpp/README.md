@@ -5,7 +5,9 @@ The final destination of programming
 
 
 ## Stack Overflow (2021.05.18)
-- Let's conquer the `stack overflow` problem!
+- "Let's conquer the `stack overflow` problem!"
+- …… a stupid conquerer who didn't know `template` and `generic function` said.
+- Can he learn them or still stay in beginner's swamps? To be continued …… 
 
 #### StackOverflow.cpp
 ```cpp
@@ -93,9 +95,9 @@ int main()
 
 ## Hello World (2021.05.12)
 - My first run of **`C`/`C++`** code in **Visual Studio Code**
-- Environmental setting is harder than coding
-- Find how to **complie** and **run** (rather easier than VSC menu)
-- `gcc` (for `C`) and `g++` (for `C++`) seem not so different
+- Environmental setting was harder than coding
+- Find how to **complie** and **run** in cosole (rather easier than VS Code menu)
+- `gcc` (for `C`) and `g++` (for `C++`) seem not so different to each other
 
 #### IamYourFather_c.c :
 ```c
